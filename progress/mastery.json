@@ -1,0 +1,647 @@
+{
+  "schema_version": 1,
+  "initialized_on": "2026-10-04",
+  "timezone": "Asia/Taipei",
+  "objective": "Long-term retention and practical software engineering ability",
+  "track_allocation": {
+    "frontend": 0.3,
+    "backend": 0.35,
+    "devops": 0.35
+  },
+  "dimensions": [
+    "conceptual_understanding",
+    "implementation_correctness",
+    "edge_case_handling",
+    "testing_quality",
+    "tradeoff_explanation"
+  ],
+  "score_range": [
+    0,
+    4
+  ],
+  "policy_ref": "README.md",
+  "skills": {
+    "fe.typescript": {
+      "track": "frontend",
+      "status": "developing",
+      "latest_scores": {
+        "conceptual_understanding": {
+          "score": 3,
+          "assessment_id": "2026-10-04-baseline-frontend",
+          "evidence_ref": "assessments/2026-10-04-baseline-frontend.md#q5--typescript-state-modeling",
+          "assessed_on": "2026-10-04"
+        },
+        "implementation_correctness": null,
+        "edge_case_handling": null,
+        "testing_quality": null,
+        "tradeoff_explanation": null
+      },
+      "last_assessed_on": "2026-10-04",
+      "next_review_on": "2026-10-05",
+      "assessment_history": [
+        {
+          "assessment_id": "2026-10-04-baseline-frontend",
+          "assessment_path": "assessments/2026-10-04-baseline-frontend.md",
+          "assessed_on": "2026-10-04",
+          "question_ids": [
+            "Q5"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 3
+          },
+          "evidence_refs": [
+            "assessments/2026-10-04-baseline-frontend.md#q5--typescript-state-modeling"
+          ],
+          "assistance": "None before response to Q5; task constraints specified the intended state requirements.",
+          "independent": true,
+          "checks_run": [],
+          "outcome": "Correct conceptual union design and static/runtime distinction; broader TypeScript implementation and edge cases unknown."
+        }
+      ]
+    },
+    "fe.browser": {
+      "track": "frontend",
+      "status": "developing",
+      "latest_scores": {
+        "conceptual_understanding": {
+          "score": 2,
+          "assessment_id": "2026-10-04-baseline-frontend",
+          "evidence_ref": "assessments/2026-10-04-baseline-frontend.md#q6--browser-event-loop-prediction",
+          "assessed_on": "2026-10-04"
+        },
+        "implementation_correctness": null,
+        "edge_case_handling": null,
+        "testing_quality": null,
+        "tradeoff_explanation": null
+      },
+      "last_assessed_on": "2026-10-04",
+      "next_review_on": "2026-10-05",
+      "assessment_history": [
+        {
+          "assessment_id": "2026-10-04-baseline-frontend",
+          "assessment_path": "assessments/2026-10-04-baseline-frontend.md",
+          "assessed_on": "2026-10-04",
+          "question_ids": [
+            "Q6"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 2
+          },
+          "evidence_refs": [
+            "assessments/2026-10-04-baseline-frontend.md#q6--browser-event-loop-prediction"
+          ],
+          "assistance": "None before Q6 response; queue correction delivered afterward.",
+          "independent": true,
+          "checks_run": [],
+          "outcome": "Partial event-loop prediction; nested microtask enqueue ordering gap. No broader browser mastery inferred."
+        }
+      ]
+    },
+    "fe.react": {
+      "track": "frontend",
+      "status": "developing",
+      "latest_scores": {
+        "conceptual_understanding": {
+          "score": 2,
+          "assessment_id": "2026-10-04-baseline-frontend",
+          "evidence_ref": "assessments/2026-10-04-baseline-frontend.md#q2-pseudocode-attempt-3",
+          "assessed_on": "2026-10-04"
+        },
+        "implementation_correctness": null,
+        "edge_case_handling": {
+          "score": 2,
+          "assessment_id": "2026-10-04-baseline-frontend",
+          "evidence_ref": "assessments/2026-10-04-baseline-frontend.md#q2-pseudocode-attempt-3",
+          "assessed_on": "2026-10-04"
+        },
+        "testing_quality": {
+          "score": 2,
+          "assessment_id": "2026-10-04-baseline-frontend",
+          "evidence_ref": "assessments/2026-10-04-baseline-frontend.md#q4--cancellation-versus-ignoring-results",
+          "assessed_on": "2026-10-04"
+        },
+        "tradeoff_explanation": {
+          "score": 2,
+          "assessment_id": "2026-10-04-baseline-frontend",
+          "evidence_ref": "assessments/2026-10-04-baseline-frontend.md#q4--cancellation-versus-ignoring-results",
+          "assessed_on": "2026-10-04"
+        }
+      },
+      "last_assessed_on": "2026-10-04",
+      "next_review_on": "2026-10-05",
+      "assessment_history": [
+        {
+          "assessment_id": "2026-10-04-baseline-frontend",
+          "assessment_path": "assessments/2026-10-04-baseline-frontend.md",
+          "assessed_on": "2026-10-04",
+          "question_ids": [
+            "Q1",
+            "Q1b",
+            "Q1c",
+            "Q1d",
+            "Q2"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding",
+            "edge_case_handling"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 2,
+            "edge_case_handling": 2
+          },
+          "evidence_refs": [
+            "assessments/2026-10-04-baseline-frontend.md#q2-pseudocode-attempt-3",
+            "assessments/2026-10-04-frontend-q2-attempt-3.txt"
+          ],
+          "assistance": "Multiple focused hints, repeated-identity probe and cleanup correction; original attempts preserved.",
+          "independent": false,
+          "checks_run": [],
+          "outcome": "Guided pseudocode reasoning demonstrated; executable implementation and delayed retention unassessed."
+        },
+        {
+          "assessment_id": "2026-10-04-baseline-frontend",
+          "assessment_path": "assessments/2026-10-04-baseline-frontend.md",
+          "assessed_on": "2026-10-04",
+          "question_ids": [
+            "Q3",
+            "Q3b",
+            "Q4"
+          ],
+          "applicable_dimensions": [
+            "testing_quality",
+            "tradeoff_explanation"
+          ],
+          "dimension_scores": {
+            "testing_quality": 2,
+            "tradeoff_explanation": 2
+          },
+          "evidence_refs": [
+            "assessments/2026-10-04-baseline-frontend.md#q4--cancellation-versus-ignoring-results"
+          ],
+          "assistance": "Intermediate loading-state assertion clarified after guidance; cancellation boundary corrected after Q4.",
+          "independent": false,
+          "checks_run": [],
+          "outcome": "Narrow scenario: test-design reasoning and partial trade-off explanation; no executed test or implementation evidence."
+        }
+      ]
+    },
+    "fe.nextjs": {
+      "track": "frontend",
+      "status": "developing",
+      "latest_scores": {
+        "conceptual_understanding": {
+          "score": 3,
+          "assessment_id": "2026-10-04-baseline-frontend",
+          "evidence_ref": "assessments/2026-10-04-baseline-frontend.md#q8--nextjs-cached-read-after-a-mutation",
+          "assessed_on": "2026-10-04"
+        },
+        "implementation_correctness": null,
+        "edge_case_handling": null,
+        "testing_quality": null,
+        "tradeoff_explanation": null
+      },
+      "last_assessed_on": "2026-10-04",
+      "next_review_on": "2026-10-05",
+      "assessment_history": [
+        {
+          "assessment_id": "2026-10-04-baseline-frontend",
+          "assessment_path": "assessments/2026-10-04-baseline-frontend.md",
+          "assessed_on": "2026-10-04",
+          "question_ids": [
+            "Q8"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 3
+          },
+          "evidence_refs": [
+            "assessments/2026-10-04-baseline-frontend.md#q8--nextjs-cached-read-after-a-mutation"
+          ],
+          "assistance": "No guidance before Q8 answer; API spelling/options clarified afterward.",
+          "independent": true,
+          "checks_run": [],
+          "outcome": "Correct scoped server-cache and mutation invalidation reasoning; broader rendering/cache implementation unassessed."
+        }
+      ]
+    },
+    "fe.http-cache": {
+      "track": "frontend",
+      "status": "unassessed",
+      "latest_scores": {
+        "conceptual_understanding": null,
+        "implementation_correctness": null,
+        "edge_case_handling": null,
+        "testing_quality": null,
+        "tradeoff_explanation": null
+      },
+      "last_assessed_on": null,
+      "next_review_on": null,
+      "assessment_history": []
+    },
+    "fe.performance": {
+      "track": "frontend",
+      "status": "developing",
+      "latest_scores": {
+        "conceptual_understanding": {
+          "score": 2,
+          "assessment_id": "2026-10-04-baseline-frontend",
+          "evidence_ref": "assessments/2026-10-04-baseline-frontend.md#q9--performance-diagnosis-final-initial-baseline-probe",
+          "assessed_on": "2026-10-04"
+        },
+        "implementation_correctness": null,
+        "edge_case_handling": null,
+        "testing_quality": null,
+        "tradeoff_explanation": null
+      },
+      "last_assessed_on": "2026-10-04",
+      "next_review_on": "2026-10-05",
+      "assessment_history": [
+        {
+          "assessment_id": "2026-10-04-baseline-frontend",
+          "assessment_path": "assessments/2026-10-04-baseline-frontend.md",
+          "assessed_on": "2026-10-04",
+          "question_ids": [
+            "Q9"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 2
+          },
+          "evidence_refs": [
+            "assessments/2026-10-04-baseline-frontend.md#q9--performance-diagnosis-final-initial-baseline-probe"
+          ],
+          "assistance": "No guidance before initial Q9 answer; dominant-layout correction afterward.",
+          "independent": true,
+          "checks_run": [],
+          "outcome": "Basic optimization hypotheses including virtualization; bottleneck attribution and verification gaps. Synthetic trace only; architecture not inferred."
+        }
+      ]
+    },
+    "fe.testing": {
+      "track": "frontend",
+      "status": "unassessed",
+      "latest_scores": {
+        "conceptual_understanding": null,
+        "implementation_correctness": null,
+        "edge_case_handling": null,
+        "testing_quality": null,
+        "tradeoff_explanation": null
+      },
+      "last_assessed_on": null,
+      "next_review_on": null,
+      "assessment_history": []
+    },
+    "fe.accessibility": {
+      "track": "frontend",
+      "status": "developing",
+      "latest_scores": {
+        "conceptual_understanding": {
+          "score": 2,
+          "assessment_id": "2026-10-04-baseline-frontend",
+          "evidence_ref": "assessments/2026-10-04-baseline-frontend.md#q7--dialog-keyboard-accessibility",
+          "assessed_on": "2026-10-04"
+        },
+        "implementation_correctness": null,
+        "edge_case_handling": null,
+        "testing_quality": null,
+        "tradeoff_explanation": null
+      },
+      "last_assessed_on": "2026-10-04",
+      "next_review_on": "2026-10-05",
+      "assessment_history": [
+        {
+          "assessment_id": "2026-10-04-baseline-frontend",
+          "assessment_path": "assessments/2026-10-04-baseline-frontend.md",
+          "assessed_on": "2026-10-04",
+          "question_ids": [
+            "Q7"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 1
+          },
+          "evidence_refs": [
+            "assessments/2026-10-04-baseline-frontend.md#q7--dialog-keyboard-accessibility"
+          ],
+          "assistance": "No guidance before initial Q7 response; explained custom ARIA semantics versus behavior afterward.",
+          "independent": true,
+          "checks_run": [],
+          "outcome": "Partial focus awareness; input focusability and unimplemented Escape/focus behavior missed. Narrow custom-dialog assessment only."
+        },
+        {
+          "assessment_id": "2026-10-04-baseline-frontend",
+          "assessment_path": "assessments/2026-10-04-baseline-frontend.md",
+          "assessed_on": "2026-10-04",
+          "question_ids": [
+            "Q7"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 2
+          },
+          "evidence_refs": [
+            "assessments/2026-10-04-baseline-frontend.md#q7--dialog-keyboard-accessibility"
+          ],
+          "assistance": "Current response before this turn feedback.",
+          "independent": true,
+          "checks_run": [],
+          "outcome": "Record correction: current response recognizes input and Close; supersedes earlier score 1 based on differing stored wording. Expected-versus-implemented modal behavior gaps remain."
+        }
+      ]
+    },
+    "fe.architecture": {
+      "track": "frontend",
+      "status": "unassessed",
+      "latest_scores": {
+        "conceptual_understanding": null,
+        "implementation_correctness": null,
+        "edge_case_handling": null,
+        "testing_quality": null,
+        "tradeoff_explanation": null
+      },
+      "last_assessed_on": null,
+      "next_review_on": null,
+      "assessment_history": []
+    },
+    "be.java": {
+      "track": "backend",
+      "status": "unassessed",
+      "latest_scores": {
+        "conceptual_understanding": null,
+        "implementation_correctness": null,
+        "edge_case_handling": null,
+        "testing_quality": null,
+        "tradeoff_explanation": null
+      },
+      "last_assessed_on": null,
+      "next_review_on": null,
+      "assessment_history": []
+    },
+    "be.spring": {
+      "track": "backend",
+      "status": "unassessed",
+      "latest_scores": {
+        "conceptual_understanding": null,
+        "implementation_correctness": null,
+        "edge_case_handling": null,
+        "testing_quality": null,
+        "tradeoff_explanation": null
+      },
+      "last_assessed_on": null,
+      "next_review_on": null,
+      "assessment_history": []
+    },
+    "be.rest": {
+      "track": "backend",
+      "status": "unassessed",
+      "latest_scores": {
+        "conceptual_understanding": null,
+        "implementation_correctness": null,
+        "edge_case_handling": null,
+        "testing_quality": null,
+        "tradeoff_explanation": null
+      },
+      "last_assessed_on": null,
+      "next_review_on": null,
+      "assessment_history": []
+    },
+    "be.sql": {
+      "track": "backend",
+      "status": "unassessed",
+      "latest_scores": {
+        "conceptual_understanding": null,
+        "implementation_correctness": null,
+        "edge_case_handling": null,
+        "testing_quality": null,
+        "tradeoff_explanation": null
+      },
+      "last_assessed_on": null,
+      "next_review_on": null,
+      "assessment_history": []
+    },
+    "be.transactions": {
+      "track": "backend",
+      "status": "unassessed",
+      "latest_scores": {
+        "conceptual_understanding": null,
+        "implementation_correctness": null,
+        "edge_case_handling": null,
+        "testing_quality": null,
+        "tradeoff_explanation": null
+      },
+      "last_assessed_on": null,
+      "next_review_on": null,
+      "assessment_history": []
+    },
+    "be.auth": {
+      "track": "backend",
+      "status": "unassessed",
+      "latest_scores": {
+        "conceptual_understanding": null,
+        "implementation_correctness": null,
+        "edge_case_handling": null,
+        "testing_quality": null,
+        "tradeoff_explanation": null
+      },
+      "last_assessed_on": null,
+      "next_review_on": null,
+      "assessment_history": []
+    },
+    "be.concurrency": {
+      "track": "backend",
+      "status": "unassessed",
+      "latest_scores": {
+        "conceptual_understanding": null,
+        "implementation_correctness": null,
+        "edge_case_handling": null,
+        "testing_quality": null,
+        "tradeoff_explanation": null
+      },
+      "last_assessed_on": null,
+      "next_review_on": null,
+      "assessment_history": []
+    },
+    "be.redis": {
+      "track": "backend",
+      "status": "unassessed",
+      "latest_scores": {
+        "conceptual_understanding": null,
+        "implementation_correctness": null,
+        "edge_case_handling": null,
+        "testing_quality": null,
+        "tradeoff_explanation": null
+      },
+      "last_assessed_on": null,
+      "next_review_on": null,
+      "assessment_history": []
+    },
+    "be.integration": {
+      "track": "backend",
+      "status": "unassessed",
+      "latest_scores": {
+        "conceptual_understanding": null,
+        "implementation_correctness": null,
+        "edge_case_handling": null,
+        "testing_quality": null,
+        "tradeoff_explanation": null
+      },
+      "last_assessed_on": null,
+      "next_review_on": null,
+      "assessment_history": []
+    },
+    "ops.linux": {
+      "track": "devops",
+      "status": "unassessed",
+      "latest_scores": {
+        "conceptual_understanding": null,
+        "implementation_correctness": null,
+        "edge_case_handling": null,
+        "testing_quality": null,
+        "tradeoff_explanation": null
+      },
+      "last_assessed_on": null,
+      "next_review_on": null,
+      "assessment_history": []
+    },
+    "ops.networking": {
+      "track": "devops",
+      "status": "unassessed",
+      "latest_scores": {
+        "conceptual_understanding": null,
+        "implementation_correctness": null,
+        "edge_case_handling": null,
+        "testing_quality": null,
+        "tradeoff_explanation": null
+      },
+      "last_assessed_on": null,
+      "next_review_on": null,
+      "assessment_history": []
+    },
+    "ops.http": {
+      "track": "devops",
+      "status": "unassessed",
+      "latest_scores": {
+        "conceptual_understanding": null,
+        "implementation_correctness": null,
+        "edge_case_handling": null,
+        "testing_quality": null,
+        "tradeoff_explanation": null
+      },
+      "last_assessed_on": null,
+      "next_review_on": null,
+      "assessment_history": []
+    },
+    "ops.nginx": {
+      "track": "devops",
+      "status": "unassessed",
+      "latest_scores": {
+        "conceptual_understanding": null,
+        "implementation_correctness": null,
+        "edge_case_handling": null,
+        "testing_quality": null,
+        "tradeoff_explanation": null
+      },
+      "last_assessed_on": null,
+      "next_review_on": null,
+      "assessment_history": []
+    },
+    "ops.docker": {
+      "track": "devops",
+      "status": "unassessed",
+      "latest_scores": {
+        "conceptual_understanding": null,
+        "implementation_correctness": null,
+        "edge_case_handling": null,
+        "testing_quality": null,
+        "tradeoff_explanation": null
+      },
+      "last_assessed_on": null,
+      "next_review_on": null,
+      "assessment_history": []
+    },
+    "ops.kubernetes": {
+      "track": "devops",
+      "status": "unassessed",
+      "latest_scores": {
+        "conceptual_understanding": null,
+        "implementation_correctness": null,
+        "edge_case_handling": null,
+        "testing_quality": null,
+        "tradeoff_explanation": null
+      },
+      "last_assessed_on": null,
+      "next_review_on": null,
+      "assessment_history": []
+    },
+    "ops.cicd": {
+      "track": "devops",
+      "status": "unassessed",
+      "latest_scores": {
+        "conceptual_understanding": null,
+        "implementation_correctness": null,
+        "edge_case_handling": null,
+        "testing_quality": null,
+        "tradeoff_explanation": null
+      },
+      "last_assessed_on": null,
+      "next_review_on": null,
+      "assessment_history": []
+    },
+    "ops.aws": {
+      "track": "devops",
+      "status": "unassessed",
+      "latest_scores": {
+        "conceptual_understanding": null,
+        "implementation_correctness": null,
+        "edge_case_handling": null,
+        "testing_quality": null,
+        "tradeoff_explanation": null
+      },
+      "last_assessed_on": null,
+      "next_review_on": null,
+      "assessment_history": []
+    },
+    "ops.observability": {
+      "track": "devops",
+      "status": "unassessed",
+      "latest_scores": {
+        "conceptual_understanding": null,
+        "implementation_correctness": null,
+        "edge_case_handling": null,
+        "testing_quality": null,
+        "tradeoff_explanation": null
+      },
+      "last_assessed_on": null,
+      "next_review_on": null,
+      "assessment_history": []
+    },
+    "ops.debugging": {
+      "track": "devops",
+      "status": "unassessed",
+      "latest_scores": {
+        "conceptual_understanding": null,
+        "implementation_correctness": null,
+        "edge_case_handling": null,
+        "testing_quality": null,
+        "tradeoff_explanation": null
+      },
+      "last_assessed_on": null,
+      "next_review_on": null,
+      "assessment_history": []
+    }
+  }
+}

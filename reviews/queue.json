@@ -1,0 +1,185 @@
+{
+  "schema_version": 1,
+  "timezone": "Asia/Taipei",
+  "policy": {
+    "success_intervals_days": [
+      1,
+      3,
+      7,
+      14,
+      30
+    ],
+    "interval_basis": "Days after the preceding successful independent attempt",
+    "retry_interval_days": [
+      1,
+      3
+    ],
+    "initial_pending_assessment_delay_days": 1,
+    "success_minimum_applicable_dimension_score": 3,
+    "failure_resets_stage_to": 0,
+    "unanswered_status": "pending",
+    "overdue_is_failure": false,
+    "policy_ref": "README.md"
+  },
+  "items": [
+    {
+      "id": "review-fe-react-2026-10-04",
+      "skill_id": "fe.react",
+      "status": "pending",
+      "kind": "review",
+      "due_on": "2026-10-05",
+      "stage": 0,
+      "last_interval_days": 1,
+      "last_outcome": "needs_practice",
+      "assessment_refs": [
+        "assessments/2026-10-04-baseline-frontend.md#q1--asynchronous-profile-prediction",
+        "assessments/2026-10-04-baseline-frontend.md#q4--cancellation-versus-ignoring-results"
+      ],
+      "concept_ref": "concepts/async-request-validity.md",
+      "history": [
+        {
+          "on": "2026-10-04",
+          "assessment_id": "2026-10-04-baseline-frontend",
+          "question_id": "Q1c",
+          "outcome": "needs_practice",
+          "due_on": "2026-10-05",
+          "reason": "Observed gap distinguishing user identity and request currency; baseline still in progress, no final scores."
+        },
+        {
+          "on": "2026-10-04",
+          "assessment_id": "2026-10-04-baseline-frontend",
+          "question_id": "Q4",
+          "outcome": "needs_practice",
+          "due_on": "2026-10-05",
+          "reason": "Add cancellation-boundary probe to the same pending review; no review completed and no independent-success interval advanced."
+        }
+      ],
+      "scheduling_reason": "Fresh short review one day after the observed Q1c gap; unanswered review remains pending."
+    },
+    {
+      "id": "review-fe-typescript-2026-10-04",
+      "skill_id": "fe.typescript",
+      "status": "pending",
+      "kind": "review",
+      "due_on": "2026-10-05",
+      "stage": 0,
+      "last_interval_days": 1,
+      "last_outcome": "success",
+      "assessment_refs": [
+        "assessments/2026-10-04-baseline-frontend.md#q5--typescript-state-modeling"
+      ],
+      "concept_ref": null,
+      "history": [
+        {
+          "on": "2026-10-04",
+          "assessment_id": "2026-10-04-baseline-frontend",
+          "question_id": "Q5",
+          "outcome": "success",
+          "due_on": "2026-10-05",
+          "reason": "Independent conceptual success only; first delayed review, no broad skill mastery claim."
+        }
+      ],
+      "scheduling_reason": "Fresh state-modeling/runtime-boundary conceptual probe one day after Q5 independent success."
+    },
+    {
+      "id": "review-fe-browser-2026-10-04",
+      "skill_id": "fe.browser",
+      "status": "pending",
+      "kind": "review",
+      "due_on": "2026-10-05",
+      "stage": 0,
+      "last_interval_days": 1,
+      "last_outcome": "needs_practice",
+      "assessment_refs": [
+        "assessments/2026-10-04-baseline-frontend.md#q6--browser-event-loop-prediction"
+      ],
+      "concept_ref": "concepts/browser-microtask-ordering.md",
+      "history": [
+        {
+          "on": "2026-10-04",
+          "assessment_id": "2026-10-04-baseline-frontend",
+          "question_id": "Q6",
+          "outcome": "needs_practice",
+          "due_on": "2026-10-05",
+          "reason": "Observed nested microtask FIFO gap; fresh short review in one day."
+        }
+      ],
+      "scheduling_reason": "Fresh queue-order reasoning probe after Q6 partial performance."
+    },
+    {
+      "id": "review-fe-accessibility-2026-10-04",
+      "skill_id": "fe.accessibility",
+      "status": "pending",
+      "kind": "review",
+      "due_on": "2026-10-05",
+      "stage": 0,
+      "last_interval_days": 1,
+      "last_outcome": "needs_practice",
+      "assessment_refs": [
+        "assessments/2026-10-04-baseline-frontend.md#q7--dialog-keyboard-accessibility"
+      ],
+      "concept_ref": "concepts/modal-keyboard-focus.md",
+      "history": [
+        {
+          "on": "2026-10-04",
+          "assessment_id": "2026-10-04-baseline-frontend",
+          "question_id": "Q7",
+          "outcome": "needs_practice",
+          "due_on": "2026-10-05",
+          "reason": "Observed custom-dialog focus/keyboard implementation gap."
+        }
+      ],
+      "scheduling_reason": "Fresh modal keyboard reasoning probe after Q7 conceptual gaps."
+    },
+    {
+      "id": "review-fe-nextjs-2026-10-04",
+      "skill_id": "fe.nextjs",
+      "status": "pending",
+      "kind": "review",
+      "due_on": "2026-10-05",
+      "stage": 0,
+      "last_interval_days": 1,
+      "last_outcome": "success",
+      "assessment_refs": [
+        "assessments/2026-10-04-baseline-frontend.md#q8--nextjs-cached-read-after-a-mutation"
+      ],
+      "concept_ref": "concepts/nextjs-refresh-and-data-cache.md",
+      "history": [
+        {
+          "on": "2026-10-04",
+          "assessment_id": "2026-10-04-baseline-frontend",
+          "question_id": "Q8",
+          "outcome": "success",
+          "due_on": "2026-10-05",
+          "reason": "Independent conceptual cache-boundary success; broader practical skill remains developing."
+        }
+      ],
+      "scheduling_reason": "Fresh server-cache invalidation conceptual probe one day after Q8."
+    },
+    {
+      "id": "review-fe-performance-2026-10-04",
+      "skill_id": "fe.performance",
+      "status": "pending",
+      "kind": "review",
+      "due_on": "2026-10-05",
+      "stage": 0,
+      "last_interval_days": 1,
+      "last_outcome": "needs_practice",
+      "assessment_refs": [
+        "assessments/2026-10-04-baseline-frontend.md#q9--performance-diagnosis-final-initial-baseline-probe"
+      ],
+      "concept_ref": "concepts/frontend-performance-attribution.md",
+      "history": [
+        {
+          "on": "2026-10-04",
+          "assessment_id": "2026-10-04-baseline-frontend",
+          "question_id": "Q9",
+          "outcome": "needs_practice",
+          "due_on": "2026-10-05",
+          "reason": "Fresh bottleneck-attribution and verification probe after partial initial answer."
+        }
+      ],
+      "scheduling_reason": "Short fresh performance reasoning review one day after Q9."
+    }
+  ]
+}

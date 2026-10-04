@@ -1,6 +1,21 @@
 # Personal AI engineering tutor and wiki
 
-Goal: long-term retention and practical engineering ability through assessment, deliberate practice, debugging and fresh delayed reviews. `AGENTS.md` governs the tutor. Initialization is complete; no lesson or assessment has started and no mastery scores have been assigned.
+Goal: long-term retention and practical engineering ability through assessment, deliberate practice, debugging and fresh delayed reviews. `AGENTS.md` governs the tutor. The initial frontend reasoning baseline is recorded; backend and DevOps baselines are next. Practical implementation remains unverified until tested.
+
+## Visual workspace
+
+The Next.js dashboard presents the curriculum, dimension-level assessment evidence, spaced reviews, concepts, assessments, journal, misconceptions, sources and exercise guides. Markdown and JSON remain the source of truth. Refresh the browser after updating the records; the server reads them on each request.
+
+Requires Node.js 20.9+ (developed with Node 22.14). From the repository root:
+
+```sh
+npm ci
+npm run dev
+```
+
+Open http://localhost:3000. For production locally, run `npm run build` followed by `npm start`. Run `npm run typecheck` for the dashboard's TypeScript checks. Dependencies are pinned in `package-lock.json`; see the [Next.js installation documentation](https://nextjs.org/docs/app/getting-started/installation).
+
+The dashboard is a read-only view of personal learning records and binds to the local machine. It has no login layer; add access control before deploying it to a shared or public host. Searches include all note text, including assessment records. Exercise projects are independent and excluded from the dashboard compiler; website checks do not count as learner assessment results.
 
 ## Repository map
 

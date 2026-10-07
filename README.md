@@ -86,7 +86,7 @@ Coding assessments belong in isolated projects under `exercises/`. Pin versions 
 
 ## GitHub Pages
 
-The Pages workflow builds a static snapshot of all wiki notes and progress on each push to master. Publication is disabled by default: after approving the site audience and enabling Pages with GitHub Actions as its source, manually run the workflow with publish selected to deploy. The project base path is /engineering-tutor. No server is required; Markdown and JSON are read during the build. Search and filters run in the browser, and review labels use the current date in Asia/Taipei. New learning records appear after committing, pushing and completing a successful deployment.
+The Pages workflow builds a static snapshot of all wiki notes and progress on each push to master. Publication is disabled by default: after approving the site audience and enabling Pages with GitHub Actions as its source, manually run the workflow with publish selected to deploy the `.next-pages` directory. The project base path is /engineering-tutor. No server is required; Markdown and JSON are read during the build. Search and filters run in the browser, and review labels use the current date in Asia/Taipei. New learning records appear after committing, pushing and completing a successful deployment.
 
 To build the Pages snapshot in PowerShell:
 ```powershell

@@ -13,9 +13,9 @@ npm ci
 npm run dev
 ```
 
-Open http://localhost:3000. For production locally, run `npm run build` followed by `npm start`. Run `npm run typecheck` for the dashboard's TypeScript checks. Dependencies are pinned in `package-lock.json`; see the [Next.js installation documentation](https://nextjs.org/docs/app/getting-started/installation).
+Open http://localhost:3000. For a production snapshot locally, run `npm run build` followed by `npm start`. Rebuild after editing wiki records. Run `npm run typecheck` for the dashboard's TypeScript checks. Dependencies are pinned in `package-lock.json`; see the [Next.js installation documentation](https://nextjs.org/docs/app/getting-started/installation).
 
-The dashboard is a read-only view of personal learning records and binds to the local machine. It has no login layer; add access control before deploying it to a shared or public host. Searches include all note text, including assessment records. Exercise projects are independent and excluded from the dashboard compiler; website checks do not count as learner assessment results.
+The dashboard is a read-only view of personal learning records. It has no login layer. A GitHub Pages deployment publishes the included wiki and assessment records to the site audience. Searches include all note text, including assessment records. Exercise projects are independent and excluded from the dashboard compiler; website checks do not count as learner assessment results.
 
 ## Repository map
 
@@ -83,3 +83,16 @@ Update existing concept pages rather than duplicating them. Include plain-langua
 Assessment records preserve original answers, dimension evidence, hints, corrections and follow-ups. Mark unanswered work pending. Record recurring mistakes only from observed occurrences. Preserve historical evidence; corrections append or explicitly supersede rather than silently deleting it.
 
 Coding assessments belong in isolated projects under `exercises/`. Pin versions when preparing a project, provide reproducible commands and acceptance criteria, and distinguish checks run from checks proposed. Dependency installation requires authorization. No dependency install, coding assessment or today's lesson was performed during initialization.
+
+## GitHub Pages
+
+The Pages workflow builds a static snapshot of all wiki notes and progress on each push to master. Publication is disabled by default: after approving the site audience and enabling Pages with GitHub Actions as its source, manually run the workflow with publish selected to deploy. The project base path is /engineering-tutor. No server is required; Markdown and JSON are read during the build. Search and filters run in the browser, and review labels use the current date in Asia/Taipei. New learning records appear after committing, pushing and completing a successful deployment.
+
+To build the Pages snapshot in PowerShell:
+```powershell
+$env:GITHUB_PAGES = "true"
+npm run build
+Remove-Item Env:GITHUB_PAGES
+```
+
+GitHub Pages availability for private repositories depends on the account plan. Do not change repository visibility just to deploy without the owner's approval.

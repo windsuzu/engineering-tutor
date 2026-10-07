@@ -41,3 +41,15 @@ Accessed 2026-10-04; rolling Next.js docs label 16.3.8. Q8 assumes App Router, c
 Assessment: ../assessments/2026-10-04-baseline-frontend.md, Q8. Learner independently identifies the server-cache boundary and invalidation at save time; conceptual score 3 for this scenario. API naming clarified without penalizing correct reasoning.
 Remaining gaps: executable invalidation, failure/consistency cases, tag freshness semantics and independent delayed transfer. Broader HTTP cache skill not assessed.
 Next review: 2026-10-05; fe.nextjs in ../reviews/queue.json.
+
+## Stale-while-revalidate and Server Action expiry
+
+Added 2026-10-07. A Server Action runs an async mutation on the server. After successful write, updateTag(tag) immediately expires tagged entries; it does not itself write the database or eagerly fetch replacements. The next tagged server read waits for fresh data. Only Server Actions can call updateTag. revalidateTag(tag, "max") allows old cached data to be served while an origin refresh runs in the background, even when that refresh succeeds. Later reads can use the refreshed cache; this does not promise a push to all open browser tabs. Optimistic client state is separate from authoritative cache freshness.
+
+Example: price cache 100, saved price 120, origin latency 500 ms. SWR may respond with 100 during the refresh; expiry makes the next server cache read wait for 120. Choose background refresh for tolerable temporary staleness; choose immediate expiry for showing a writer their saved data on the next read.
+
+Sources: https://nextjs.org/docs/app/api-reference/functions/updateTag (last updated August 18, 2026), https://nextjs.org/docs/app/api-reference/functions/revalidateTag ; publisher Vercel/Next.js, original publication dates unspecified, accessed 2026-10-07. Rolling docs 16.4.0; existing Next.js 16 APIs applicable to repo 16.3.8; snippets not executed. Established documented cache behavior.
+
+Personal evidence: shared-tag scope independently identified in ../assessments/2026-10-07-review-nextjs.md; new freshness semantics requested for explanation, assessment remains pending. No new mastery score assigned. Next short freshness review proposed 2026-10-09, superseding earlier date while this taught topic is pending.
+
+October 7 correction check: learner correctly chose revalidateTag for a blog feed tolerating temporary staleness, explaining that immediate freshness is unnecessary. Guided transfer only; independent delayed review remains October 9.

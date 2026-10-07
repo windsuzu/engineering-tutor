@@ -73,3 +73,7 @@ Preserve earlier occurrences and corrections when updating status. A successful 
 - Review: review-fe-accessibility-2026-10-04, due 2026-10-05.
 - Occurrence history: 2026-10-04, Q7, first observation.
 - Resolution evidence: none yet.
+
+## aria-modal-behavior-001 — October 7 update
+
+Status: recurring. New occurrence in assessments/2026-10-07-review-accessibility.md: learner attributes initial Cancel focus to role/aria-modal despite previously identifying no automatic focus. Retain both statements as evidence of an unsettled distinction. Explained that semantics alone do not implement initial focus. Correct Tab-escape answer supports partial understanding. Last-row wording ambiguity excluded from grading. Empty-list target explained as Add project. Next review 2026-10-09. Earlier history preserved.

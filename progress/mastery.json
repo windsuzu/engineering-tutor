@@ -27,17 +27,17 @@
       "latest_scores": {
         "conceptual_understanding": {
           "score": 3,
-          "assessment_id": "2026-10-04-baseline-frontend",
-          "evidence_ref": "assessments/2026-10-04-baseline-frontend.md#q5--typescript-state-modeling",
-          "assessed_on": "2026-10-04"
+          "assessment_id": "2026-10-07-review-typescript",
+          "evidence_ref": "assessments/2026-10-07-review-typescript.md#correction-and-result",
+          "assessed_on": "2026-10-07"
         },
         "implementation_correctness": null,
         "edge_case_handling": null,
         "testing_quality": null,
         "tradeoff_explanation": null
       },
-      "last_assessed_on": "2026-10-04",
-      "next_review_on": "2026-10-05",
+      "last_assessed_on": "2026-10-07",
+      "next_review_on": "2026-10-10",
       "assessment_history": [
         {
           "assessment_id": "2026-10-04-baseline-frontend",
@@ -59,6 +59,28 @@
           "independent": true,
           "checks_run": [],
           "outcome": "Correct conceptual union design and static/runtime distinction; broader TypeScript implementation and edge cases unknown."
+        },
+        {
+          "assessment_id": "2026-10-07-review-typescript",
+          "assessment_path": "assessments/2026-10-07-review-typescript.md",
+          "assessed_on": "2026-10-07",
+          "question_ids": [
+            "Q1",
+            "required-field-follow-up"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 3
+          },
+          "evidence_refs": [
+            "assessments/2026-10-07-review-typescript.md#correction-and-result"
+          ],
+          "assistance": "Required-field reminder; initial union and runtime-validation reasoning independent. Optionality omission identified by learner as overlooked requirement.",
+          "independent": true,
+          "checks_run": [],
+          "outcome": "Successful narrow conceptual review with accidental requirement oversight corrected; other dimensions unassessed."
         }
       ]
     },
@@ -67,18 +89,18 @@
       "status": "developing",
       "latest_scores": {
         "conceptual_understanding": {
-          "score": 2,
-          "assessment_id": "2026-10-04-baseline-frontend",
-          "evidence_ref": "assessments/2026-10-04-baseline-frontend.md#q6--browser-event-loop-prediction",
-          "assessed_on": "2026-10-04"
+          "score": 3,
+          "assessment_id": "2026-10-07-review-microtasks",
+          "evidence_ref": "assessments/2026-10-07-review-microtasks.md#explanation-follow-up",
+          "assessed_on": "2026-10-07"
         },
         "implementation_correctness": null,
         "edge_case_handling": null,
         "testing_quality": null,
         "tradeoff_explanation": null
       },
-      "last_assessed_on": "2026-10-04",
-      "next_review_on": "2026-10-05",
+      "last_assessed_on": "2026-10-07",
+      "next_review_on": "2026-10-10",
       "assessment_history": [
         {
           "assessment_id": "2026-10-04-baseline-frontend",
@@ -100,6 +122,28 @@
           "independent": true,
           "checks_run": [],
           "outcome": "Partial event-loop prediction; nested microtask enqueue ordering gap. No broader browser mastery inferred."
+        },
+        {
+          "assessment_id": "2026-10-07-review-microtasks",
+          "assessment_path": "assessments/2026-10-07-review-microtasks.md",
+          "assessed_on": "2026-10-07",
+          "question_ids": [
+            "prediction",
+            "explanation-follow-up"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 3
+          },
+          "evidence_refs": [
+            "assessments/2026-10-07-review-microtasks.md"
+          ],
+          "assistance": "No hints before exact prediction and explanation; subsequent enqueue-timing clarification confirms reasoning.",
+          "independent": true,
+          "checks_run": [],
+          "outcome": "Correct fresh Promise-chain/microtask prediction and explanation. Broader browser internals and runtime verification unassessed."
         }
       ]
     },
@@ -109,9 +153,9 @@
       "latest_scores": {
         "conceptual_understanding": {
           "score": 2,
-          "assessment_id": "2026-10-04-baseline-frontend",
-          "evidence_ref": "assessments/2026-10-04-baseline-frontend.md#q2-pseudocode-attempt-3",
-          "assessed_on": "2026-10-04"
+          "assessment_id": "2026-10-07-review-request-validity",
+          "evidence_ref": "assessments/2026-10-07-review-request-validity.md#scoped-evaluation-and-next-review",
+          "assessed_on": "2026-10-07"
         },
         "implementation_correctness": null,
         "edge_case_handling": {
@@ -133,8 +177,8 @@
           "assessed_on": "2026-10-04"
         }
       },
-      "last_assessed_on": "2026-10-04",
-      "next_review_on": "2026-10-05",
+      "last_assessed_on": "2026-10-07",
+      "next_review_on": "2026-10-09",
       "assessment_history": [
         {
           "assessment_id": "2026-10-04-baseline-frontend",
@@ -188,6 +232,31 @@
           "independent": false,
           "checks_run": [],
           "outcome": "Narrow scenario: test-design reasoning and partial trade-off explanation; no executed test or implementation evidence."
+        },
+        {
+          "assessment_id": "2026-10-07-review-request-validity",
+          "assessment_path": "assessments/2026-10-07-review-request-validity.md",
+          "assessed_on": "2026-10-07",
+          "question_ids": [
+            "Q1",
+            "Q2",
+            "Q2b",
+            "Q3",
+            "Q4"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 2
+          },
+          "evidence_refs": [
+            "assessments/2026-10-07-review-request-validity.md"
+          ],
+          "assistance": "Independent initial stale-error diagnosis and valid ID proposal; cancellation and captured/latest identity source explained. Tutor prompt ambiguity excluded from negative evidence.",
+          "independent": false,
+          "checks_run": [],
+          "outcome": "Correct core guard recognition with guided cancellation/error-contract follow-ups; fresh review needed."
         }
       ]
     },
@@ -207,7 +276,7 @@
         "tradeoff_explanation": null
       },
       "last_assessed_on": "2026-10-04",
-      "next_review_on": "2026-10-05",
+      "next_review_on": "2026-10-09",
       "assessment_history": [
         {
           "assessment_id": "2026-10-04-baseline-frontend",
@@ -252,17 +321,17 @@
       "latest_scores": {
         "conceptual_understanding": {
           "score": 2,
-          "assessment_id": "2026-10-04-baseline-frontend",
-          "evidence_ref": "assessments/2026-10-04-baseline-frontend.md#q9--performance-diagnosis-final-initial-baseline-probe",
-          "assessed_on": "2026-10-04"
+          "assessment_id": "2026-10-07-review-performance",
+          "evidence_ref": "assessments/2026-10-07-review-performance.md#explanation-and-correction-check--october-8",
+          "assessed_on": "2026-10-08"
         },
         "implementation_correctness": null,
         "edge_case_handling": null,
         "testing_quality": null,
         "tradeoff_explanation": null
       },
-      "last_assessed_on": "2026-10-04",
-      "next_review_on": "2026-10-05",
+      "last_assessed_on": "2026-10-08",
+      "next_review_on": "2026-10-10",
       "assessment_history": [
         {
           "assessment_id": "2026-10-04-baseline-frontend",
@@ -284,6 +353,28 @@
           "independent": true,
           "checks_run": [],
           "outcome": "Basic optimization hypotheses including virtualization; bottleneck attribution and verification gaps. Synthetic trace only; architecture not inferred."
+        },
+        {
+          "assessment_id": "2026-10-07-review-performance",
+          "assessment_path": "assessments/2026-10-07-review-performance.md",
+          "assessed_on": "2026-10-08",
+          "question_ids": [
+            "Q1",
+            "saved-width-correction-check"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 2
+          },
+          "evidence_refs": [
+            "assessments/2026-10-07-review-performance.md#explanation-and-correction-check--october-8"
+          ],
+          "assistance": "Detailed explanation and full focused fix after learner requested clarification; immediate recognition check correct.",
+          "independent": false,
+          "checks_run": [],
+          "outcome": "Guided understanding of read/write sequencing; fresh independent diagnosis and actual measurements pending."
         }
       ]
     },
@@ -307,17 +398,17 @@
       "latest_scores": {
         "conceptual_understanding": {
           "score": 2,
-          "assessment_id": "2026-10-04-baseline-frontend",
-          "evidence_ref": "assessments/2026-10-04-baseline-frontend.md#q7--dialog-keyboard-accessibility",
-          "assessed_on": "2026-10-04"
+          "assessment_id": "2026-10-07-review-accessibility",
+          "evidence_ref": "assessments/2026-10-07-review-accessibility.md#follow-up-attempts-and-correction",
+          "assessed_on": "2026-10-07"
         },
         "implementation_correctness": null,
         "edge_case_handling": null,
         "testing_quality": null,
         "tradeoff_explanation": null
       },
-      "last_assessed_on": "2026-10-04",
-      "next_review_on": "2026-10-05",
+      "last_assessed_on": "2026-10-07",
+      "next_review_on": "2026-10-09",
       "assessment_history": [
         {
           "assessment_id": "2026-10-04-baseline-frontend",
@@ -360,6 +451,28 @@
           "independent": true,
           "checks_run": [],
           "outcome": "Record correction: current response recognizes input and Close; supersedes earlier score 1 based on differing stored wording. Expected-versus-implemented modal behavior gaps remain."
+        },
+        {
+          "assessment_id": "2026-10-07-review-accessibility",
+          "assessment_path": "assessments/2026-10-07-review-accessibility.md",
+          "assessed_on": "2026-10-07",
+          "question_ids": [
+            "Q1",
+            "focus-follow-ups"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 2
+          },
+          "evidence_refs": [
+            "assessments/2026-10-07-review-accessibility.md#follow-up-attempts-and-correction"
+          ],
+          "assistance": "Focus/ARIA distinction and restoration explained; last-row wording clarified without penalty.",
+          "independent": false,
+          "checks_run": [],
+          "outcome": "Partial modal reasoning; ARIA focus behavior and empty-list restoration need practice."
         }
       ]
     },
@@ -407,59 +520,210 @@
     },
     "be.rest": {
       "track": "backend",
-      "status": "unassessed",
+      "status": "developing",
       "latest_scores": {
-        "conceptual_understanding": null,
+        "conceptual_understanding": {
+          "score": 2,
+          "assessment_id": "2026-10-04-baseline-backend",
+          "evidence_ref": "assessments/2026-10-04-baseline-backend.md#q2e--duplicate-insert-and-inventory-rollback",
+          "assessed_on": "2026-10-04"
+        },
         "implementation_correctness": null,
         "edge_case_handling": null,
         "testing_quality": null,
         "tradeoff_explanation": null
       },
-      "last_assessed_on": null,
-      "next_review_on": null,
-      "assessment_history": []
+      "last_assessed_on": "2026-10-04",
+      "next_review_on": "2026-10-05",
+      "assessment_history": [
+        {
+          "assessment_id": "2026-10-04-baseline-backend",
+          "assessment_path": "assessments/2026-10-04-baseline-backend.md",
+          "assessed_on": "2026-10-04",
+          "question_ids": [
+            "Q2",
+            "Q2b",
+            "Q2c",
+            "Q2d",
+            "Q2e"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 2
+          },
+          "evidence_refs": [
+            "assessments/2026-10-04-baseline-backend.md#q2--retrying-an-uncertain-request",
+            "assessments/2026-10-04-baseline-backend.md#q2e--duplicate-insert-and-inventory-rollback"
+          ],
+          "assistance": "Stable operation identity and unique database enforcement explained; correct immediate rollback/result follow-up.",
+          "independent": false,
+          "checks_run": [],
+          "outcome": "Narrow API retry/idempotency conceptual evidence; practical API and SQL implementation remain unknown."
+        }
+      ]
     },
     "be.sql": {
       "track": "backend",
-      "status": "unassessed",
+      "status": "developing",
       "latest_scores": {
-        "conceptual_understanding": null,
+        "conceptual_understanding": {
+          "score": 1,
+          "assessment_id": "2026-10-04-baseline-backend",
+          "evidence_ref": "assessments/2026-10-04-baseline-backend.md#q4b--aggregation-keys-and-missing-matches",
+          "assessed_on": "2026-10-07"
+        },
         "implementation_correctness": null,
         "edge_case_handling": null,
         "testing_quality": null,
         "tradeoff_explanation": null
       },
-      "last_assessed_on": null,
-      "next_review_on": null,
-      "assessment_history": []
+      "last_assessed_on": "2026-10-07",
+      "next_review_on": "2026-10-08",
+      "assessment_history": [
+        {
+          "assessment_id": "2026-10-04-baseline-backend",
+          "assessment_path": "assessments/2026-10-04-baseline-backend.md",
+          "assessed_on": "2026-10-07",
+          "question_ids": [
+            "Q4",
+            "Q4b"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 1
+          },
+          "evidence_refs": [
+            "assessments/2026-10-04-baseline-backend.md#q4b--aggregation-keys-and-missing-matches"
+          ],
+          "assistance": "Clarification requested before Q4b; full correction supplied after response.",
+          "independent": true,
+          "checks_run": [],
+          "outcome": "Partial filter/count/join idea; grouping key, join preservation and missing-count reasoning need substantial help. Syntax familiarity not penalized."
+        }
+      ]
     },
     "be.transactions": {
       "track": "backend",
-      "status": "unassessed",
+      "status": "developing",
       "latest_scores": {
-        "conceptual_understanding": null,
+        "conceptual_understanding": {
+          "score": 3,
+          "assessment_id": "2026-10-07-review-transactions",
+          "evidence_ref": "assessments/2026-10-07-review-transactions.md",
+          "assessed_on": "2026-10-07"
+        },
         "implementation_correctness": null,
         "edge_case_handling": null,
         "testing_quality": null,
         "tradeoff_explanation": null
       },
-      "last_assessed_on": null,
-      "next_review_on": null,
-      "assessment_history": []
+      "last_assessed_on": "2026-10-07",
+      "next_review_on": "2026-10-10",
+      "assessment_history": [
+        {
+          "assessment_id": "2026-10-04-baseline-backend",
+          "assessment_path": "assessments/2026-10-04-baseline-backend.md",
+          "assessed_on": "2026-10-04",
+          "question_ids": [
+            "Q1",
+            "Q1b",
+            "Q1c",
+            "Q1d",
+            "Q1e"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 2
+          },
+          "evidence_refs": [
+            "assessments/2026-10-04-baseline-backend.md#q1--concurrent-reservation-reasoning",
+            "assessments/2026-10-04-baseline-backend.md#q1e--rollback-of-a-failed-reservation"
+          ],
+          "assistance": "Transaction command explanation, affected-row distinction, and conditional UPDATE correction supplied before correct rollback follow-up.",
+          "independent": false,
+          "checks_run": [],
+          "outcome": "Independent race recognition and correct guided rollback; atomic conditional-write design required guidance. Syntax unfamiliarity evaluated separately."
+        },
+        {
+          "assessment_id": "2026-10-07-review-transactions",
+          "assessment_path": "assessments/2026-10-07-review-transactions.md",
+          "assessed_on": "2026-10-07",
+          "question_ids": [
+            "transfer-review",
+            "commit-boundary-clarification"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 3
+          },
+          "evidence_refs": [
+            "assessments/2026-10-07-review-transactions.md"
+          ],
+          "assistance": "Question-only clarification of ambiguous YES; no answer disclosed before correct clarification.",
+          "independent": true,
+          "checks_run": [],
+          "outcome": "Successful fresh grouping/commit-boundary conceptual review; concurrent reservation isolation and runnable implementation remain unverified."
+        }
+      ]
     },
     "be.auth": {
       "track": "backend",
-      "status": "unassessed",
+      "status": "developing",
       "latest_scores": {
-        "conceptual_understanding": null,
+        "conceptual_understanding": {
+          "score": 2,
+          "assessment_id": "2026-10-04-baseline-backend",
+          "evidence_ref": "assessments/2026-10-04-baseline-backend.md#q3d--authentication-versus-authorization",
+          "assessed_on": "2026-10-04"
+        },
         "implementation_correctness": null,
         "edge_case_handling": null,
-        "testing_quality": null,
+        "testing_quality": {
+          "score": 2,
+          "assessment_id": "2026-10-04-baseline-backend",
+          "evidence_ref": "assessments/2026-10-04-baseline-backend.md#q3d--authentication-versus-authorization",
+          "assessed_on": "2026-10-04"
+        },
         "tradeoff_explanation": null
       },
-      "last_assessed_on": null,
-      "next_review_on": null,
-      "assessment_history": []
+      "last_assessed_on": "2026-10-04",
+      "next_review_on": "2026-10-05",
+      "assessment_history": [
+        {
+          "assessment_id": "2026-10-04-baseline-backend",
+          "assessment_path": "assessments/2026-10-04-baseline-backend.md",
+          "assessed_on": "2026-10-04",
+          "question_ids": [
+            "Q3",
+            "Q3b",
+            "Q3c",
+            "Q3d"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding",
+            "testing_quality"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 2,
+            "testing_quality": 2
+          },
+          "evidence_refs": [
+            "assessments/2026-10-04-baseline-backend.md#q3d--authentication-versus-authorization"
+          ],
+          "assistance": "Actual-code trace clarified; owner/session field distinction and HTTP labels explained. Tutor numeric-ID ambiguity excluded from negative evidence.",
+          "independent": false,
+          "checks_run": [],
+          "outcome": "Correct guided caller-controlled identity reasoning and three proposed assertions; runnable authentication and tests unverified."
+        }
+      ]
     },
     "be.concurrency": {
       "track": "backend",

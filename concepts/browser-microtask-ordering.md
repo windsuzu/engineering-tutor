@@ -30,3 +30,11 @@ Assessment: ../assessments/2026-10-04-baseline-frontend.md, Q6. Learner predicte
 Q6b follow-up: correct W, X, Z, Y immediately after explanation. Clarified that Y is enqueued while X runs, behind already-queued Z. This supports corrected understanding but is not delayed retention.
 Remaining gaps: fresh independent transfer, broader browser internals and practical performance diagnosis unassessed.
 Next review: 2026-10-05; fe.browser in ../reviews/queue.json.
+
+## Delayed review — 2026-10-07
+
+[Fresh Promise-chain review](../assessments/2026-10-07-review-microtasks.md): independently predicts start/end/first/peer/nested/chained and explains that the second then awaits completion of the first, while nested is queued inside the first callback. Scoped conceptual score 3; original baseline score 2 retained in history. Nesting is not a priority mechanism: nested is queued before the first callback's completion settles the promise that chained observes. No code or tests run; broader browser internals unassessed.
+
+Verified primary references on 2026-10-07: [WHATWG microtask checkpoint](https://html.spec.whatwg.org/multipage/webappapis.html#perform-a-microtask-checkpoint), [TC39 Promise reactions](https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-performpromisethen). Full metadata is in the dated review assessment.
+
+The overdue review was completed on 2026-10-07 without penalty. Next active review: 2026-10-10.

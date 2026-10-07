@@ -23,17 +23,59 @@
   },
   "items": [
     {
+      "id": "review-be-transactions-2026-10-04",
+      "skill_id": "be.transactions",
+      "status": "pending",
+      "kind": "review",
+      "due_on": "2026-10-10",
+      "stage": 1,
+      "last_interval_days": 3,
+      "last_outcome": "success",
+      "assessment_refs": [
+        "assessments/2026-10-04-baseline-backend.md#q1b--prevent-the-inconsistency",
+        "assessments/2026-10-04-baseline-backend.md#q1e--rollback-of-a-failed-reservation",
+        "assessments/2026-10-07-review-transactions.md"
+      ],
+      "concept_ref": "concepts/transactional-seat-reservations.md",
+      "history": [
+        {
+          "on": "2026-10-04",
+          "outcome": "pending",
+          "due_on": "2026-10-05",
+          "reason": "Transaction-command meanings explained after Q1b; fresh assessment pending, no success or failure inferred."
+        },
+        {
+          "on": "2026-10-04",
+          "assessment_id": "2026-10-04-baseline-backend",
+          "question_id": "Q1e",
+          "outcome": "needs_practice",
+          "due_on": "2026-10-05",
+          "reason": "Correct guided rollback check; fresh independent transaction and concurrency assessment needed."
+        },
+        {
+          "on": "2026-10-07",
+          "assessment_id": "2026-10-07-review-transactions",
+          "question_id": "commit-boundary-clarification",
+          "outcome": "success",
+          "due_on": "2026-10-10",
+          "reason": "First successful delayed conceptual review completed; three-day interval from actual success. Scope grouping/commit boundary; concurrency remains to probe."
+        }
+      ],
+      "scheduling_reason": "Successful first delayed review; next in three days using fresh grouping and concurrency scenarios."
+    },
+    {
       "id": "review-fe-react-2026-10-04",
       "skill_id": "fe.react",
       "status": "pending",
       "kind": "review",
-      "due_on": "2026-10-05",
+      "due_on": "2026-10-09",
       "stage": 0,
-      "last_interval_days": 1,
+      "last_interval_days": 2,
       "last_outcome": "needs_practice",
       "assessment_refs": [
         "assessments/2026-10-04-baseline-frontend.md#q1--asynchronous-profile-prediction",
-        "assessments/2026-10-04-baseline-frontend.md#q4--cancellation-versus-ignoring-results"
+        "assessments/2026-10-04-baseline-frontend.md#q4--cancellation-versus-ignoring-results",
+        "assessments/2026-10-07-review-request-validity.md"
       ],
       "concept_ref": "concepts/async-request-validity.md",
       "history": [
@@ -52,21 +94,30 @@
           "outcome": "needs_practice",
           "due_on": "2026-10-05",
           "reason": "Add cancellation-boundary probe to the same pending review; no review completed and no independent-success interval advanced."
+        },
+        {
+          "on": "2026-10-07",
+          "assessment_id": "2026-10-07-review-request-validity",
+          "question_id": "Q4",
+          "outcome": "needs_practice",
+          "due_on": "2026-10-09",
+          "reason": "Independent core guard recognition; cancellation failure path and captured/current identity required correction. No lateness penalty or prompt-ambiguity failure inferred."
         }
       ],
-      "scheduling_reason": "Fresh short review one day after the observed Q1c gap; unanswered review remains pending."
+      "scheduling_reason": "Fresh short cancellation/identity probe two days after correction; no independent delayed success interval advanced."
     },
     {
       "id": "review-fe-typescript-2026-10-04",
       "skill_id": "fe.typescript",
       "status": "pending",
       "kind": "review",
-      "due_on": "2026-10-05",
-      "stage": 0,
-      "last_interval_days": 1,
+      "due_on": "2026-10-10",
+      "stage": 1,
+      "last_interval_days": 3,
       "last_outcome": "success",
       "assessment_refs": [
-        "assessments/2026-10-04-baseline-frontend.md#q5--typescript-state-modeling"
+        "assessments/2026-10-04-baseline-frontend.md#q5--typescript-state-modeling",
+        "assessments/2026-10-07-review-typescript.md"
       ],
       "concept_ref": null,
       "history": [
@@ -77,21 +128,30 @@
           "outcome": "success",
           "due_on": "2026-10-05",
           "reason": "Independent conceptual success only; first delayed review, no broad skill mastery claim."
+        },
+        {
+          "on": "2026-10-07",
+          "assessment_id": "2026-10-07-review-typescript",
+          "question_id": "required-field-follow-up",
+          "outcome": "success",
+          "due_on": "2026-10-10",
+          "reason": "Union design and runtime distinction demonstrated; accidental optionality omission corrected after requirement reminder."
         }
       ],
-      "scheduling_reason": "Fresh state-modeling/runtime-boundary conceptual probe one day after Q5 independent success."
+      "scheduling_reason": "Next fresh conceptual review three days after successful delayed review."
     },
     {
       "id": "review-fe-browser-2026-10-04",
       "skill_id": "fe.browser",
       "status": "pending",
       "kind": "review",
-      "due_on": "2026-10-05",
-      "stage": 0,
-      "last_interval_days": 1,
-      "last_outcome": "needs_practice",
+      "due_on": "2026-10-10",
+      "stage": 1,
+      "last_interval_days": 3,
+      "last_outcome": "success",
       "assessment_refs": [
-        "assessments/2026-10-04-baseline-frontend.md#q6--browser-event-loop-prediction"
+        "assessments/2026-10-04-baseline-frontend.md#q6--browser-event-loop-prediction",
+        "assessments/2026-10-07-review-microtasks.md"
       ],
       "concept_ref": "concepts/browser-microtask-ordering.md",
       "history": [
@@ -102,21 +162,30 @@
           "outcome": "needs_practice",
           "due_on": "2026-10-05",
           "reason": "Observed nested microtask FIFO gap; fresh short review in one day."
+        },
+        {
+          "on": "2026-10-07",
+          "assessment_id": "2026-10-07-review-microtasks",
+          "question_id": "explanation-follow-up",
+          "outcome": "success",
+          "due_on": "2026-10-10",
+          "reason": "Exact independent fresh output and Promise-chain dependency explanation; next interval three days after actual review success."
         }
       ],
-      "scheduling_reason": "Fresh queue-order reasoning probe after Q6 partial performance."
+      "scheduling_reason": "First successful delayed microtask-ordering review; fresh next probe after three days."
     },
     {
       "id": "review-fe-accessibility-2026-10-04",
       "skill_id": "fe.accessibility",
       "status": "pending",
       "kind": "review",
-      "due_on": "2026-10-05",
+      "due_on": "2026-10-09",
       "stage": 0,
-      "last_interval_days": 1,
+      "last_interval_days": 2,
       "last_outcome": "needs_practice",
       "assessment_refs": [
-        "assessments/2026-10-04-baseline-frontend.md#q7--dialog-keyboard-accessibility"
+        "assessments/2026-10-04-baseline-frontend.md#q7--dialog-keyboard-accessibility",
+        "assessments/2026-10-07-review-accessibility.md"
       ],
       "concept_ref": "concepts/modal-keyboard-focus.md",
       "history": [
@@ -127,21 +196,30 @@
           "outcome": "needs_practice",
           "due_on": "2026-10-05",
           "reason": "Observed custom-dialog focus/keyboard implementation gap."
+        },
+        {
+          "on": "2026-10-07",
+          "assessment_id": "2026-10-07-review-accessibility",
+          "question_id": "focus-follow-ups",
+          "outcome": "needs_practice",
+          "due_on": "2026-10-09",
+          "reason": "ARIA focus-placement attribution and empty-list target required correction; no lateness or wording penalty."
         }
       ],
-      "scheduling_reason": "Fresh modal keyboard reasoning probe after Q7 conceptual gaps."
+      "scheduling_reason": "Fresh focus semantics and disappearing-opener review two days after correction."
     },
     {
       "id": "review-fe-nextjs-2026-10-04",
       "skill_id": "fe.nextjs",
       "status": "pending",
       "kind": "review",
-      "due_on": "2026-10-05",
+      "due_on": "2026-10-09",
       "stage": 0,
       "last_interval_days": 1,
       "last_outcome": "success",
       "assessment_refs": [
-        "assessments/2026-10-04-baseline-frontend.md#q8--nextjs-cached-read-after-a-mutation"
+        "assessments/2026-10-04-baseline-frontend.md#q8--nextjs-cached-read-after-a-mutation",
+        "assessments/2026-10-07-review-nextjs.md"
       ],
       "concept_ref": "concepts/nextjs-refresh-and-data-cache.md",
       "history": [
@@ -152,21 +230,30 @@
           "outcome": "success",
           "due_on": "2026-10-05",
           "reason": "Independent conceptual cache-boundary success; broader practical skill remains developing."
+        },
+        {
+          "on": "2026-10-07",
+          "assessment_id": "2026-10-07-review-nextjs",
+          "question_id": "freshness-teaching",
+          "outcome": "pending",
+          "due_on": "2026-10-09",
+          "reason": "Shared-tag scope demonstrated; SWR versus expiry introduced after teaching request. No new mastery score."
         }
       ],
-      "scheduling_reason": "Fresh server-cache invalidation conceptual probe one day after Q8."
+      "scheduling_reason": "New freshness semantics explained; short fresh assessment pending in two days. No successful review inferred."
     },
     {
       "id": "review-fe-performance-2026-10-04",
       "skill_id": "fe.performance",
       "status": "pending",
       "kind": "review",
-      "due_on": "2026-10-05",
+      "due_on": "2026-10-10",
       "stage": 0,
-      "last_interval_days": 1,
+      "last_interval_days": 2,
       "last_outcome": "needs_practice",
       "assessment_refs": [
-        "assessments/2026-10-04-baseline-frontend.md#q9--performance-diagnosis-final-initial-baseline-probe"
+        "assessments/2026-10-04-baseline-frontend.md#q9--performance-diagnosis-final-initial-baseline-probe",
+        "assessments/2026-10-07-review-performance.md"
       ],
       "concept_ref": "concepts/frontend-performance-attribution.md",
       "history": [
@@ -177,9 +264,92 @@
           "outcome": "needs_practice",
           "due_on": "2026-10-05",
           "reason": "Fresh bottleneck-attribution and verification probe after partial initial answer."
+        },
+        {
+          "on": "2026-10-08",
+          "assessment_id": "2026-10-07-review-performance",
+          "question_id": "saved-width-correction-check",
+          "outcome": "needs_practice",
+          "due_on": "2026-10-10",
+          "reason": "Correct immediate saved-number recognition after explanation; independent diagnosis and measurements still pending."
         }
       ],
-      "scheduling_reason": "Short fresh performance reasoning review one day after Q9."
+      "scheduling_reason": "Fresh read/write diagnosis two days after guided explanation; no delayed success inferred."
+    },
+    {
+      "id": "review-be-rest-2026-10-04",
+      "skill_id": "be.rest",
+      "status": "pending",
+      "kind": "review",
+      "due_on": "2026-10-05",
+      "stage": 0,
+      "last_interval_days": 1,
+      "last_outcome": "needs_practice",
+      "assessment_refs": [
+        "assessments/2026-10-04-baseline-backend.md#q2e--duplicate-insert-and-inventory-rollback"
+      ],
+      "concept_ref": "concepts/booking-retry-idempotency.md",
+      "history": [
+        {
+          "on": "2026-10-04",
+          "assessment_id": "2026-10-04-baseline-backend",
+          "question_id": "Q2e",
+          "outcome": "needs_practice",
+          "due_on": "2026-10-05",
+          "reason": "Guided idempotency correction; fresh independent retry scenario needed."
+        }
+      ],
+      "scheduling_reason": "Fresh short API retry/idempotency probe after guided correction; no delayed success inferred."
+    },
+    {
+      "id": "review-be-auth-2026-10-04",
+      "skill_id": "be.auth",
+      "status": "pending",
+      "kind": "review",
+      "due_on": "2026-10-05",
+      "stage": 0,
+      "last_interval_days": 1,
+      "last_outcome": "needs_practice",
+      "assessment_refs": [
+        "assessments/2026-10-04-baseline-backend.md#q3d--authentication-versus-authorization"
+      ],
+      "concept_ref": "concepts/reservation-access-control.md",
+      "history": [
+        {
+          "on": "2026-10-04",
+          "assessment_id": "2026-10-04-baseline-backend",
+          "question_id": "Q3d",
+          "outcome": "needs_practice",
+          "due_on": "2026-10-05",
+          "reason": "Fresh independent access-control transfer needed after clarification and guidance."
+        }
+      ],
+      "scheduling_reason": "Fresh ownership and trust-boundary probe; no delayed retention or executable tests inferred."
+    },
+    {
+      "id": "review-be-sql-2026-10-07",
+      "skill_id": "be.sql",
+      "status": "pending",
+      "kind": "review",
+      "due_on": "2026-10-08",
+      "stage": 0,
+      "last_interval_days": 1,
+      "last_outcome": "needs_practice",
+      "assessment_refs": [
+        "assessments/2026-10-04-baseline-backend.md#q4b--aggregation-keys-and-missing-matches"
+      ],
+      "concept_ref": "concepts/event-reservation-counts.md",
+      "history": [
+        {
+          "on": "2026-10-07",
+          "assessment_id": "2026-10-04-baseline-backend",
+          "question_id": "Q4b",
+          "outcome": "needs_practice",
+          "due_on": "2026-10-08",
+          "reason": "Fresh grouping/outer-join probe after substantial correction."
+        }
+      ],
+      "scheduling_reason": "One-day fresh relational query review; no implementation or delayed retention inferred."
     }
   ]
 }

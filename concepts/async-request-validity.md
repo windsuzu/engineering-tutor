@@ -62,3 +62,15 @@ Q4b evidence: after feedback, learner recognized that a payment could have succe
 
 Remaining gaps: independent transfer of cancellation boundaries, independently designed deterministic tests and executable verification.
 Next review: 2026-10-05, fe.react; see ../reviews/queue.json. No backend transaction mastery inferred.
+
+## Practical framework context — 2026-10-07
+
+Custom client fetch followed by setState can race in a Next.js Client Component, whether started by an Effect or an event handler. Framework routing does not infer eligibility for arbitrary user setters. Next's installed router implementation tracks its own pending actions and prevents discarded actions from applying their resulting router state; that is scoped to router-managed state, not application request code.
+
+Query libraries own the query data/error state they expose. Include changing inputs in the key, for example ['search', query] with TanStack Query v5. Pass its query-function signal to supported fetch operations for cancellation; cancellation defaults and hook-specific limitations still apply. Avoid manually copying obsolete query completions into one unkeyed local state. Next's fetching guide supports server-owned fetching and client query-library patterns; SWR documents specific query/mutation race coordination.
+
+This tutor dashboard currently reads fs data in Server Components and filters supplied records locally, so the assessed client-request race pattern was not found in app/components/lib. This is a code-inspection finding, not a runtime concurrency test or a claim about an unseen employer app.
+
+Review on 2026-10-07: independently recognized the obsolete catch and proposed latest-request identity. Immediate follow-ups correctly apply captured/latest comparison after explanation of error-ID source and cancellation. Narrow conceptual score retained at 2 because cancellation and identity-source details still needed guidance; tutor's ambiguous Effect-versus-handler prompt is excluded as negative evidence. No executable checks run. Next active review: 2026-10-09, focused on cancellation and guard transfer.
+
+References and version metadata: [review sources](../sources/2026-10-07-request-validity-review.md). Installed Next 16.3.8 router source inspected in node_modules/next/dist/client/components/app-router-instance.js; rolling Next docs identify 16.4.0. No dependency upgrade performed.

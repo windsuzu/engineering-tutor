@@ -1,6 +1,6 @@
 # Proposed baseline assessment plan
 
-Status: proposed, not started. No answers, scores or demonstrated mastery exist.
+Current status: initial frontend reasoning/pseudocode baseline recorded; practical frontend implementation remains unverified. Backend baseline opening question is pending; DevOps baseline has not started. See the dated assessment records for actual evidence. The plan below preserves the proposed full practical format; discussion alone does not establish implementation ability.
 
 ## Format
 

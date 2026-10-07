@@ -37,3 +37,11 @@ Assessment: ../assessments/2026-10-04-baseline-frontend.md, Q7. Current response
 Q7b: learner correctly identifies possible escape to Help without focus management and intended restoration to Edit profile. Clarified wrap-around to the input and the need to explicitly restore focus in this custom implementation. This is guided reasoning, not implemented verification.
 Remaining gaps: fresh independent diagnosis, actual implementation and keyboard verification.
 Next review: 2026-10-05, fe.accessibility in ../reviews/queue.json.
+
+## October 7 review update
+
+Delete workflow: explicitly focus the least destructive action (Cancel) where appropriate. After removing the opener, choose a surviving target supporting the workflow: a next-row control or Add project when the list is empty. An appropriate heading/empty-state message with tabindex=-1 can serve when no suitable control exists. Do not rely on arbitrary DOM order or browser chrome. W3C APG source above reverified 2026-10-07; publication date unspecified, established rolling browser/ARIA guidance.
+
+Evidence: ../assessments/2026-10-07-review-accessibility.md. Conceptual 2/4; understands tab escape but focus-placement attribution and empty-list restoration required correction. No implementation or keyboard tests performed. Next review updated to 2026-10-09, superseding the earlier date.
+
+Cancellation follow-up October 7: learner correctly names the original outside Delete button as focus-return target when the row survives. Immediate guided confirmation; delayed retention still pending.

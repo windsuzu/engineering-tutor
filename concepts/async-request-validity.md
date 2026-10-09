@@ -74,3 +74,7 @@ This tutor dashboard currently reads fs data in Server Components and filters su
 Review on 2026-10-07: independently recognized the obsolete catch and proposed latest-request identity. Immediate follow-ups correctly apply captured/latest comparison after explanation of error-ID source and cancellation. Narrow conceptual score retained at 2 because cancellation and identity-source details still needed guidance; tutor's ambiguous Effect-versus-handler prompt is excluded as negative evidence. No executable checks run. Next active review: 2026-10-09, focused on cancellation and guard transfer.
 
 References and version metadata: [review sources](../sources/2026-10-07-request-validity-review.md). Installed Next 16.3.8 router source inspected in node_modules/next/dist/client/components/app-router-instance.js; rolling Next docs identify 16.4.0. No dependency upgrade performed.
+
+## October 9 loading-state guard review
+
+[Inventory loading review](../assessments/2026-10-09-review-request-validity.md#final-evaluation): independently identifies unguarded finally and proposes latest-request-ID gating for loading. Initial true wording clarified to false; preserve the correction without inferring a conceptual failure. Conceptual 3/4 for this narrow guard-transfer task. No snippet or tests executed; other dimension scores remain historical evidence. Cancellation/error identity source, unmount handling, and deterministic tests were not reassessed here and remain gaps. Next active review October 12 includes those boundaries; broader skill remains developing.

@@ -42,4 +42,8 @@ Double clicks duplicate one operation only if the client reuses its pending atte
 
 [Q2–Q2e](../assessments/2026-10-04-baseline-backend.md): independently recognized random-ID duplicate risk; correctly followed rollback and returned original success after guidance. Scoped conceptual score 2. Stable operation identity and database uniqueness needed explanation. Independent transfer, API contracts, concurrency implementation and tests remain unverified.
 
-Next review: 2026-10-05.
+### October 8 delayed review
+
+[Voucher purchase review](../assessments/2026-10-08-review-idempotency.md#final-evaluation): independently identifies a client-supplied ID and correctly distinguishes reused retry IDs from new intended-purchase IDs. Concurrent routing needed explanation; proposes a pre-insert check rather than database enforcement, and explicitly chooses an error for an already committed successful retry. Explained the uniqueness guarantee and recovery of the original success result. Correct rollback and successful UI-display checks are immediate guided evidence, not retained mastery. Scoped conceptual score remains 2; other dimensions unassessed. No endpoint, SQL, or tests executed. Earlier evidence preserved.
+
+Next review: 2026-10-10; fresh concurrency and successful-retry response scenario after correction.

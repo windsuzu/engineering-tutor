@@ -152,10 +152,10 @@
       "status": "developing",
       "latest_scores": {
         "conceptual_understanding": {
-          "score": 2,
-          "assessment_id": "2026-10-07-review-request-validity",
-          "evidence_ref": "assessments/2026-10-07-review-request-validity.md#scoped-evaluation-and-next-review",
-          "assessed_on": "2026-10-07"
+          "score": 3,
+          "assessment_id": "2026-10-09-review-request-validity",
+          "evidence_ref": "assessments/2026-10-09-review-request-validity.md#final-evaluation",
+          "assessed_on": "2026-10-09"
         },
         "implementation_correctness": null,
         "edge_case_handling": {
@@ -177,8 +177,8 @@
           "assessed_on": "2026-10-04"
         }
       },
-      "last_assessed_on": "2026-10-07",
-      "next_review_on": "2026-10-09",
+      "last_assessed_on": "2026-10-09",
+      "next_review_on": "2026-10-12",
       "assessment_history": [
         {
           "assessment_id": "2026-10-04-baseline-frontend",
@@ -257,6 +257,29 @@
           "independent": false,
           "checks_run": [],
           "outcome": "Correct core guard recognition with guided cancellation/error-contract follow-ups; fresh review needed."
+        },
+        {
+          "assessment_id": "2026-10-09-review-request-validity",
+          "assessment_path": "assessments/2026-10-09-review-request-validity.md",
+          "assessed_on": "2026-10-09",
+          "question_ids": [
+            "Q1",
+            "Q1b",
+            "Q2"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 3
+          },
+          "evidence_refs": [
+            "assessments/2026-10-09-review-request-validity.md#final-evaluation"
+          ],
+          "assistance": "Independent unguarded-finally diagnosis and latest-ID fix; true/false wording clarified by highlighting literal setter, not penalized. Minimal patch supplied only afterward.",
+          "independent": true,
+          "checks_run": [],
+          "outcome": "Successful narrow guard-transfer conceptual review; cancellation/error identity source, unmount and deterministic tests unassessed here and remain gaps."
         }
       ]
     },
@@ -266,17 +289,17 @@
       "latest_scores": {
         "conceptual_understanding": {
           "score": 3,
-          "assessment_id": "2026-10-04-baseline-frontend",
-          "evidence_ref": "assessments/2026-10-04-baseline-frontend.md#q8--nextjs-cached-read-after-a-mutation",
-          "assessed_on": "2026-10-04"
+          "assessment_id": "2026-10-09-review-nextjs",
+          "evidence_ref": "assessments/2026-10-09-review-nextjs.md#final-evaluation",
+          "assessed_on": "2026-10-09"
         },
         "implementation_correctness": null,
         "edge_case_handling": null,
         "testing_quality": null,
         "tradeoff_explanation": null
       },
-      "last_assessed_on": "2026-10-04",
-      "next_review_on": "2026-10-09",
+      "last_assessed_on": "2026-10-09",
+      "next_review_on": "2026-10-12",
       "assessment_history": [
         {
           "assessment_id": "2026-10-04-baseline-frontend",
@@ -298,6 +321,28 @@
           "independent": true,
           "checks_run": [],
           "outcome": "Correct scoped server-cache and mutation invalidation reasoning; broader rendering/cache implementation unassessed."
+        },
+        {
+          "assessment_id": "2026-10-09-review-nextjs",
+          "assessment_path": "assessments/2026-10-09-review-nextjs.md",
+          "assessed_on": "2026-10-09",
+          "question_ids": [
+            "Q1",
+            "Q2"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 3
+          },
+          "evidence_refs": [
+            "assessments/2026-10-09-review-nextjs.md#final-evaluation"
+          ],
+          "assistance": "Prior October 7 teaching; no fresh solution before answers. Q1 confirmed before Q2; acronym expansion explained after correct timing answer.",
+          "independent": true,
+          "checks_run": [],
+          "outcome": "Successful narrow delayed SWR/immediate-expiry and next-read timing review; implementation, failures, tests, and broader Next.js skill unverified."
         }
       ]
     },
@@ -397,18 +442,18 @@
       "status": "developing",
       "latest_scores": {
         "conceptual_understanding": {
-          "score": 2,
-          "assessment_id": "2026-10-07-review-accessibility",
-          "evidence_ref": "assessments/2026-10-07-review-accessibility.md#follow-up-attempts-and-correction",
-          "assessed_on": "2026-10-07"
+          "score": 3,
+          "assessment_id": "2026-10-09-review-accessibility",
+          "evidence_ref": "assessments/2026-10-09-review-accessibility.md#final-evaluation",
+          "assessed_on": "2026-10-09"
         },
         "implementation_correctness": null,
         "edge_case_handling": null,
         "testing_quality": null,
         "tradeoff_explanation": null
       },
-      "last_assessed_on": "2026-10-07",
-      "next_review_on": "2026-10-09",
+      "last_assessed_on": "2026-10-09",
+      "next_review_on": "2026-10-12",
       "assessment_history": [
         {
           "assessment_id": "2026-10-04-baseline-frontend",
@@ -473,6 +518,30 @@
           "independent": false,
           "checks_run": [],
           "outcome": "Partial modal reasoning; ARIA focus behavior and empty-list restoration need practice."
+        },
+        {
+          "assessment_id": "2026-10-09-review-accessibility",
+          "assessment_path": "assessments/2026-10-09-review-accessibility.md",
+          "assessed_on": "2026-10-09",
+          "question_ids": [
+            "Q1",
+            "Q2",
+            "Q3",
+            "Q4"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 3
+          },
+          "evidence_refs": [
+            "assessments/2026-10-09-review-accessibility.md#final-evaluation"
+          ],
+          "assistance": "Correct answers confirmed; ARIA semantic scope and mounting timing clarified. Ref/effect example shown after learner proposed ref.focus; restoration/wrap targets not supplied before attempts.",
+          "independent": true,
+          "checks_run": [],
+          "outcome": "Successful narrow conceptual initial focus, disappearing opener restoration, and forward Tab containment review; runtime modal and broader keyboard cases unverified."
         }
       ]
     },
@@ -524,17 +593,17 @@
       "latest_scores": {
         "conceptual_understanding": {
           "score": 2,
-          "assessment_id": "2026-10-04-baseline-backend",
-          "evidence_ref": "assessments/2026-10-04-baseline-backend.md#q2e--duplicate-insert-and-inventory-rollback",
-          "assessed_on": "2026-10-04"
+          "assessment_id": "2026-10-08-review-idempotency",
+          "evidence_ref": "assessments/2026-10-08-review-idempotency.md#final-evaluation",
+          "assessed_on": "2026-10-08"
         },
         "implementation_correctness": null,
         "edge_case_handling": null,
         "testing_quality": null,
         "tradeoff_explanation": null
       },
-      "last_assessed_on": "2026-10-04",
-      "next_review_on": "2026-10-05",
+      "last_assessed_on": "2026-10-08",
+      "next_review_on": "2026-10-10",
       "assessment_history": [
         {
           "assessment_id": "2026-10-04-baseline-backend",
@@ -561,6 +630,35 @@
           "independent": false,
           "checks_run": [],
           "outcome": "Narrow API retry/idempotency conceptual evidence; practical API and SQL implementation remain unknown."
+        },
+        {
+          "assessment_id": "2026-10-08-review-idempotency",
+          "assessment_path": "assessments/2026-10-08-review-idempotency.md",
+          "assessed_on": "2026-10-08",
+          "question_ids": [
+            "Q1",
+            "Q1b",
+            "Q2",
+            "Q2b",
+            "Q2c",
+            "Q3",
+            "Q3b"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 2
+          },
+          "evidence_refs": [
+            "assessments/2026-10-08-review-idempotency.md#final-evaluation",
+            "assessments/2026-10-08-review-idempotency.md#q2b-attempt-and-correction",
+            "assessments/2026-10-08-review-idempotency.md#q3-response-and-correction"
+          ],
+          "assistance": "Operation identity/lifetime clarified without a supplied rule; routing explained; database uniqueness and successful retry response taught; rollback and display checks guided.",
+          "independent": false,
+          "checks_run": [],
+          "outcome": "needs_practice; correct independent operation-identity reasoning; concurrency enforcement and recovered-success response need fresh independent reassessment."
         }
       ]
     },
@@ -569,18 +667,18 @@
       "status": "developing",
       "latest_scores": {
         "conceptual_understanding": {
-          "score": 1,
-          "assessment_id": "2026-10-04-baseline-backend",
-          "evidence_ref": "assessments/2026-10-04-baseline-backend.md#q4b--aggregation-keys-and-missing-matches",
-          "assessed_on": "2026-10-07"
+          "score": 2,
+          "assessment_id": "2026-10-09-review-sql",
+          "evidence_ref": "assessments/2026-10-09-review-sql.md#final-evaluation",
+          "assessed_on": "2026-10-09"
         },
         "implementation_correctness": null,
         "edge_case_handling": null,
         "testing_quality": null,
         "tradeoff_explanation": null
       },
-      "last_assessed_on": "2026-10-07",
-      "next_review_on": "2026-10-08",
+      "last_assessed_on": "2026-10-09",
+      "next_review_on": "2026-10-11",
       "assessment_history": [
         {
           "assessment_id": "2026-10-04-baseline-backend",
@@ -603,6 +701,30 @@
           "independent": true,
           "checks_run": [],
           "outcome": "Partial filter/count/join idea; grouping key, join preservation and missing-count reasoning need substantial help. Syntax familiarity not penalized."
+        },
+        {
+          "assessment_id": "2026-10-09-review-sql",
+          "assessment_path": "assessments/2026-10-09-review-sql.md",
+          "assessed_on": "2026-10-09",
+          "question_ids": [
+            "Q1",
+            "Q2",
+            "Q2b",
+            "Q3"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 2
+          },
+          "evidence_refs": [
+            "assessments/2026-10-09-review-sql.md#final-evaluation"
+          ],
+          "assistance": "Grouping and COALESCE independently supplied; preserved join side corrected; tutor-run examples explained missing aggregate row.",
+          "independent": false,
+          "checks_run": [],
+          "outcome": "needs_practice; improved grouping/null-conversion evidence, preserved-side distinction required teaching. Tutor-run SQLite examples verified separately; no learner implementation/tests."
         }
       ]
     },
@@ -679,10 +801,10 @@
       "status": "developing",
       "latest_scores": {
         "conceptual_understanding": {
-          "score": 2,
-          "assessment_id": "2026-10-04-baseline-backend",
-          "evidence_ref": "assessments/2026-10-04-baseline-backend.md#q3d--authentication-versus-authorization",
-          "assessed_on": "2026-10-04"
+          "score": 3,
+          "assessment_id": "2026-10-08-review-access-control",
+          "evidence_ref": "assessments/2026-10-08-review-access-control.md#final-evaluation",
+          "assessed_on": "2026-10-09"
         },
         "implementation_correctness": null,
         "edge_case_handling": null,
@@ -694,8 +816,8 @@
         },
         "tradeoff_explanation": null
       },
-      "last_assessed_on": "2026-10-04",
-      "next_review_on": "2026-10-05",
+      "last_assessed_on": "2026-10-09",
+      "next_review_on": "2026-10-12",
       "assessment_history": [
         {
           "assessment_id": "2026-10-04-baseline-backend",
@@ -722,6 +844,29 @@
           "independent": false,
           "checks_run": [],
           "outcome": "Correct guided caller-controlled identity reasoning and three proposed assertions; runnable authentication and tests unverified."
+        },
+        {
+          "assessment_id": "2026-10-08-review-access-control",
+          "assessment_path": "assessments/2026-10-08-review-access-control.md",
+          "assessed_on": "2026-10-09",
+          "question_ids": [
+            "Q1",
+            "Q2",
+            "Q3"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 3
+          },
+          "evidence_refs": [
+            "assessments/2026-10-08-review-access-control.md#final-evaluation"
+          ],
+          "assistance": "No solution supplied before each answer; confirmation of prior correct answers between questions.",
+          "independent": true,
+          "checks_run": [],
+          "outcome": "Successful narrow conceptual review of ownership/trusted identity and authentication versus authorization; practical implementation/tests remain unverified."
         }
       ]
     },

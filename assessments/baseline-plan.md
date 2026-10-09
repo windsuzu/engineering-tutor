@@ -1,6 +1,6 @@
 # Proposed baseline assessment plan
 
-Current status: initial frontend reasoning/pseudocode baseline recorded; practical frontend implementation remains unverified. Backend baseline opening question is pending; DevOps baseline has not started. See the dated assessment records for actual evidence. The plan below preserves the proposed full practical format; discussion alone does not establish implementation ability.
+Current status (updated 2026-10-09): initial frontend reasoning/pseudocode baseline recorded; practical frontend implementation remains unverified. Backend baseline Q1–Q4 and corrections have sampled transaction, API retry, access-control, and SQL reasoning. Delayed reviews through October 9 are recorded separately; Java/Spring and other unsampled backend skills remain unassessed. Resume the backend baseline with Q5 input-validation reasoning, then select Java/Spring probes from the actual response before starting DevOps, whose baseline has not started. See the dated assessment records for actual evidence. The plan below preserves the proposed full practical format; discussion alone does not establish implementation ability.
 
 ## Format
 

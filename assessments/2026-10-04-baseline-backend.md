@@ -1,6 +1,6 @@
 # Backend baseline — 2026-10-04
 
-Status: started; Q1 awaiting response. No backend scores assigned.
+Status (updated 2026-10-09): in progress. Q1–Q4 reasoning/corrections recorded below; narrow backend scores and dated delayed reviews are in progress/mastery.json. Resume at Q5 input validation; no backend implementation or tests verified. Earlier observations retain their original dates.
 Timezone: Asia/Taipei.
 
 ## Session goals and format
@@ -274,3 +274,26 @@ No API or tests executed. This samples be.auth conceptual reasoning, not impleme
 ## Continuing actions
 
 Record the original response before feedback. Ask for a corrected approach and deterministic test scenario afterward, adjusting prompts to the observed understanding. Research metadata: ../sources/2026-10-04-backend-baseline.md. Do not expose a reference solution before the attempt.
+
+## Q5 — Input-validation baseline continuation (October 9)
+
+Learner requested returning to the baseline after reviews due through October 9 were addressed. Continue with an unsampled API input-validation case; plain language accepted, no Java/Spring API recall prerequisite.
+
+A reservation API receives requestedSeats from the request body and runs:
+
+```text
+seatsLeft = 5
+requestedSeats = -2
+
+if seatsLeft >= requestedSeats:
+    seatsLeft = seatsLeft - requestedSeats
+    return "reserved"
+else:
+    return "sold out"
+```
+
+No validation, database constraints, or other handlers change this example. What value does seatsLeft have after this request?
+
+Learner response: pending. One closed-book prediction; do not disclose the arithmetic result or validation fix before the attempt. Follow with validation requirements after actual answer. No runtime output claimed; no code/API tests executed. Applicable dimension scores remain pending; do not infer mastery from resuming baseline work.
+
+This is a tutor-created language-independent code trace, not a framework/API-version claim. Existing reservation concepts and baseline history provide context; live official-reference access remains unavailable as recorded in the October 8–9 review notes. Java/Spring and DevOps skills remain unassessed.

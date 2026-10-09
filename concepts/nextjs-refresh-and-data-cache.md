@@ -53,3 +53,9 @@ Sources: https://nextjs.org/docs/app/api-reference/functions/updateTag (last upd
 Personal evidence: shared-tag scope independently identified in ../assessments/2026-10-07-review-nextjs.md; new freshness semantics requested for explanation, assessment remains pending. No new mastery score assigned. Next short freshness review proposed 2026-10-09, superseding earlier date while this taught topic is pending.
 
 October 7 correction check: learner correctly chose revalidateTag for a blog feed tolerating temporary staleness, explaining that immediate freshness is unnecessary. Guided transfer only; independent delayed review remains October 9.
+
+## October 9 freshness review
+
+[Article-count review](../assessments/2026-10-09-review-nextjs.md#final-evaluation): independently predicts old count during SWR, identifies updateTag, and explains next-read fresh fetching/waiting. Conceptual 3/4 for this narrow freshness distinction. Requested the acronym expansion; terminology clarification is not a demonstrated conceptual gap. Other dimensions unassessed; no Next.js cache exercise/tests executed. Broader skill remains developing. Next active review October 12; prior evidence preserved above.
+
+SWR means stale-while-revalidate: serve the old cached value while refreshing it in the background. Here it describes cache behavior; the React library named SWR is a separate implementation of related ideas and is not required to call Next.js revalidateTag. A cache refresh is not automatically a push to every already-open tab.

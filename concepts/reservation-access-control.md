@@ -47,4 +47,8 @@ Proposed cases: owner gets the correct record; nonowner is denied despite forged
 
 [Q3–Q3d](../assessments/2026-10-04-baseline-backend.md): correct ownership policy and caller-controlled parameter explanation after clarification. Narrow conceptual score 2; proposed test-design score 2. Runtime implementation and tests are unassessed. Tutor ambiguity and unfamiliar HTTP labels are not treated as independent conceptual failures. Fresh transfer and authentication/authorization distinction remain to be assessed independently.
 
-Next review: 2026-10-05.
+### October 8–9 delayed review
+
+[Private export review](../assessments/2026-10-08-review-access-control.md#final-evaluation), completed October 9: independently traces caller-controlled identity disclosure, compares stored ownerUserId with verified requester.userId, and explains that a logged-in nonowner fails authorization. Narrow conceptual score 3/4. No new testing evidence; baseline proposed-test score remains historical evidence, and runnable endpoint/security checks remain unverified. No broad practical mastery inferred. Earlier assessment history preserved.
+
+Next review: 2026-10-12, fresh conceptual transfer three days after the first successful delayed review.

@@ -43,6 +43,12 @@ Useful for dashboards showing all parents, including those with no matching chil
 
 [Q4/Q4b](../assessments/2026-10-04-baseline-backend.md): proposes filtering/counting before joining, but grouping key, preserved join side and missing-count semantics need explanation. Scoped conceptual score 1. Implementation, query tests and independent transfer unverified. Q4c is an immediate guided check, not a delayed review.
 
-Next review: 2026-10-08, with a fresh scenario.
+Next review: 2026-10-11, with a fresh preserved-side and post-join-filter scenario.
 
 Immediate Q4c follow-up on 2026-10-07 correctly predicts zero for an event with only cancelled reservations and identifies LEFT JOIN preservation. This supports corrected understanding after explanation, not independent delayed retention; original probe score remains unchanged.
+
+## October 9 review
+
+[Support-ticket review](../assessments/2026-10-09-review-sql.md#final-evaluation): independently selects the team grouping key and supplies COALESCE(value, 0), but chooses RIGHT JOIN with teams on the left. Explained preserved-side semantics; reversed-order correction answer is guided. Conceptual 2/4 for this narrow review; practical implementation, testing, and broader SQL skill remain unverified. Tutor-run SQLite 3.53.1 examples confirmed illustrated aggregation/join results and the zero display; no PostgreSQL queries or complete learner queries executed. Earlier evidence preserved.
+
+LEFT JOIN preserves left rows at the join step. A later WHERE condition on unmatched right-hand values can reject their NULLs and remove those preserved rows. No learner understanding of that filtering edge case assessed yet.

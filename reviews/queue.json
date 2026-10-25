@@ -27,15 +27,16 @@
       "skill_id": "be.transactions",
       "status": "pending",
       "kind": "review",
-      "due_on": "2026-10-17",
-      "stage": 2,
-      "last_interval_days": 7,
+      "due_on": "2026-11-08",
+      "stage": 3,
+      "last_interval_days": 14,
       "last_outcome": "success",
       "assessment_refs": [
         "assessments/2026-10-04-baseline-backend.md#q1b--prevent-the-inconsistency",
         "assessments/2026-10-04-baseline-backend.md#q1e--rollback-of-a-failed-reservation",
         "assessments/2026-10-07-review-transactions.md",
-        "assessments/2026-10-18-session-recovery.md#2026-10-10-review-transactions"
+        "assessments/2026-10-18-session-recovery.md#2026-10-10-review-transactions",
+        "assessments/2026-10-25-phase2-transactions.md"
       ],
       "concept_ref": "concepts/transactional-seat-reservations.md",
       "history": [
@@ -68,9 +69,17 @@
           "due_on": "2026-10-17",
           "reason": "Atomic guarded decrement reports zero rows, service must skip INSERT. DAO/service layering alone is not a business-condition check. Correct stop decision after question-only clarification. Effective transaction boundary supplied; no Spring/SQL run.",
           "recovered_on": "2026-10-18"
+        },
+        {
+          "on": "2026-10-25",
+          "assessment_id": "2026-10-25-phase2-transactions",
+          "question_id": "Q1",
+          "outcome": "success",
+          "due_on": "2026-11-08",
+          "reason": "Independent committed deduction/reservation retention despite response failure; no DB/HTTP execution or lateness penalty."
         }
       ],
-      "scheduling_reason": "Recovered prior actual scoped outcome from chat; see evidence ledger. No new stage advancement during recovery."
+      "scheduling_reason": "Third scoped delayed transaction conceptual success, committed-state versus later HTTP failure; next14 days after October25, practical implementation unverified."
     },
     {
       "id": "review-fe-react-2026-10-04",
@@ -138,14 +147,15 @@
       "skill_id": "fe.typescript",
       "status": "pending",
       "kind": "review",
-      "due_on": "2026-10-17",
-      "stage": 2,
-      "last_interval_days": 7,
+      "due_on": "2026-11-08",
+      "stage": 3,
+      "last_interval_days": 14,
       "last_outcome": "success",
       "assessment_refs": [
         "assessments/2026-10-04-baseline-frontend.md#q5--typescript-state-modeling",
         "assessments/2026-10-07-review-typescript.md",
-        "assessments/2026-10-18-session-recovery.md#2026-10-10-review-typescript"
+        "assessments/2026-10-18-session-recovery.md#2026-10-10-review-typescript",
+        "assessments/2026-10-25-phase2-typescript.md"
       ],
       "concept_ref": null,
       "history": [
@@ -172,24 +182,33 @@
           "due_on": "2026-10-17",
           "reason": "Session optional-user assignment, discriminated union and runtime JSON validation distinction. Ambiguous reject wording clarified without penalty. Strict optional access/TypeError terminology explained after prediction; union/runtime answers independent. Historical tutor tsc checks are not learner tests.",
           "recovered_on": "2026-10-18"
+        },
+        {
+          "on": "2026-10-25",
+          "assessment_id": "2026-10-25-phase2-typescript",
+          "question_id": "Q3",
+          "outcome": "success",
+          "due_on": "2026-11-08",
+          "reason": "Independent asserted-null failure, guard/schema plan and wrong-type rejection; wording clarified, no learner execution/tests/lateness penalty."
         }
       ],
-      "scheduling_reason": "Recovered prior actual scoped outcome from chat; see evidence ledger. No new stage advancement during recovery."
+      "scheduling_reason": "Third scoped delayed static/runtime-boundary conceptual success; next14 days after October25, no practical validator implementation/test mastery."
     },
     {
       "id": "review-fe-browser-2026-10-04",
       "skill_id": "fe.browser",
       "status": "pending",
       "kind": "review",
-      "due_on": "2026-10-17",
-      "stage": 1,
-      "last_interval_days": 3,
-      "last_outcome": "success",
+      "due_on": "2026-10-27",
+      "stage": 0,
+      "last_interval_days": 2,
+      "last_outcome": "needs_practice",
       "assessment_refs": [
         "assessments/2026-10-04-baseline-frontend.md#q6--browser-event-loop-prediction",
         "assessments/2026-10-07-review-microtasks.md",
         "assessments/2026-10-18-session-recovery.md#2026-10-10-review-microtasks",
-        "assessments/2026-10-18-session-recovery.md#2026-10-13-review-microtasks"
+        "assessments/2026-10-18-session-recovery.md#2026-10-13-review-microtasks",
+        "assessments/2026-10-25-phase2-browser.md"
       ],
       "concept_ref": "concepts/browser-microtask-ordering.md",
       "history": [
@@ -224,9 +243,17 @@
           "due_on": "2026-10-17",
           "reason": "Immediate async function logs begin/inside/end then resumed/peer; earlier fulfilled-await scheduling explained independently. No universal await priority or runtime/browser tests.",
           "recovered_on": "2026-10-18"
+        },
+        {
+          "on": "2026-10-25",
+          "assessment_id": "2026-10-25-phase2-browser",
+          "question_id": "Q2",
+          "outcome": "needs_practice",
+          "due_on": "2026-10-27",
+          "reason": "Timer placed before queued microtasks; correct remainder after hint. No browser/learner tests/lateness penalty."
         }
       ],
-      "scheduling_reason": "Recovered prior actual scoped outcome from chat; see evidence ledger. No new stage advancement during recovery."
+      "scheduling_reason": "Fresh timer/microtask boundary two days after October25 correction; guided remainder not independent retention."
     },
     {
       "id": "review-fe-accessibility-2026-10-04",
@@ -682,6 +709,31 @@
       "last_interval_days": 2,
       "last_outcome": "needs_practice",
       "scheduling_reason": "Fresh local-reference/shared-object scenario two days after October25 correction; guided allocation fix not independent delayed success."
+    },
+    {
+      "id": "review-ops-http-2026-10-25",
+      "skill_id": "ops.http",
+      "status": "pending",
+      "kind": "review",
+      "due_on": "2026-10-26",
+      "stage": 0,
+      "last_interval_days": 1,
+      "last_outcome": "success",
+      "assessment_refs": [
+        "assessments/2026-10-25-devops-http-baseline.md#final-evaluation"
+      ],
+      "concept_ref": "concepts/http-proxy-request-path.md",
+      "history": [
+        {
+          "on": "2026-10-25",
+          "assessment_id": "2026-10-25-devops-http-baseline",
+          "question_id": "Q2",
+          "outcome": "success",
+          "due_on": "2026-10-26",
+          "reason": "Independent hop/port and original-route verification plan; first delayed review next day, no actual operations tests."
+        }
+      ],
+      "scheduling_reason": "First fresh delayed HTTP path diagnosis review one day after initial conceptual success; practical ops unverified."
     }
   ]
 }

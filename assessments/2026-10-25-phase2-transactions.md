@@ -1,6 +1,6 @@
 # Phase 2 transaction review: commit before response failure
 
-Date:October25. Skill:be.transactions. Phase2 review1/3, originally dueOctober17. Status:in progress, first response pending. Java21/Spring Boot4 context, no unshown framework rollback behavior assumed.
+Date:October25. Skill:be.transactions. Phase2 review1/3, originally dueOctober17. Status:completed; narrow commit-versus-response conceptual success. Java21/Spring Boot4 context, no unshown framework rollback behavior assumed.
 
 ## Situation
 
@@ -37,3 +37,19 @@ Response:pending. No final state or rule supplied before attempt. Prior commit/a
 ## Sources and scheduling
 
 Previously verified PostgreSQL18 transaction context in [transaction concept](../concepts/transactional-seat-reservations.md) and backend source notes; no newly retrieved docs or actual Spring boundary test claimed. Effective commit boundary is explicit. Existing stage2 describes earlier scoped conceptual history; choose actual next stage/date after independent/guided evidence. No lateness penalty.
+
+## Q1 actual response
+
+Learner response (verbatim):
+
+```text
+the database state remains deducted and inserted successfully. only the user cannot get the response.
+```
+
+Correct independent distinction: committed stock8 and R900 remain; later response failure alone does not undo them. No penalty for not repeating the supplied arithmetic numerically; deduction and insertion retention explicitly correct. Clarify a retry needs existing idempotency policy rather than assuming HTTP500 means no committed work; matching-replay behavior was already assessed separately, so do not add a repetitive retry quiz or new be.rest score here. No database/controller/serialization execution.
+
+## Final evaluation
+
+Conceptual understanding:3/4 narrowly for an explicitly committed transaction versus later HTTP delivery failure. No outcome supplied before answer; earlier commit/affected-row and idempotency histories retained as prior evidence. Other four dimensions unassessed: no real transaction/caller-boundary configuration, serialization/HTTP reproduction, recovery implementation, learner tests or compared strategies. This one focused boundary case does not demonstrate all transaction isolation/concurrency/compensation skills.
+
+Third scoped delayed conceptual success, stage3; next November8 (14 days after October25). Broad transactions developing, no practical/retained mastery claim or lateness penalty. Phase2 review1 complete; continue selected TypeScript review2. No duplicate replay review or unplanned extra backlog added.

@@ -27,17 +27,17 @@
       "latest_scores": {
         "conceptual_understanding": {
           "score": 3,
-          "assessment_id": "2026-10-10-review-typescript",
-          "evidence_ref": "assessments/2026-10-18-session-recovery.md#2026-10-10-review-typescript",
-          "assessed_on": "2026-10-10"
+          "assessment_id": "2026-10-25-phase2-typescript",
+          "evidence_ref": "assessments/2026-10-25-phase2-typescript.md#final-evaluation",
+          "assessed_on": "2026-10-25"
         },
         "implementation_correctness": null,
         "edge_case_handling": null,
         "testing_quality": null,
         "tradeoff_explanation": null
       },
-      "last_assessed_on": "2026-10-10",
-      "next_review_on": "2026-10-17",
+      "last_assessed_on": "2026-10-25",
+      "next_review_on": "2026-11-08",
       "assessment_history": [
         {
           "assessment_id": "2026-10-04-baseline-frontend",
@@ -103,6 +103,29 @@
           "checks_run": [],
           "outcome": "Recovered prior scoped evaluation; other dimensions unassessed here.",
           "recovery_event": "2026-10-10-review-typescript"
+        },
+        {
+          "assessment_id": "2026-10-25-phase2-typescript",
+          "assessment_path": "assessments/2026-10-25-phase2-typescript.md",
+          "assessed_on": "2026-10-25",
+          "question_ids": [
+            "Q1",
+            "Q2",
+            "Q3"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 3
+          },
+          "evidence_refs": [
+            "assessments/2026-10-25-phase2-typescript.md#final-evaluation"
+          ],
+          "assistance": "No result before attempts; TypeError/predicate terminology and full-shape caveat clarified without inferring an implemented defect. Numeric/string mismatch named after correct rejection.",
+          "independent": true,
+          "checks_run": [],
+          "outcome": "Successful narrow assertion/runtime-validation plan reasoning; complete guard/schema/error-branch/learner tests unverified."
         }
       ]
     },
@@ -111,18 +134,18 @@
       "status": "developing",
       "latest_scores": {
         "conceptual_understanding": {
-          "score": 3,
-          "assessment_id": "2026-10-13-review-microtasks",
-          "evidence_ref": "assessments/2026-10-18-session-recovery.md#2026-10-13-review-microtasks",
-          "assessed_on": "2026-10-14"
+          "score": 2,
+          "assessment_id": "2026-10-25-phase2-browser",
+          "evidence_ref": "assessments/2026-10-25-phase2-browser.md#final-evaluation",
+          "assessed_on": "2026-10-25"
         },
         "implementation_correctness": null,
         "edge_case_handling": null,
         "testing_quality": null,
         "tradeoff_explanation": null
       },
-      "last_assessed_on": "2026-10-14",
-      "next_review_on": "2026-10-17",
+      "last_assessed_on": "2026-10-25",
+      "next_review_on": "2026-10-27",
       "assessment_history": [
         {
           "assessment_id": "2026-10-04-baseline-frontend",
@@ -210,6 +233,28 @@
           "checks_run": [],
           "outcome": "Recovered prior scoped evaluation; other dimensions unassessed here.",
           "recovery_event": "2026-10-13-review-microtasks"
+        },
+        {
+          "assessment_id": "2026-10-25-phase2-browser",
+          "assessment_path": "assessments/2026-10-25-phase2-browser.md",
+          "assessed_on": "2026-10-25",
+          "question_ids": [
+            "Q1",
+            "Q2"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 2
+          },
+          "evidence_refs": [
+            "assessments/2026-10-25-phase2-browser.md#final-evaluation"
+          ],
+          "assistance": "Pre-await prefix and resumed-before-peer independent; microtask-before-timer rule explained before corrected remainder.",
+          "independent": false,
+          "checks_run": [],
+          "outcome": "needs_practice on timer/checkpoint; earlier async progress preserved. Tutor Node illustration not browser/learner tests."
         }
       ]
     },
@@ -1253,17 +1298,17 @@
       "latest_scores": {
         "conceptual_understanding": {
           "score": 3,
-          "assessment_id": "2026-10-10-review-transactions",
-          "evidence_ref": "assessments/2026-10-18-session-recovery.md#2026-10-10-review-transactions",
-          "assessed_on": "2026-10-10"
+          "assessment_id": "2026-10-25-phase2-transactions",
+          "evidence_ref": "assessments/2026-10-25-phase2-transactions.md#final-evaluation",
+          "assessed_on": "2026-10-25"
         },
         "implementation_correctness": null,
         "edge_case_handling": null,
         "testing_quality": null,
         "tradeoff_explanation": null
       },
-      "last_assessed_on": "2026-10-10",
-      "next_review_on": "2026-10-17",
+      "last_assessed_on": "2026-10-25",
+      "next_review_on": "2026-11-08",
       "assessment_history": [
         {
           "assessment_id": "2026-10-04-baseline-backend",
@@ -1334,6 +1379,27 @@
           "checks_run": [],
           "outcome": "Recovered prior scoped evaluation; other dimensions unassessed here.",
           "recovery_event": "2026-10-10-review-transactions"
+        },
+        {
+          "assessment_id": "2026-10-25-phase2-transactions",
+          "assessment_path": "assessments/2026-10-25-phase2-transactions.md",
+          "assessed_on": "2026-10-25",
+          "question_ids": [
+            "Q1"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 3
+          },
+          "evidence_refs": [
+            "assessments/2026-10-25-phase2-transactions.md#final-evaluation"
+          ],
+          "assistance": "Explicit commit-before-serialization timing and no recovery assumptions; no state answer before learner response.",
+          "independent": true,
+          "checks_run": [],
+          "outcome": "Successful narrow committed database versus HTTP delivery boundary reasoning; no actual DB/Spring/HTTP or learner tests; other transaction scopes unverified."
         }
       ]
     },
@@ -1621,17 +1687,45 @@
     },
     "ops.http": {
       "track": "devops",
-      "status": "unassessed",
+      "status": "developing",
       "latest_scores": {
-        "conceptual_understanding": null,
+        "conceptual_understanding": {
+          "score": 3,
+          "assessment_id": "2026-10-25-devops-http-baseline",
+          "evidence_ref": "assessments/2026-10-25-devops-http-baseline.md#final-evaluation",
+          "assessed_on": "2026-10-25"
+        },
         "implementation_correctness": null,
         "edge_case_handling": null,
         "testing_quality": null,
         "tradeoff_explanation": null
       },
-      "last_assessed_on": null,
-      "next_review_on": null,
-      "assessment_history": []
+      "last_assessed_on": "2026-10-25",
+      "next_review_on": "2026-10-26",
+      "assessment_history": [
+        {
+          "assessment_id": "2026-10-25-devops-http-baseline",
+          "assessment_path": "assessments/2026-10-25-devops-http-baseline.md",
+          "assessed_on": "2026-10-25",
+          "question_ids": [
+            "Q1",
+            "Q2"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 3
+          },
+          "evidence_refs": [
+            "assessments/2026-10-25-devops-http-baseline.md#final-evaluation"
+          ],
+          "assistance": "Proxy/listener vocabulary; no cause/fix/request result before attempts. Full curl spelling and body inspection refined afterward.",
+          "independent": true,
+          "checks_run": [],
+          "outcome": "Initial narrow HTTP path diagnosis and original-route verification reasoning; no real server/curl/reload/tests, other operations skills unassessed."
+        }
+      ]
     },
     "ops.nginx": {
       "track": "devops",

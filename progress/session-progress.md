@@ -1,38 +1,34 @@
-# Current session progress — phase 3
+# Current session progress — phase4
 
-Started October25 after explicit learner request: "push and move to next phase." Completed [phase2](sessions/2026-10-25-phase2.md) remains archived with [daily outcomes](../daily/2026-10-25.md#archived-phase2-outcomes); no history reset or new mastery inferred.
+Started October25 (Asia/Taipei), explicit request: "push save and move on to the next phase." Completed [phase3](sessions/2026-10-25-phase3.md) remains archived; no mastery/history reset.
 
 ## Bars
 
-**Reviews [░░░] 0/3 completed** — Next.js in progress, two planned.
+**Reviews [░░░] 0/3 completed.** SQL in progress; React and accessibility planned.
 
-**New learning [░] 0/1 completed** — Linux listener-address scope planned, not started.
+**New learning [░] 0/1 completed.** DNS resolution versus TCP connection planned, not started.
 
-Current:**Next.js server-cache expiry versus an already-rendered browser page**, first response pending.
+Current: **SQL preserved rows and aggregate counts**, first response pending.
 
 ## Selected plan
 
-| Kind | Item | State | Outcome/evidence |
+| Kind | Item | State | Evidence |
 | --- | --- | --- | --- |
-| Review1 | Next.js cache expiry/read/browser boundary | In progress | [Case](../assessments/2026-10-25-phase3-nextjs.md); dueOct19, no new answer |
-| Review2 | Layout computation cost versus visible shift | Planned | [Queue](../reviews/queue.json); dueOct20, no new attempt |
-| Review3 | Credential validity versus object permission | Planned | [Queue](../reviews/queue.json); dueOct20, no new attempt |
-| New learning1 | Linux listener addresses: loopback versus all IPv4 interfaces | Planned | Synthetic host/request diagrams after reviews; no lesson/task/response or operational mastery yet |
+| Review1 | SQL LEFT JOIN counts with missing matches | In progress | [Case](../assessments/2026-10-25-phase4-sql.md); dueOct20; no new answer |
+| Review2 | React overlapping requests and cleanup | Planned | [Queue](../reviews/queue.json); dueOct21; no new attempt |
+| Review3 | Accessible dialog focus and background interaction | Planned | [Queue](../reviews/queue.json); dueOct24; no new attempt |
+| New learning1 | DNS resolution versus TCP connection | Planned | Extends HTTP/listener path; no teaching/task/answer/score yet |
 
-Oldest remaining due items selected first; new unit extends DevOps HTTP path into host listening-address scope. Default3 reviews/1 new unit remains finite; follow-ups are not extra items. Explicitly record replacements/deferrals for time or user goals; no mandatory catch-up backlog.
+Oldest due items selected; accessibility selected before REST at sameOct24 due date. REST remains queued, not an extra mandatory item. Default finite3review/1new plan, follow-ups not extra completions. Archive and stop when selected work finishes; guided completion is not mastery.
 
-## Sources and maintenance
+## Sources of truth
 
-- [mastery.json](mastery.json) records evidence-backed scores/history; [queue](../reviews/queue.json) records due dates/stages/outcomes. Verify matching next-review dates. This Markdown does not derive separate scores.
-- Assessments/daily notes preserve actual answers/assistance and executed versus hypothetical evidence; pending answer means no final outcome or completion.
-- Read AGENTS.md, [preferences](tutoring-preferences.md), [question template](question-template.md), active assessment/queue/history on every session/resumption. Show actual bars before each substantive question, one focused task at a time.
-- Count selected work only after final recorded outcome; guided completion is not mastery. Tutor demonstrations do not become learner tests.
-- Retain active plan across dates. Archive outcomes and stop automatic chaining after selected work finishes/deferred status is recorded.
+Read AGENTS.md, [preferences](tutoring-preferences.md), [question template](question-template.md), this tracker, [mastery](mastery.json), [queue](../reviews/queue.json), active assessment and latest daily notes before questioning. Save actual responses/assistance; no final grades while partial. Synchronize final mastery and queue dates, then bars. Tutor tests are not learner evidence.
 
 ## Queue snapshot
 
-October25:7 overdue items, none due exactly today. This plan selects Next.jsOct19 and performance/authOct20; SQLOct20,ReactOct21,accessibility/restOct24 remain queued. HTTP nextOct26; Java/concurrency/browser Oct27; SpringNov1; transactions/TypeScriptNov8. Refresh snapshot before later reporting, don't add the other4 overdue reviews automatically.
+October25:4overdue — SQL20,React21,accessibility24,REST24. Selected first3; REST deferred. HTTP nextOct26; Java/concurrency/browser/auth/Linux Oct27; Next.jsOct28; Spring/performanceNov1; transactions/TypeScriptNov8. Snapshot is not mandatory backlog.
 
 ## Save checkpoint
 
-Learner authorizes committing/pushing phase2 evidence and this next pending plan. Actual Git result reported in chat, not a learner test. Preparing phase3 does not grade any answer, advance a review or start the planned Linux lesson.
+User authorizes Phase3 commit/push and new pending plan. Last confirmed remote basecbd2e76 before this save; actual new Git result reported in chat after verification. Preparing phase4 does not advance mastery or start planned DNS lesson.

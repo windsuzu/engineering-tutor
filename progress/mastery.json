@@ -421,18 +421,18 @@
       "status": "developing",
       "latest_scores": {
         "conceptual_understanding": {
-          "score": 2,
-          "assessment_id": "2026-10-17-review-nextjs",
-          "evidence_ref": "assessments/2026-10-18-session-recovery.md#2026-10-17-review-nextjs",
-          "assessed_on": "2026-10-17"
+          "score": 3,
+          "assessment_id": "2026-10-25-phase3-nextjs",
+          "evidence_ref": "assessments/2026-10-25-phase3-nextjs.md#final-evaluation",
+          "assessed_on": "2026-10-25"
         },
         "implementation_correctness": null,
         "edge_case_handling": null,
         "testing_quality": null,
         "tradeoff_explanation": null
       },
-      "last_assessed_on": "2026-10-17",
-      "next_review_on": "2026-10-19",
+      "last_assessed_on": "2026-10-25",
+      "next_review_on": "2026-10-28",
       "assessment_history": [
         {
           "assessment_id": "2026-10-04-baseline-frontend",
@@ -498,6 +498,28 @@
           "checks_run": [],
           "outcome": "Recovered prior scoped evaluation; other dimensions unassessed here.",
           "recovery_event": "2026-10-17-review-nextjs"
+        },
+        {
+          "assessment_id": "2026-10-25-phase3-nextjs",
+          "assessment_path": "assessments/2026-10-25-phase3-nextjs.md",
+          "assessed_on": "2026-10-25",
+          "question_ids": [
+            "Q1",
+            "Q2"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 3
+          },
+          "evidence_refs": [
+            "assessments/2026-10-25-phase3-nextjs.md#final-evaluation"
+          ],
+          "assistance": "Q1 new-user restriction clarified: same visitor can make subsequent server read. No replacement-read timing solution before Q2. Prior teaching retained.",
+          "independent": true,
+          "checks_run": [],
+          "outcome": "Narrow idle-browser and fresh-next-read predictions correct; user identity clarification supplied, broader implementation unassessed."
         }
       ]
     },
@@ -521,17 +543,17 @@
       "latest_scores": {
         "conceptual_understanding": {
           "score": 3,
-          "assessment_id": "2026-10-17-review-performance",
-          "evidence_ref": "assessments/2026-10-18-session-recovery.md#2026-10-17-review-performance",
-          "assessed_on": "2026-10-17"
+          "assessment_id": "2026-10-25-phase3-performance",
+          "evidence_ref": "assessments/2026-10-25-phase3-performance.md#final-evaluation",
+          "assessed_on": "2026-10-25"
         },
         "implementation_correctness": null,
         "edge_case_handling": null,
         "testing_quality": null,
         "tradeoff_explanation": null
       },
-      "last_assessed_on": "2026-10-17",
-      "next_review_on": "2026-10-20",
+      "last_assessed_on": "2026-10-25",
+      "next_review_on": "2026-11-01",
       "assessment_history": [
         {
           "assessment_id": "2026-10-04-baseline-frontend",
@@ -619,6 +641,27 @@
           "checks_run": [],
           "outcome": "Recovered prior scoped evaluation; other dimensions unassessed here.",
           "recovery_event": "2026-10-17-review-performance"
+        },
+        {
+          "assessment_id": "2026-10-25-phase3-performance",
+          "assessment_path": "assessments/2026-10-25-phase3-performance.md",
+          "assessed_on": "2026-10-25",
+          "question_ids": [
+            "Q1"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 3
+          },
+          "evidence_refs": [
+            "assessments/2026-10-25-phase3-performance.md#final-evaluation"
+          ],
+          "assistance": "None before answer. Tutor explicitly connected supplied42-to9ms evidence and qualified forced-layout counts afterward.",
+          "independent": true,
+          "checks_run": [],
+          "outcome": "Correct independent reduced repeated-layout work interpretation despite unchanged CLS; no actual measurements or practical mastery."
         }
       ]
     },
@@ -1408,10 +1451,10 @@
       "status": "developing",
       "latest_scores": {
         "conceptual_understanding": {
-          "score": 3,
-          "assessment_id": "2026-10-17-review-auth",
-          "evidence_ref": "assessments/2026-10-18-session-recovery.md#2026-10-17-review-auth",
-          "assessed_on": "2026-10-17"
+          "score": 2,
+          "assessment_id": "2026-10-25-phase3-auth",
+          "evidence_ref": "assessments/2026-10-25-phase3-auth.md#final-evaluation",
+          "assessed_on": "2026-10-25"
         },
         "implementation_correctness": null,
         "edge_case_handling": null,
@@ -1423,8 +1466,8 @@
         },
         "tradeoff_explanation": null
       },
-      "last_assessed_on": "2026-10-17",
-      "next_review_on": "2026-10-20",
+      "last_assessed_on": "2026-10-25",
+      "next_review_on": "2026-10-27",
       "assessment_history": [
         {
           "assessment_id": "2026-10-04-baseline-backend",
@@ -1540,6 +1583,29 @@
           "checks_run": [],
           "outcome": "Recovered prior scoped evaluation; other dimensions unassessed here.",
           "recovery_event": "2026-10-17-review-auth"
+        },
+        {
+          "assessment_id": "2026-10-25-phase3-auth",
+          "assessment_path": "assessments/2026-10-25-phase3-auth.md",
+          "assessed_on": "2026-10-25",
+          "question_ids": [
+            "Q1",
+            "Q2",
+            "Q3"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 2
+          },
+          "evidence_refs": [
+            "assessments/2026-10-25-phase3-auth.md#final-evaluation"
+          ],
+          "assistance": "Trusted signature accepted without audience in Q1. Intended-recipient audience hint before correct Q2; Q3 ownership distinction independently correct.",
+          "independent": false,
+          "checks_run": [],
+          "outcome": "Guided audience correction; ownership classification retained. Needs fresh credential-validity review; practical security unassessed."
         }
       ]
     },
@@ -1659,17 +1725,46 @@
     },
     "ops.linux": {
       "track": "devops",
-      "status": "unassessed",
+      "status": "developing",
       "latest_scores": {
-        "conceptual_understanding": null,
+        "conceptual_understanding": {
+          "score": 2,
+          "assessment_id": "2026-10-25-linux-listener-baseline",
+          "evidence_ref": "assessments/2026-10-25-linux-listener-baseline.md#final-evaluation",
+          "assessed_on": "2026-10-25"
+        },
         "implementation_correctness": null,
         "edge_case_handling": null,
         "testing_quality": null,
         "tradeoff_explanation": null
       },
-      "last_assessed_on": null,
-      "next_review_on": null,
-      "assessment_history": []
+      "last_assessed_on": "2026-10-25",
+      "next_review_on": "2026-10-27",
+      "assessment_history": [
+        {
+          "assessment_id": "2026-10-25-linux-listener-baseline",
+          "assessment_path": "assessments/2026-10-25-linux-listener-baseline.md",
+          "assessed_on": "2026-10-25",
+          "question_ids": [
+            "Q1",
+            "Q2",
+            "Q3"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 2
+          },
+          "evidence_refs": [
+            "assessments/2026-10-25-linux-listener-baseline.md#final-evaluation"
+          ],
+          "assistance": "Address definitions before Q1; loopback/private-interface distinction explained after Q1; full wildcard-bind fix and diagram before Q3. Forwarding alternative acknowledged.",
+          "independent": false,
+          "checks_run": [],
+          "outcome": "Guided first-learning listener scope; correct client destination after teaching, fresh independent diagnosis pending. Broader Linux practical skills unassessed."
+        }
+      ]
     },
     "ops.networking": {
       "track": "devops",

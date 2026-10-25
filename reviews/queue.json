@@ -312,15 +312,16 @@
       "skill_id": "fe.nextjs",
       "status": "pending",
       "kind": "review",
-      "due_on": "2026-10-19",
-      "stage": 0,
-      "last_interval_days": 2,
-      "last_outcome": "needs_practice",
+      "due_on": "2026-10-28",
+      "stage": 1,
+      "last_interval_days": 3,
+      "last_outcome": "success",
       "assessment_refs": [
         "assessments/2026-10-04-baseline-frontend.md#q8--nextjs-cached-read-after-a-mutation",
         "assessments/2026-10-07-review-nextjs.md",
         "assessments/2026-10-09-review-nextjs.md",
-        "assessments/2026-10-18-session-recovery.md#2026-10-17-review-nextjs"
+        "assessments/2026-10-18-session-recovery.md#2026-10-17-review-nextjs",
+        "assessments/2026-10-25-phase3-nextjs.md#final-evaluation"
       ],
       "concept_ref": "concepts/nextjs-refresh-and-data-cache.md",
       "history": [
@@ -355,24 +356,33 @@
           "due_on": "2026-10-19",
           "reason": "SWR/API choice recalled, but updateTag eager fetch while idle predicted. Expiry versus replacement fetch explained before fresh5 answer. Earlier next-read recall preserved; no actual cache/HTTP tests.",
           "recovered_on": "2026-10-18"
+        },
+        {
+          "on": "2026-10-25",
+          "assessment_id": "2026-10-25-phase3-nextjs",
+          "question_id": "Q2",
+          "outcome": "success",
+          "due_on": "2026-10-28",
+          "reason": "Idle UI and next-read fresh wait correctly predicted; new-user wording clarified, no timing solution supplied."
         }
       ],
-      "scheduling_reason": "Recovered prior actual scoped outcome from chat; see evidence ledger. No new stage advancement during recovery."
+      "scheduling_reason": "Successful narrow delayed expiry/browser/read timing review; next fresh case in three days, no practical mastery."
     },
     {
       "id": "review-fe-performance-2026-10-04",
       "skill_id": "fe.performance",
       "status": "pending",
       "kind": "review",
-      "due_on": "2026-10-20",
-      "stage": 1,
-      "last_interval_days": 3,
+      "due_on": "2026-11-01",
+      "stage": 2,
+      "last_interval_days": 7,
       "last_outcome": "success",
       "assessment_refs": [
         "assessments/2026-10-04-baseline-frontend.md#q9--performance-diagnosis-final-initial-baseline-probe",
         "assessments/2026-10-07-review-performance.md",
         "assessments/2026-10-18-session-recovery.md#2026-10-10-review-performance",
-        "assessments/2026-10-18-session-recovery.md#2026-10-17-review-performance"
+        "assessments/2026-10-18-session-recovery.md#2026-10-17-review-performance",
+        "assessments/2026-10-25-phase3-performance.md#final-evaluation"
       ],
       "concept_ref": "concepts/frontend-performance-attribution.md",
       "history": [
@@ -407,9 +417,17 @@
           "due_on": "2026-10-20",
           "reason": "Independent Layout-duration metric and batching/lower-duration interpretation despite unchanged shift. Accepted case-format work not assessment evidence. Same-width follows code, timing alone not exact causal count. Hypothetical36-to12ms, no benchmark.",
           "recovered_on": "2026-10-18"
+        },
+        {
+          "on": "2026-10-25",
+          "assessment_id": "2026-10-25-phase3-performance",
+          "question_id": "Q1",
+          "outcome": "success",
+          "due_on": "2026-11-01",
+          "reason": "Correct read-once/reduced repeated layout interpretation; timing supplied not measured, exact layout count unproven."
         }
       ],
-      "scheduling_reason": "Recovered prior actual scoped outcome from chat; see evidence ledger. No new stage advancement during recovery."
+      "scheduling_reason": "Independent narrow delayed layout-work interpretation; fresh review in seven days, no benchmark mastery."
     },
     {
       "id": "review-be-rest-2026-10-04",
@@ -469,16 +487,17 @@
       "skill_id": "be.auth",
       "status": "pending",
       "kind": "review",
-      "due_on": "2026-10-20",
-      "stage": 1,
-      "last_interval_days": 3,
-      "last_outcome": "success",
+      "due_on": "2026-10-27",
+      "stage": 0,
+      "last_interval_days": 2,
+      "last_outcome": "needs_practice",
       "assessment_refs": [
         "assessments/2026-10-04-baseline-backend.md#q3d--authentication-versus-authorization",
         "assessments/2026-10-08-review-access-control.md",
         "assessments/2026-10-18-session-recovery.md#baseline-q14-jwt-trust",
         "assessments/2026-10-18-session-recovery.md#2026-10-13-review-auth",
-        "assessments/2026-10-18-session-recovery.md#2026-10-17-review-auth"
+        "assessments/2026-10-18-session-recovery.md#2026-10-17-review-auth",
+        "assessments/2026-10-25-phase3-auth.md#final-evaluation"
       ],
       "concept_ref": "concepts/reservation-access-control.md",
       "history": [
@@ -513,9 +532,17 @@
           "due_on": "2026-10-20",
           "reason": "Expired owned-invoice token fails authentication independently; caller-key signature rejected. Third-party wording clarified to configured issuer/JWKS/pinned trust. Original recorded client date17 retained; reply appeared with newer execution context18, precise completion-date association uncertain. No crypto/provider tests.",
           "recovered_on": "2026-10-18"
+        },
+        {
+          "on": "2026-10-25",
+          "assessment_id": "2026-10-25-phase3-auth",
+          "question_id": "Q3",
+          "outcome": "needs_practice",
+          "due_on": "2026-10-27",
+          "reason": "Audience requirement needed hint; independent owner authorization classification correct, other dimensions unassessed."
         }
       ],
-      "scheduling_reason": "Recovered prior actual scoped outcome from chat; see evidence ledger. No new stage advancement during recovery."
+      "scheduling_reason": "Signature-only acceptance omitted audience; guided correction, fresh credential-validity case in two days."
     },
     {
       "id": "review-be-sql-2026-10-07",
@@ -734,6 +761,31 @@
         }
       ],
       "scheduling_reason": "First fresh delayed HTTP path diagnosis review one day after initial conceptual success; practical ops unverified."
+    },
+    {
+      "id": "review-ops-linux-2026-10-25",
+      "skill_id": "ops.linux",
+      "status": "pending",
+      "kind": "review",
+      "due_on": "2026-10-27",
+      "stage": 0,
+      "last_interval_days": 2,
+      "last_outcome": "needs_practice",
+      "assessment_refs": [
+        "assessments/2026-10-25-linux-listener-baseline.md#final-evaluation"
+      ],
+      "concept_ref": "concepts/linux-listener-addresses.md",
+      "history": [
+        {
+          "on": "2026-10-25",
+          "assessment_id": "2026-10-25-linux-listener-baseline",
+          "question_id": "Q3",
+          "outcome": "needs_practice",
+          "due_on": "2026-10-27",
+          "reason": "Loopback reachability and direct bind fix required explanation; correct client destination guided."
+        }
+      ],
+      "scheduling_reason": "Fresh listener interpretation two days after guided initial learning; no practical operations mastery."
     }
   ]
 }

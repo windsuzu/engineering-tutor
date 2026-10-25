@@ -27,17 +27,17 @@
       "latest_scores": {
         "conceptual_understanding": {
           "score": 3,
-          "assessment_id": "2026-10-07-review-typescript",
-          "evidence_ref": "assessments/2026-10-07-review-typescript.md#correction-and-result",
-          "assessed_on": "2026-10-07"
+          "assessment_id": "2026-10-10-review-typescript",
+          "evidence_ref": "assessments/2026-10-18-session-recovery.md#2026-10-10-review-typescript",
+          "assessed_on": "2026-10-10"
         },
         "implementation_correctness": null,
         "edge_case_handling": null,
         "testing_quality": null,
         "tradeoff_explanation": null
       },
-      "last_assessed_on": "2026-10-07",
-      "next_review_on": "2026-10-10",
+      "last_assessed_on": "2026-10-10",
+      "next_review_on": "2026-10-17",
       "assessment_history": [
         {
           "assessment_id": "2026-10-04-baseline-frontend",
@@ -81,6 +81,28 @@
           "independent": true,
           "checks_run": [],
           "outcome": "Successful narrow conceptual review with accidental requirement oversight corrected; other dimensions unassessed."
+        },
+        {
+          "assessment_id": "2026-10-10-review-typescript",
+          "assessment_path": "assessments/2026-10-18-session-recovery.md",
+          "assessed_on": "2026-10-10",
+          "question_ids": [
+            "see-recovered-responses"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 3
+          },
+          "evidence_refs": [
+            "assessments/2026-10-18-session-recovery.md#2026-10-10-review-typescript"
+          ],
+          "assistance": "Session optional-user assignment, discriminated union and runtime JSON validation distinction. Ambiguous reject wording clarified without penalty. Strict optional access/TypeError terminology explained after prediction; union/runtime answers independent. Historical tutor tsc checks are not learner tests.",
+          "independent": true,
+          "checks_run": [],
+          "outcome": "Recovered prior scoped evaluation; other dimensions unassessed here.",
+          "recovery_event": "2026-10-10-review-typescript"
         }
       ]
     },
@@ -90,17 +112,17 @@
       "latest_scores": {
         "conceptual_understanding": {
           "score": 3,
-          "assessment_id": "2026-10-07-review-microtasks",
-          "evidence_ref": "assessments/2026-10-07-review-microtasks.md#explanation-follow-up",
-          "assessed_on": "2026-10-07"
+          "assessment_id": "2026-10-13-review-microtasks",
+          "evidence_ref": "assessments/2026-10-18-session-recovery.md#2026-10-13-review-microtasks",
+          "assessed_on": "2026-10-14"
         },
         "implementation_correctness": null,
         "edge_case_handling": null,
         "testing_quality": null,
         "tradeoff_explanation": null
       },
-      "last_assessed_on": "2026-10-07",
-      "next_review_on": "2026-10-10",
+      "last_assessed_on": "2026-10-14",
+      "next_review_on": "2026-10-17",
       "assessment_history": [
         {
           "assessment_id": "2026-10-04-baseline-frontend",
@@ -144,6 +166,50 @@
           "independent": true,
           "checks_run": [],
           "outcome": "Correct fresh Promise-chain/microtask prediction and explanation. Broader browser internals and runtime verification unassessed."
+        },
+        {
+          "assessment_id": "2026-10-10-review-microtasks",
+          "assessment_path": "assessments/2026-10-18-session-recovery.md",
+          "assessed_on": "2026-10-10",
+          "question_ids": [
+            "see-recovered-responses"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 2
+          },
+          "evidence_refs": [
+            "assessments/2026-10-18-session-recovery.md#2026-10-10-review-microtasks"
+          ],
+          "assistance": "Original queue A then nested C, immediate async B/await D, outer E: final B E A D C. Pre-await execution needed explicit teaching; smaller and full traces correct after hints. Prior Promise-chain success preserved. Historical tutor Node output, no browser/learner tests.",
+          "independent": false,
+          "checks_run": [],
+          "outcome": "Recovered prior scoped evaluation; other dimensions unassessed here.",
+          "recovery_event": "2026-10-10-review-microtasks"
+        },
+        {
+          "assessment_id": "2026-10-13-review-microtasks",
+          "assessment_path": "assessments/2026-10-18-session-recovery.md",
+          "assessed_on": "2026-10-14",
+          "question_ids": [
+            "see-recovered-responses"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 3
+          },
+          "evidence_refs": [
+            "assessments/2026-10-18-session-recovery.md#2026-10-13-review-microtasks"
+          ],
+          "assistance": "Immediate async function logs begin/inside/end then resumed/peer; earlier fulfilled-await scheduling explained independently. No universal await priority or runtime/browser tests.",
+          "independent": true,
+          "checks_run": [],
+          "outcome": "Recovered prior scoped evaluation; other dimensions unassessed here.",
+          "recovery_event": "2026-10-13-review-microtasks"
         }
       ]
     },
@@ -153,9 +219,9 @@
       "latest_scores": {
         "conceptual_understanding": {
           "score": 3,
-          "assessment_id": "2026-10-09-review-request-validity",
-          "evidence_ref": "assessments/2026-10-09-review-request-validity.md#final-evaluation",
-          "assessed_on": "2026-10-09"
+          "assessment_id": "2026-10-14-review-request-validity",
+          "evidence_ref": "assessments/2026-10-18-session-recovery.md#2026-10-14-review-request-validity",
+          "assessed_on": "2026-10-14"
         },
         "implementation_correctness": null,
         "edge_case_handling": {
@@ -177,8 +243,8 @@
           "assessed_on": "2026-10-04"
         }
       },
-      "last_assessed_on": "2026-10-09",
-      "next_review_on": "2026-10-12",
+      "last_assessed_on": "2026-10-14",
+      "next_review_on": "2026-10-21",
       "assessment_history": [
         {
           "assessment_id": "2026-10-04-baseline-frontend",
@@ -280,6 +346,28 @@
           "independent": true,
           "checks_run": [],
           "outcome": "Successful narrow guard-transfer conceptual review; cancellation/error identity source, unmount and deterministic tests unassessed here and remain gaps."
+        },
+        {
+          "assessment_id": "2026-10-14-review-request-validity",
+          "assessment_path": "assessments/2026-10-18-session-recovery.md",
+          "assessed_on": "2026-10-14",
+          "question_ids": [
+            "see-recovered-responses"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 3
+          },
+          "evidence_refs": [
+            "assessments/2026-10-18-session-recovery.md#2026-10-14-review-request-validity"
+          ],
+          "assistance": "Latest-ID and abort/null cleanup proposed; ref ambiguity clarified to both owned refs. Custom buildPreview ignores abort after fetch/body completed: boundary explicitly taught, not independently demonstrated. Historical grade3 limited to guard/lifecycle; no React/unmount tests, cancellation remains fresh target.",
+          "independent": true,
+          "checks_run": [],
+          "outcome": "Recovered prior scoped evaluation; other dimensions unassessed here.",
+          "recovery_event": "2026-10-14-review-request-validity"
         }
       ]
     },
@@ -288,18 +376,18 @@
       "status": "developing",
       "latest_scores": {
         "conceptual_understanding": {
-          "score": 3,
-          "assessment_id": "2026-10-09-review-nextjs",
-          "evidence_ref": "assessments/2026-10-09-review-nextjs.md#final-evaluation",
-          "assessed_on": "2026-10-09"
+          "score": 2,
+          "assessment_id": "2026-10-17-review-nextjs",
+          "evidence_ref": "assessments/2026-10-18-session-recovery.md#2026-10-17-review-nextjs",
+          "assessed_on": "2026-10-17"
         },
         "implementation_correctness": null,
         "edge_case_handling": null,
         "testing_quality": null,
         "tradeoff_explanation": null
       },
-      "last_assessed_on": "2026-10-09",
-      "next_review_on": "2026-10-12",
+      "last_assessed_on": "2026-10-17",
+      "next_review_on": "2026-10-19",
       "assessment_history": [
         {
           "assessment_id": "2026-10-04-baseline-frontend",
@@ -343,6 +431,28 @@
           "independent": true,
           "checks_run": [],
           "outcome": "Successful narrow delayed SWR/immediate-expiry and next-read timing review; implementation, failures, tests, and broader Next.js skill unverified."
+        },
+        {
+          "assessment_id": "2026-10-17-review-nextjs",
+          "assessment_path": "assessments/2026-10-18-session-recovery.md",
+          "assessed_on": "2026-10-17",
+          "question_ids": [
+            "see-recovered-responses"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 2
+          },
+          "evidence_refs": [
+            "assessments/2026-10-18-session-recovery.md#2026-10-17-review-nextjs"
+          ],
+          "assistance": "SWR/API choice recalled, but updateTag eager fetch while idle predicted. Expiry versus replacement fetch explained before fresh5 answer. Earlier next-read recall preserved; no actual cache/HTTP tests.",
+          "independent": false,
+          "checks_run": [],
+          "outcome": "Recovered prior scoped evaluation; other dimensions unassessed here.",
+          "recovery_event": "2026-10-17-review-nextjs"
         }
       ]
     },
@@ -365,18 +475,18 @@
       "status": "developing",
       "latest_scores": {
         "conceptual_understanding": {
-          "score": 2,
-          "assessment_id": "2026-10-07-review-performance",
-          "evidence_ref": "assessments/2026-10-07-review-performance.md#explanation-and-correction-check--october-8",
-          "assessed_on": "2026-10-08"
+          "score": 3,
+          "assessment_id": "2026-10-17-review-performance",
+          "evidence_ref": "assessments/2026-10-18-session-recovery.md#2026-10-17-review-performance",
+          "assessed_on": "2026-10-17"
         },
         "implementation_correctness": null,
         "edge_case_handling": null,
         "testing_quality": null,
         "tradeoff_explanation": null
       },
-      "last_assessed_on": "2026-10-08",
-      "next_review_on": "2026-10-10",
+      "last_assessed_on": "2026-10-17",
+      "next_review_on": "2026-10-20",
       "assessment_history": [
         {
           "assessment_id": "2026-10-04-baseline-frontend",
@@ -420,6 +530,50 @@
           "independent": false,
           "checks_run": [],
           "outcome": "Guided understanding of read/write sequencing; fresh independent diagnosis and actual measurements pending."
+        },
+        {
+          "assessment_id": "2026-10-10-review-performance",
+          "assessment_path": "assessments/2026-10-18-session-recovery.md",
+          "assessed_on": "2026-10-10",
+          "question_ids": [
+            "see-recovered-responses"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 2
+          },
+          "evidence_refs": [
+            "assessments/2026-10-18-session-recovery.md#2026-10-10-review-performance"
+          ],
+          "assistance": "Per-tile height read/write batching independently correct; Layout duration versus layout-shift measurement required explanation twice. Hypothetical 40-to-8ms, no browser benchmark.",
+          "independent": false,
+          "checks_run": [],
+          "outcome": "Recovered prior scoped evaluation; other dimensions unassessed here.",
+          "recovery_event": "2026-10-10-review-performance"
+        },
+        {
+          "assessment_id": "2026-10-17-review-performance",
+          "assessment_path": "assessments/2026-10-18-session-recovery.md",
+          "assessed_on": "2026-10-17",
+          "question_ids": [
+            "see-recovered-responses"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 3
+          },
+          "evidence_refs": [
+            "assessments/2026-10-18-session-recovery.md#2026-10-17-review-performance"
+          ],
+          "assistance": "Independent Layout-duration metric and batching/lower-duration interpretation despite unchanged shift. Accepted case-format work not assessment evidence. Same-width follows code, timing alone not exact causal count. Hypothetical36-to12ms, no benchmark.",
+          "independent": true,
+          "checks_run": [],
+          "outcome": "Recovered prior scoped evaluation; other dimensions unassessed here.",
+          "recovery_event": "2026-10-17-review-performance"
         }
       ]
     },
@@ -443,17 +597,17 @@
       "latest_scores": {
         "conceptual_understanding": {
           "score": 3,
-          "assessment_id": "2026-10-09-review-accessibility",
-          "evidence_ref": "assessments/2026-10-09-review-accessibility.md#final-evaluation",
-          "assessed_on": "2026-10-09"
+          "assessment_id": "2026-10-14-review-accessibility",
+          "evidence_ref": "assessments/2026-10-18-session-recovery.md#2026-10-14-review-accessibility",
+          "assessed_on": "2026-10-17"
         },
         "implementation_correctness": null,
         "edge_case_handling": null,
         "testing_quality": null,
         "tradeoff_explanation": null
       },
-      "last_assessed_on": "2026-10-09",
-      "next_review_on": "2026-10-12",
+      "last_assessed_on": "2026-10-17",
+      "next_review_on": "2026-10-24",
       "assessment_history": [
         {
           "assessment_id": "2026-10-04-baseline-frontend",
@@ -542,6 +696,28 @@
           "independent": true,
           "checks_run": [],
           "outcome": "Successful narrow conceptual initial focus, disappearing opener restoration, and forward Tab containment review; runtime modal and broader keyboard cases unverified."
+        },
+        {
+          "assessment_id": "2026-10-14-review-accessibility",
+          "assessment_path": "assessments/2026-10-18-session-recovery.md",
+          "assessed_on": "2026-10-17",
+          "question_ids": [
+            "see-recovered-responses"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 3
+          },
+          "evidence_refs": [
+            "assessments/2026-10-18-session-recovery.md#2026-10-14-review-accessibility"
+          ],
+          "assistance": "Reverse Tab first-to-last independent; ARIA wording clarified as no click blocking. Inert vocabulary requested/taught, reversal guided. Historical grade3 scoped to modal behavior, not independent inert mastery. No keyboard/browser/assistive tests.",
+          "independent": true,
+          "checks_run": [],
+          "outcome": "Recovered prior scoped evaluation; other dimensions unassessed here.",
+          "recovery_event": "2026-10-14-review-accessibility"
         }
       ]
     },
@@ -561,49 +737,282 @@
     },
     "be.java": {
       "track": "backend",
-      "status": "unassessed",
-      "latest_scores": {
-        "conceptual_understanding": null,
-        "implementation_correctness": null,
-        "edge_case_handling": null,
-        "testing_quality": null,
-        "tradeoff_explanation": null
-      },
-      "last_assessed_on": null,
-      "next_review_on": null,
-      "assessment_history": []
-    },
-    "be.spring": {
-      "track": "backend",
-      "status": "unassessed",
-      "latest_scores": {
-        "conceptual_understanding": null,
-        "implementation_correctness": null,
-        "edge_case_handling": null,
-        "testing_quality": null,
-        "tradeoff_explanation": null
-      },
-      "last_assessed_on": null,
-      "next_review_on": null,
-      "assessment_history": []
-    },
-    "be.rest": {
-      "track": "backend",
       "status": "developing",
       "latest_scores": {
         "conceptual_understanding": {
           "score": 2,
-          "assessment_id": "2026-10-08-review-idempotency",
-          "evidence_ref": "assessments/2026-10-08-review-idempotency.md#final-evaluation",
-          "assessed_on": "2026-10-08"
+          "assessment_id": "2026-10-25-learning-resource-cleanup",
+          "evidence_ref": "assessments/2026-10-25-learning-resource-cleanup.md#final-evaluation",
+          "assessed_on": "2026-10-25"
         },
         "implementation_correctness": null,
         "edge_case_handling": null,
         "testing_quality": null,
         "tradeoff_explanation": null
       },
-      "last_assessed_on": "2026-10-08",
-      "next_review_on": "2026-10-10",
+      "last_assessed_on": "2026-10-25",
+      "next_review_on": "2026-10-27",
+      "assessment_history": [
+        {
+          "assessment_id": "baseline-q6-nullable",
+          "assessment_path": "assessments/2026-10-18-session-recovery.md",
+          "assessed_on": "2026-10-10",
+          "question_ids": [
+            "see-recovered-responses"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 2
+          },
+          "evidence_refs": [
+            "assessments/2026-10-18-session-recovery.md#baseline-q6-nullable"
+          ],
+          "assistance": "Nullable Integer requestedSeats >0 throws before either branch; record accessor naming and unboxing taught before null-first && guard. Historical Java21 source-mode NPE and guard demonstrations, not learner tests.",
+          "independent": false,
+          "checks_run": [],
+          "outcome": "Recovered prior scoped evaluation; other dimensions unassessed here.",
+          "recovery_event": "baseline-q6-nullable"
+        },
+        {
+          "assessment_id": "baseline-q7-exception-flow",
+          "assessment_path": "assessments/2026-10-18-session-recovery.md",
+          "assessed_on": "2026-10-10",
+          "question_ids": [
+            "see-recovered-responses"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 3
+          },
+          "evidence_refs": [
+            "assessments/2026-10-18-session-recovery.md#baseline-q7-exception-flow"
+          ],
+          "assistance": "Correct matching catch output start/invalid/finished and nonmatching NPE propagation after finally. No runtime or resources/checked-exception proof. Existing null-safety review retained.",
+          "independent": true,
+          "checks_run": [],
+          "outcome": "Recovered prior scoped evaluation; other dimensions unassessed here.",
+          "recovery_event": "baseline-q7-exception-flow"
+        },
+        {
+          "assessment_id": "baseline-q8-checked-exceptions",
+          "assessment_path": "assessments/2026-10-18-session-recovery.md",
+          "assessed_on": "2026-10-10",
+          "question_ids": [
+            "see-recovered-responses"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 2
+          },
+          "evidence_refs": [
+            "assessments/2026-10-18-session-recovery.md#baseline-q8-checked-exceptions"
+          ],
+          "assistance": "Same-class static call is valid; compiler rejects unhandled IOException. Catch-or-declare rule and main throws signature supplied before guided propagation/local catch. Historical java source compiler verified original error; javac absent. No learner tests.",
+          "independent": false,
+          "checks_run": [],
+          "outcome": "Recovered prior scoped evaluation; other dimensions unassessed here.",
+          "recovery_event": "baseline-q8-checked-exceptions"
+        },
+        {
+          "assessment_id": "2026-10-13-review-java",
+          "assessment_path": "assessments/2026-10-18-session-recovery.md",
+          "assessed_on": "2026-10-13",
+          "question_ids": [
+            "see-recovered-responses"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 2
+          },
+          "evidence_refs": [
+            "assessments/2026-10-18-session-recovery.md#2026-10-13-review-java"
+          ],
+          "assistance": "Integer null == primitive0 throws; safe guard after explanation. Checked IOException catch-or-declare independently recalled. Historical tutor Java NPE illustration not learner tests.",
+          "independent": false,
+          "checks_run": [],
+          "outcome": "Recovered prior scoped evaluation; other dimensions unassessed here.",
+          "recovery_event": "2026-10-13-review-java"
+        },
+        {
+          "assessment_id": "2026-10-18-review-java",
+          "assessment_path": "assessments/2026-10-18-review-java.md",
+          "assessed_on": "2026-10-25",
+          "question_ids": [
+            "Q1",
+            "Q2"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 3
+          },
+          "evidence_refs": [
+            "assessments/2026-10-18-review-java.md#final-evaluation"
+          ],
+          "assistance": "Explicit null-as-zero business contract and answer format; no arithmetic/defaulting solution supplied before attempts. Pseudocode accepted; Java translation after answer.",
+          "independent": true,
+          "checks_run": [],
+          "outcome": "Successful narrow arithmetic-unboxing and null-defaulting reasoning; no full program/learner tests, earlier guided cases preserved."
+        },
+        {
+          "assessment_id": "2026-10-25-learning-resource-cleanup",
+          "assessment_path": "assessments/2026-10-25-learning-resource-cleanup.md",
+          "assessed_on": "2026-10-25",
+          "question_ids": [
+            "Q1",
+            "Q2",
+            "Q3"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 2
+          },
+          "evidence_refs": [
+            "assessments/2026-10-25-learning-resource-cleanup.md#final-evaluation"
+          ],
+          "assistance": "New try-with-resources rule introduced; failed and normal path orders corrected with diagram and tutor failure demo, final scope-exit recognition guided.",
+          "independent": false,
+          "checks_run": [],
+          "outcome": "New resource-lifetime unit completed with guidance; fresh check needed. Earlier independent nullable/defaulting3 preserved; no learner I/O/tests, success path not executed."
+        }
+      ]
+    },
+    "be.spring": {
+      "track": "backend",
+      "status": "developing",
+      "latest_scores": {
+        "conceptual_understanding": {
+          "score": 3,
+          "assessment_id": "2026-10-25-review-spring",
+          "evidence_ref": "assessments/2026-10-25-review-spring.md#final-evaluation",
+          "assessed_on": "2026-10-25"
+        },
+        "implementation_correctness": null,
+        "edge_case_handling": null,
+        "testing_quality": null,
+        "tradeoff_explanation": null
+      },
+      "last_assessed_on": "2026-10-25",
+      "next_review_on": "2026-11-01",
+      "assessment_history": [
+        {
+          "assessment_id": "baseline-q10-spring-validation",
+          "assessment_path": "assessments/2026-10-18-session-recovery.md",
+          "assessed_on": "2026-10-10",
+          "question_ids": [
+            "see-recovered-responses"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 2
+          },
+          "evidence_refs": [
+            "assessments/2026-10-18-session-recovery.md#baseline-q10-spring-validation"
+          ],
+          "assistance": "Metadata versus execution and intended parameter trigger correct; @Valid name supplied without penalty. @Positive strict-zero boundary needed teaching. Record null construction not automatic validation. Current exact dates of some baseline messages uncertain; retain earlier recorded client-date association. No Boot/provider/HTTP run.",
+          "independent": false,
+          "checks_run": [],
+          "outcome": "Recovered prior scoped evaluation; other dimensions unassessed here.",
+          "recovery_event": "baseline-q10-spring-validation"
+        },
+        {
+          "assessment_id": "baseline-q12-injection",
+          "assessment_path": "assessments/2026-10-18-session-recovery.md",
+          "assessed_on": "2026-10-10",
+          "question_ids": [
+            "see-recovered-responses"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 2
+          },
+          "evidence_refs": [
+            "assessments/2026-10-18-session-recovery.md#baseline-q12-injection"
+          ],
+          "assistance": "Discovered managed service injection predicted correctly; missing registration versus ordinary new and singleton reuse taught. Ambiguous Yes not assigned a failed branch; no app startup. Earlier recorded baseline date retained, precise message dates uncertain.",
+          "independent": false,
+          "checks_run": [],
+          "outcome": "Recovered prior scoped evaluation; other dimensions unassessed here.",
+          "recovery_event": "baseline-q12-injection"
+        },
+        {
+          "assessment_id": "2026-10-13-review-spring",
+          "assessment_path": "assessments/2026-10-18-session-recovery.md",
+          "assessed_on": "2026-10-13",
+          "question_ids": [
+            "see-recovered-responses"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 3
+          },
+          "evidence_refs": [
+            "assessments/2026-10-18-session-recovery.md#2026-10-13-review-spring"
+          ],
+          "assistance": "Independent @Positive null acceptance, @Valid execution trigger, @Bean registration without @Service and default singleton. No Boot/provider/HTTP startup tests.",
+          "independent": true,
+          "checks_run": [],
+          "outcome": "Recovered prior scoped evaluation; other dimensions unassessed here.",
+          "recovery_event": "2026-10-13-review-spring"
+        },
+        {
+          "assessment_id": "2026-10-25-review-spring",
+          "assessment_path": "assessments/2026-10-25-review-spring.md",
+          "assessed_on": "2026-10-25",
+          "question_ids": [
+            "Q1",
+            "Q2"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 3
+          },
+          "evidence_refs": [
+            "assessments/2026-10-25-review-spring.md#final-evaluation"
+          ],
+          "assistance": "Explicit validation/provider and one-type-candidate assumptions; no result/rule before attempts, confirmations afterward.",
+          "independent": true,
+          "checks_run": [],
+          "outcome": "Successful narrow @Valid/Positive and type-based bean injection reasoning; no Boot/provider/HTTP/startup or learner tests."
+        }
+      ]
+    },
+    "be.rest": {
+      "track": "backend",
+      "status": "developing",
+      "latest_scores": {
+        "conceptual_understanding": {
+          "score": 3,
+          "assessment_id": "2026-10-17-review-idempotency",
+          "evidence_ref": "assessments/2026-10-18-session-recovery.md#2026-10-17-review-idempotency",
+          "assessed_on": "2026-10-17"
+        },
+        "implementation_correctness": null,
+        "edge_case_handling": null,
+        "testing_quality": null,
+        "tradeoff_explanation": null
+      },
+      "last_assessed_on": "2026-10-17",
+      "next_review_on": "2026-10-24",
       "assessment_history": [
         {
           "assessment_id": "2026-10-04-baseline-backend",
@@ -659,6 +1068,72 @@
           "independent": false,
           "checks_run": [],
           "outcome": "needs_practice; correct independent operation-identity reasoning; concurrency enforcement and recovered-success response need fresh independent reassessment."
+        },
+        {
+          "assessment_id": "baseline-q5-validation",
+          "assessment_path": "assessments/2026-10-18-session-recovery.md",
+          "assessed_on": "2026-10-10",
+          "question_ids": [
+            "see-recovered-responses"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 3
+          },
+          "evidence_refs": [
+            "assessments/2026-10-18-session-recovery.md#baseline-q5-validation"
+          ],
+          "assistance": "Negative quantity trace, positive-integer policy and backend trust boundary correct independently; Java 21+/Spring Boot 4 preference recorded. No endpoint/validator implementation. Existing retry gap remained due.",
+          "independent": true,
+          "checks_run": [],
+          "outcome": "Recovered prior scoped evaluation; other dimensions unassessed here.",
+          "recovery_event": "baseline-q5-validation"
+        },
+        {
+          "assessment_id": "2026-10-10-review-idempotency",
+          "assessment_path": "assessments/2026-10-18-session-recovery.md",
+          "assessed_on": "2026-10-10",
+          "question_ids": [
+            "see-recovered-responses"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 3
+          },
+          "evidence_refs": [
+            "assessments/2026-10-18-session-recovery.md#2026-10-10-review-idempotency"
+          ],
+          "assistance": "Separate Java-instance sets do not enforce shared database uniqueness. UNIQUE and matching committed-success replay supplied independently. New-ID wording clarified to the same K becoming a new entry in B. No API/schema tests.",
+          "independent": true,
+          "checks_run": [],
+          "outcome": "Recovered prior scoped evaluation; other dimensions unassessed here.",
+          "recovery_event": "2026-10-10-review-idempotency"
+        },
+        {
+          "assessment_id": "2026-10-17-review-idempotency",
+          "assessment_path": "assessments/2026-10-18-session-recovery.md",
+          "assessed_on": "2026-10-17",
+          "question_ids": [
+            "see-recovered-responses"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 3
+          },
+          "evidence_refs": [
+            "assessments/2026-10-18-session-recovery.md#2026-10-17-review-idempotency"
+          ],
+          "assistance": "SameK quantity1 committed versus quantity3 payload: no mutation, invalid replay. Insert-failure phrase refined to key/payload conflict, original still successful; unchanged replay returns success. No API/schema/fingerprint tests.",
+          "independent": true,
+          "checks_run": [],
+          "outcome": "Recovered prior scoped evaluation; other dimensions unassessed here.",
+          "recovery_event": "2026-10-17-review-idempotency"
         }
       ]
     },
@@ -668,17 +1143,17 @@
       "latest_scores": {
         "conceptual_understanding": {
           "score": 2,
-          "assessment_id": "2026-10-09-review-sql",
-          "evidence_ref": "assessments/2026-10-09-review-sql.md#final-evaluation",
-          "assessed_on": "2026-10-09"
+          "assessment_id": "2026-10-17-review-sql",
+          "evidence_ref": "assessments/2026-10-18-session-recovery.md#2026-10-17-review-sql",
+          "assessed_on": "2026-10-18"
         },
         "implementation_correctness": null,
         "edge_case_handling": null,
         "testing_quality": null,
         "tradeoff_explanation": null
       },
-      "last_assessed_on": "2026-10-09",
-      "next_review_on": "2026-10-11",
+      "last_assessed_on": "2026-10-18",
+      "next_review_on": "2026-10-20",
       "assessment_history": [
         {
           "assessment_id": "2026-10-04-baseline-backend",
@@ -725,6 +1200,50 @@
           "independent": false,
           "checks_run": [],
           "outcome": "needs_practice; improved grouping/null-conversion evidence, preserved-side distinction required teaching. Tutor-run SQLite examples verified separately; no learner implementation/tests."
+        },
+        {
+          "assessment_id": "2026-10-12-review-sql",
+          "assessment_path": "assessments/2026-10-18-session-recovery.md",
+          "assessed_on": "2026-10-13",
+          "question_ids": [
+            "see-recovered-responses"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 2
+          },
+          "evidence_refs": [
+            "assessments/2026-10-18-session-recovery.md#2026-10-12-review-sql"
+          ],
+          "assistance": "LEFT JOIN project/ticket followed by WHERE status=open removes unmatched parent. ON correction guided; COUNT child versus preserved row explanation correct. Historical tutor SQLite examples, no learner/PostgreSQL tests.",
+          "independent": false,
+          "checks_run": [],
+          "outcome": "Recovered prior scoped evaluation; other dimensions unassessed here.",
+          "recovery_event": "2026-10-12-review-sql"
+        },
+        {
+          "assessment_id": "2026-10-17-review-sql",
+          "assessment_path": "assessments/2026-10-18-session-recovery.md",
+          "assessed_on": "2026-10-18",
+          "question_ids": [
+            "see-recovered-responses"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 2
+          },
+          "evidence_refs": [
+            "assessments/2026-10-18-session-recovery.md#2026-10-17-review-sql"
+          ],
+          "assistance": "Three projects preserved correctly; both COUNT(child.id) and COUNT(*) for unmatched group predictedNULL. Malformed side-by-side tutor input repaired without penalty. Row/non-null distinction taught before final2/1. Historical tutor SQLite not learner/PostgreSQL tests.",
+          "independent": false,
+          "checks_run": [],
+          "outcome": "Recovered prior scoped evaluation; other dimensions unassessed here.",
+          "recovery_event": "2026-10-17-review-sql"
         }
       ]
     },
@@ -734,17 +1253,17 @@
       "latest_scores": {
         "conceptual_understanding": {
           "score": 3,
-          "assessment_id": "2026-10-07-review-transactions",
-          "evidence_ref": "assessments/2026-10-07-review-transactions.md",
-          "assessed_on": "2026-10-07"
+          "assessment_id": "2026-10-10-review-transactions",
+          "evidence_ref": "assessments/2026-10-18-session-recovery.md#2026-10-10-review-transactions",
+          "assessed_on": "2026-10-10"
         },
         "implementation_correctness": null,
         "edge_case_handling": null,
         "testing_quality": null,
         "tradeoff_explanation": null
       },
-      "last_assessed_on": "2026-10-07",
-      "next_review_on": "2026-10-10",
+      "last_assessed_on": "2026-10-10",
+      "next_review_on": "2026-10-17",
       "assessment_history": [
         {
           "assessment_id": "2026-10-04-baseline-backend",
@@ -793,6 +1312,28 @@
           "independent": true,
           "checks_run": [],
           "outcome": "Successful fresh grouping/commit-boundary conceptual review; concurrent reservation isolation and runnable implementation remain unverified."
+        },
+        {
+          "assessment_id": "2026-10-10-review-transactions",
+          "assessment_path": "assessments/2026-10-18-session-recovery.md",
+          "assessed_on": "2026-10-10",
+          "question_ids": [
+            "see-recovered-responses"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 3
+          },
+          "evidence_refs": [
+            "assessments/2026-10-18-session-recovery.md#2026-10-10-review-transactions"
+          ],
+          "assistance": "Atomic guarded decrement reports zero rows, service must skip INSERT. DAO/service layering alone is not a business-condition check. Correct stop decision after question-only clarification. Effective transaction boundary supplied; no Spring/SQL run.",
+          "independent": true,
+          "checks_run": [],
+          "outcome": "Recovered prior scoped evaluation; other dimensions unassessed here.",
+          "recovery_event": "2026-10-10-review-transactions"
         }
       ]
     },
@@ -802,9 +1343,9 @@
       "latest_scores": {
         "conceptual_understanding": {
           "score": 3,
-          "assessment_id": "2026-10-08-review-access-control",
-          "evidence_ref": "assessments/2026-10-08-review-access-control.md#final-evaluation",
-          "assessed_on": "2026-10-09"
+          "assessment_id": "2026-10-17-review-auth",
+          "evidence_ref": "assessments/2026-10-18-session-recovery.md#2026-10-17-review-auth",
+          "assessed_on": "2026-10-17"
         },
         "implementation_correctness": null,
         "edge_case_handling": null,
@@ -816,8 +1357,8 @@
         },
         "tradeoff_explanation": null
       },
-      "last_assessed_on": "2026-10-09",
-      "next_review_on": "2026-10-12",
+      "last_assessed_on": "2026-10-17",
+      "next_review_on": "2026-10-20",
       "assessment_history": [
         {
           "assessment_id": "2026-10-04-baseline-backend",
@@ -867,22 +1408,160 @@
           "independent": true,
           "checks_run": [],
           "outcome": "Successful narrow conceptual review of ownership/trusted identity and authentication versus authorization; practical implementation/tests remain unverified."
+        },
+        {
+          "assessment_id": "baseline-q14-jwt-trust",
+          "assessment_path": "assessments/2026-10-18-session-recovery.md",
+          "assessed_on": "2026-10-12",
+          "question_ids": [
+            "see-recovered-responses"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 2
+          },
+          "evidence_refs": [
+            "assessments/2026-10-18-session-recovery.md#baseline-q14-jwt-trust"
+          ],
+          "assistance": "Stricter mismatch denial accepted as valid policy, self/delegated contract clarified. Signature role known; caller public-key trust and signature-alone acceptance required correction. Certified-key wording clarified to configured issuer/JWKS/pinned trust, not mandatory third party. No crypto/provider tests.",
+          "independent": false,
+          "checks_run": [],
+          "outcome": "Recovered prior scoped evaluation; other dimensions unassessed here.",
+          "recovery_event": "baseline-q14-jwt-trust"
+        },
+        {
+          "assessment_id": "2026-10-13-review-auth",
+          "assessment_path": "assessments/2026-10-18-session-recovery.md",
+          "assessed_on": "2026-10-13",
+          "question_ids": [
+            "see-recovered-responses"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 2
+          },
+          "evidence_refs": [
+            "assessments/2026-10-18-session-recovery.md#2026-10-13-review-auth"
+          ],
+          "assistance": "Other owner correctly denied; wrong audience token rejected but misclassified as authorization after authentication success. Expiry classification after rule teaching. Prior owner success preserved.",
+          "independent": false,
+          "checks_run": [],
+          "outcome": "Recovered prior scoped evaluation; other dimensions unassessed here.",
+          "recovery_event": "2026-10-13-review-auth"
+        },
+        {
+          "assessment_id": "2026-10-17-review-auth",
+          "assessment_path": "assessments/2026-10-18-session-recovery.md",
+          "assessed_on": "2026-10-17",
+          "question_ids": [
+            "see-recovered-responses"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 3
+          },
+          "evidence_refs": [
+            "assessments/2026-10-18-session-recovery.md#2026-10-17-review-auth"
+          ],
+          "assistance": "Expired owned-invoice token fails authentication independently; caller-key signature rejected. Third-party wording clarified to configured issuer/JWKS/pinned trust. Original recorded client date17 retained; reply appeared with newer execution context18, precise completion-date association uncertain. No crypto/provider tests.",
+          "independent": true,
+          "checks_run": [],
+          "outcome": "Recovered prior scoped evaluation; other dimensions unassessed here.",
+          "recovery_event": "2026-10-17-review-auth"
         }
       ]
     },
     "be.concurrency": {
       "track": "backend",
-      "status": "unassessed",
+      "status": "developing",
       "latest_scores": {
-        "conceptual_understanding": null,
+        "conceptual_understanding": {
+          "score": 2,
+          "assessment_id": "2026-10-25-review-concurrency",
+          "evidence_ref": "assessments/2026-10-25-review-concurrency.md#final-evaluation",
+          "assessed_on": "2026-10-25"
+        },
         "implementation_correctness": null,
         "edge_case_handling": null,
         "testing_quality": null,
         "tradeoff_explanation": null
       },
-      "last_assessed_on": null,
-      "next_review_on": null,
-      "assessment_history": []
+      "last_assessed_on": "2026-10-25",
+      "next_review_on": "2026-10-27",
+      "assessment_history": [
+        {
+          "assessment_id": "baseline-q13-singleton-state",
+          "assessment_path": "assessments/2026-10-18-session-recovery.md",
+          "assessed_on": "2026-10-10",
+          "question_ids": [
+            "see-recovered-responses"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 3
+          },
+          "evidence_refs": [
+            "assessments/2026-10-18-session-recovery.md#baseline-q13-singleton-state"
+          ],
+          "assistance": "Visible shared currentUserId field A17/B28 gives A28; learner independently proposes invocation parameters/local state. Fresh single-scope first review, no real threads/JMM/security propagation tests. Earlier recorded date retained.",
+          "independent": true,
+          "checks_run": [],
+          "outcome": "Recovered prior scoped evaluation; other dimensions unassessed here.",
+          "recovery_event": "baseline-q13-singleton-state"
+        },
+        {
+          "assessment_id": "2026-10-13-review-request-state",
+          "assessment_path": "assessments/2026-10-18-session-recovery.md",
+          "assessed_on": "2026-10-13",
+          "question_ids": [
+            "see-recovered-responses"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 3
+          },
+          "evidence_refs": [
+            "assessments/2026-10-18-session-recovery.md#2026-10-13-review-request-state"
+          ],
+          "assistance": "Invocation-local primitive quantity independent, local references still alias stipulated shared list. Explicit visibility/sequential schedule, no actual threads or broad JMM proof.",
+          "independent": true,
+          "checks_run": [],
+          "outcome": "Recovered prior scoped evaluation; other dimensions unassessed here.",
+          "recovery_event": "2026-10-13-review-request-state"
+        },
+        {
+          "assessment_id": "2026-10-25-review-concurrency",
+          "assessment_path": "assessments/2026-10-25-review-concurrency.md",
+          "assessed_on": "2026-10-25",
+          "question_ids": [
+            "Q1",
+            "Q2"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 2
+          },
+          "evidence_refs": [
+            "assessments/2026-10-25-review-concurrency.md#final-evaluation"
+          ],
+          "assistance": "Shared-builder reference assignment explained and tutor sequential alias demo run after incorrect Ada prediction; fresh per-call allocation proposed afterward.",
+          "independent": false,
+          "checks_run": [],
+          "outcome": "needs_practice on aliasing transfer; per-invocation fix correct after teaching. Prior local/shared-list success retained; no real threads or learner tests."
+        }
+      ]
     },
     "be.redis": {
       "track": "backend",

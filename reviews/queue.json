@@ -27,14 +27,15 @@
       "skill_id": "be.transactions",
       "status": "pending",
       "kind": "review",
-      "due_on": "2026-10-10",
-      "stage": 1,
-      "last_interval_days": 3,
+      "due_on": "2026-10-17",
+      "stage": 2,
+      "last_interval_days": 7,
       "last_outcome": "success",
       "assessment_refs": [
         "assessments/2026-10-04-baseline-backend.md#q1b--prevent-the-inconsistency",
         "assessments/2026-10-04-baseline-backend.md#q1e--rollback-of-a-failed-reservation",
-        "assessments/2026-10-07-review-transactions.md"
+        "assessments/2026-10-07-review-transactions.md",
+        "assessments/2026-10-18-session-recovery.md#2026-10-10-review-transactions"
       ],
       "concept_ref": "concepts/transactional-seat-reservations.md",
       "history": [
@@ -59,24 +60,33 @@
           "outcome": "success",
           "due_on": "2026-10-10",
           "reason": "First successful delayed conceptual review completed; three-day interval from actual success. Scope grouping/commit boundary; concurrency remains to probe."
+        },
+        {
+          "on": "2026-10-10",
+          "assessment_id": "2026-10-10-review-transactions",
+          "outcome": "success",
+          "due_on": "2026-10-17",
+          "reason": "Atomic guarded decrement reports zero rows, service must skip INSERT. DAO/service layering alone is not a business-condition check. Correct stop decision after question-only clarification. Effective transaction boundary supplied; no Spring/SQL run.",
+          "recovered_on": "2026-10-18"
         }
       ],
-      "scheduling_reason": "Successful first delayed review; next in three days using fresh grouping and concurrency scenarios."
+      "scheduling_reason": "Recovered prior actual scoped outcome from chat; see evidence ledger. No new stage advancement during recovery."
     },
     {
       "id": "review-fe-react-2026-10-04",
       "skill_id": "fe.react",
       "status": "pending",
       "kind": "review",
-      "due_on": "2026-10-12",
-      "stage": 1,
-      "last_interval_days": 3,
+      "due_on": "2026-10-21",
+      "stage": 2,
+      "last_interval_days": 7,
       "last_outcome": "success",
       "assessment_refs": [
         "assessments/2026-10-04-baseline-frontend.md#q1--asynchronous-profile-prediction",
         "assessments/2026-10-04-baseline-frontend.md#q4--cancellation-versus-ignoring-results",
         "assessments/2026-10-07-review-request-validity.md",
-        "assessments/2026-10-09-review-request-validity.md"
+        "assessments/2026-10-09-review-request-validity.md",
+        "assessments/2026-10-18-session-recovery.md#2026-10-14-review-request-validity"
       ],
       "concept_ref": "concepts/async-request-validity.md",
       "history": [
@@ -111,22 +121,31 @@
           "outcome": "success",
           "due_on": "2026-10-12",
           "reason": "Independent stale-finally diagnosis and latest-ID correction, with wording clarified. Scoped guard transfer only; prior cancellation/unmount gaps retained; no executable checks."
+        },
+        {
+          "on": "2026-10-14",
+          "assessment_id": "2026-10-14-review-request-validity",
+          "outcome": "success",
+          "due_on": "2026-10-21",
+          "reason": "Latest-ID and abort/null cleanup proposed; ref ambiguity clarified to both owned refs. Custom buildPreview ignores abort after fetch/body completed: boundary explicitly taught, not independently demonstrated. Historical grade3 limited to guard/lifecycle; no React/unmount tests, cancellation remains fresh target.",
+          "recovered_on": "2026-10-18"
         }
       ],
-      "scheduling_reason": "Successful first delayed loading-state guard-transfer review; next probe three days later must include unresolved cancellation/error identity source and unmount boundaries. Broad React skill remains developing."
+      "scheduling_reason": "Recovered prior actual scoped outcome from chat; see evidence ledger. No new stage advancement during recovery."
     },
     {
       "id": "review-fe-typescript-2026-10-04",
       "skill_id": "fe.typescript",
       "status": "pending",
       "kind": "review",
-      "due_on": "2026-10-10",
-      "stage": 1,
-      "last_interval_days": 3,
+      "due_on": "2026-10-17",
+      "stage": 2,
+      "last_interval_days": 7,
       "last_outcome": "success",
       "assessment_refs": [
         "assessments/2026-10-04-baseline-frontend.md#q5--typescript-state-modeling",
-        "assessments/2026-10-07-review-typescript.md"
+        "assessments/2026-10-07-review-typescript.md",
+        "assessments/2026-10-18-session-recovery.md#2026-10-10-review-typescript"
       ],
       "concept_ref": null,
       "history": [
@@ -145,22 +164,32 @@
           "outcome": "success",
           "due_on": "2026-10-10",
           "reason": "Union design and runtime distinction demonstrated; accidental optionality omission corrected after requirement reminder."
+        },
+        {
+          "on": "2026-10-10",
+          "assessment_id": "2026-10-10-review-typescript",
+          "outcome": "success",
+          "due_on": "2026-10-17",
+          "reason": "Session optional-user assignment, discriminated union and runtime JSON validation distinction. Ambiguous reject wording clarified without penalty. Strict optional access/TypeError terminology explained after prediction; union/runtime answers independent. Historical tutor tsc checks are not learner tests.",
+          "recovered_on": "2026-10-18"
         }
       ],
-      "scheduling_reason": "Next fresh conceptual review three days after successful delayed review."
+      "scheduling_reason": "Recovered prior actual scoped outcome from chat; see evidence ledger. No new stage advancement during recovery."
     },
     {
       "id": "review-fe-browser-2026-10-04",
       "skill_id": "fe.browser",
       "status": "pending",
       "kind": "review",
-      "due_on": "2026-10-10",
+      "due_on": "2026-10-17",
       "stage": 1,
       "last_interval_days": 3,
       "last_outcome": "success",
       "assessment_refs": [
         "assessments/2026-10-04-baseline-frontend.md#q6--browser-event-loop-prediction",
-        "assessments/2026-10-07-review-microtasks.md"
+        "assessments/2026-10-07-review-microtasks.md",
+        "assessments/2026-10-18-session-recovery.md#2026-10-10-review-microtasks",
+        "assessments/2026-10-18-session-recovery.md#2026-10-13-review-microtasks"
       ],
       "concept_ref": "concepts/browser-microtask-ordering.md",
       "history": [
@@ -179,23 +208,40 @@
           "outcome": "success",
           "due_on": "2026-10-10",
           "reason": "Exact independent fresh output and Promise-chain dependency explanation; next interval three days after actual review success."
+        },
+        {
+          "on": "2026-10-10",
+          "assessment_id": "2026-10-10-review-microtasks",
+          "outcome": "needs_practice",
+          "due_on": "2026-10-12",
+          "reason": "Original queue A then nested C, immediate async B/await D, outer E: final B E A D C. Pre-await execution needed explicit teaching; smaller and full traces correct after hints. Prior Promise-chain success preserved. Historical tutor Node output, no browser/learner tests.",
+          "recovered_on": "2026-10-18"
+        },
+        {
+          "on": "2026-10-14",
+          "assessment_id": "2026-10-13-review-microtasks",
+          "outcome": "success",
+          "due_on": "2026-10-17",
+          "reason": "Immediate async function logs begin/inside/end then resumed/peer; earlier fulfilled-await scheduling explained independently. No universal await priority or runtime/browser tests.",
+          "recovered_on": "2026-10-18"
         }
       ],
-      "scheduling_reason": "First successful delayed microtask-ordering review; fresh next probe after three days."
+      "scheduling_reason": "Recovered prior actual scoped outcome from chat; see evidence ledger. No new stage advancement during recovery."
     },
     {
       "id": "review-fe-accessibility-2026-10-04",
       "skill_id": "fe.accessibility",
       "status": "pending",
       "kind": "review",
-      "due_on": "2026-10-12",
-      "stage": 1,
-      "last_interval_days": 3,
+      "due_on": "2026-10-24",
+      "stage": 2,
+      "last_interval_days": 7,
       "last_outcome": "success",
       "assessment_refs": [
         "assessments/2026-10-04-baseline-frontend.md#q7--dialog-keyboard-accessibility",
         "assessments/2026-10-07-review-accessibility.md",
-        "assessments/2026-10-09-review-accessibility.md"
+        "assessments/2026-10-09-review-accessibility.md",
+        "assessments/2026-10-18-session-recovery.md#2026-10-14-review-accessibility"
       ],
       "concept_ref": "concepts/modal-keyboard-focus.md",
       "history": [
@@ -222,23 +268,32 @@
           "outcome": "success",
           "due_on": "2026-10-12",
           "reason": "Independent focus distinction, explicit focus action, logical surviving target and forward Tab wrap. No implemented modal or browser tests verified."
+        },
+        {
+          "on": "2026-10-17",
+          "assessment_id": "2026-10-14-review-accessibility",
+          "outcome": "success",
+          "due_on": "2026-10-24",
+          "reason": "Reverse Tab first-to-last independent; ARIA wording clarified as no click blocking. Inert vocabulary requested/taught, reversal guided. Historical grade3 scoped to modal behavior, not independent inert mastery. No keyboard/browser/assistive tests.",
+          "recovered_on": "2026-10-18"
         }
       ],
-      "scheduling_reason": "First successful delayed conceptual modal focus/forward Tab review; next three days later with reverse navigation/background and restoration probes. Practical skill remains developing."
+      "scheduling_reason": "Recovered prior actual scoped outcome from chat; see evidence ledger. No new stage advancement during recovery."
     },
     {
       "id": "review-fe-nextjs-2026-10-04",
       "skill_id": "fe.nextjs",
       "status": "pending",
       "kind": "review",
-      "due_on": "2026-10-12",
-      "stage": 1,
-      "last_interval_days": 3,
-      "last_outcome": "success",
+      "due_on": "2026-10-19",
+      "stage": 0,
+      "last_interval_days": 2,
+      "last_outcome": "needs_practice",
       "assessment_refs": [
         "assessments/2026-10-04-baseline-frontend.md#q8--nextjs-cached-read-after-a-mutation",
         "assessments/2026-10-07-review-nextjs.md",
-        "assessments/2026-10-09-review-nextjs.md"
+        "assessments/2026-10-09-review-nextjs.md",
+        "assessments/2026-10-18-session-recovery.md#2026-10-17-review-nextjs"
       ],
       "concept_ref": "concepts/nextjs-refresh-and-data-cache.md",
       "history": [
@@ -265,22 +320,32 @@
           "outcome": "success",
           "due_on": "2026-10-12",
           "reason": "Independently recalls stale response, updateTag immediate expiry, and next-read fetch/wait. Acronym explanation requested afterward; no executable checks."
+        },
+        {
+          "on": "2026-10-17",
+          "assessment_id": "2026-10-17-review-nextjs",
+          "outcome": "needs_practice",
+          "due_on": "2026-10-19",
+          "reason": "SWR/API choice recalled, but updateTag eager fetch while idle predicted. Expiry versus replacement fetch explained before fresh5 answer. Earlier next-read recall preserved; no actual cache/HTTP tests.",
+          "recovered_on": "2026-10-18"
         }
       ],
-      "scheduling_reason": "First successful delayed freshness conceptual review after October 7 teaching; next fresh probe three days later. Broad skill remains developing."
+      "scheduling_reason": "Recovered prior actual scoped outcome from chat; see evidence ledger. No new stage advancement during recovery."
     },
     {
       "id": "review-fe-performance-2026-10-04",
       "skill_id": "fe.performance",
       "status": "pending",
       "kind": "review",
-      "due_on": "2026-10-10",
-      "stage": 0,
-      "last_interval_days": 2,
-      "last_outcome": "needs_practice",
+      "due_on": "2026-10-20",
+      "stage": 1,
+      "last_interval_days": 3,
+      "last_outcome": "success",
       "assessment_refs": [
         "assessments/2026-10-04-baseline-frontend.md#q9--performance-diagnosis-final-initial-baseline-probe",
-        "assessments/2026-10-07-review-performance.md"
+        "assessments/2026-10-07-review-performance.md",
+        "assessments/2026-10-18-session-recovery.md#2026-10-10-review-performance",
+        "assessments/2026-10-18-session-recovery.md#2026-10-17-review-performance"
       ],
       "concept_ref": "concepts/frontend-performance-attribution.md",
       "history": [
@@ -299,22 +364,41 @@
           "outcome": "needs_practice",
           "due_on": "2026-10-10",
           "reason": "Correct immediate saved-number recognition after explanation; independent diagnosis and measurements still pending."
+        },
+        {
+          "on": "2026-10-10",
+          "assessment_id": "2026-10-10-review-performance",
+          "outcome": "needs_practice",
+          "due_on": "2026-10-12",
+          "reason": "Per-tile height read/write batching independently correct; Layout duration versus layout-shift measurement required explanation twice. Hypothetical 40-to-8ms, no browser benchmark.",
+          "recovered_on": "2026-10-18"
+        },
+        {
+          "on": "2026-10-17",
+          "assessment_id": "2026-10-17-review-performance",
+          "outcome": "success",
+          "due_on": "2026-10-20",
+          "reason": "Independent Layout-duration metric and batching/lower-duration interpretation despite unchanged shift. Accepted case-format work not assessment evidence. Same-width follows code, timing alone not exact causal count. Hypothetical36-to12ms, no benchmark.",
+          "recovered_on": "2026-10-18"
         }
       ],
-      "scheduling_reason": "Fresh read/write diagnosis two days after guided explanation; no delayed success inferred."
+      "scheduling_reason": "Recovered prior actual scoped outcome from chat; see evidence ledger. No new stage advancement during recovery."
     },
     {
       "id": "review-be-rest-2026-10-04",
       "skill_id": "be.rest",
       "status": "pending",
       "kind": "review",
-      "due_on": "2026-10-10",
-      "stage": 0,
-      "last_interval_days": 2,
-      "last_outcome": "needs_practice",
+      "due_on": "2026-10-24",
+      "stage": 2,
+      "last_interval_days": 7,
+      "last_outcome": "success",
       "assessment_refs": [
         "assessments/2026-10-04-baseline-backend.md#q2e--duplicate-insert-and-inventory-rollback",
-        "assessments/2026-10-08-review-idempotency.md"
+        "assessments/2026-10-08-review-idempotency.md",
+        "assessments/2026-10-18-session-recovery.md#baseline-q5-validation",
+        "assessments/2026-10-18-session-recovery.md#2026-10-10-review-idempotency",
+        "assessments/2026-10-18-session-recovery.md#2026-10-17-review-idempotency"
       ],
       "concept_ref": "concepts/booking-retry-idempotency.md",
       "history": [
@@ -333,22 +417,41 @@
           "outcome": "needs_practice",
           "due_on": "2026-10-10",
           "reason": "Independent intent ID distinction; database enforcement and successful retry response needed correction. Guided rollback/display checks recorded separately; no executable checks."
+        },
+        {
+          "on": "2026-10-10",
+          "assessment_id": "2026-10-10-review-idempotency",
+          "outcome": "success",
+          "due_on": "2026-10-13",
+          "reason": "Separate Java-instance sets do not enforce shared database uniqueness. UNIQUE and matching committed-success replay supplied independently. New-ID wording clarified to the same K becoming a new entry in B. No API/schema tests.",
+          "recovered_on": "2026-10-18"
+        },
+        {
+          "on": "2026-10-17",
+          "assessment_id": "2026-10-17-review-idempotency",
+          "outcome": "success",
+          "due_on": "2026-10-24",
+          "reason": "SameK quantity1 committed versus quantity3 payload: no mutation, invalid replay. Insert-failure phrase refined to key/payload conflict, original still successful; unchanged replay returns success. No API/schema/fingerprint tests.",
+          "recovered_on": "2026-10-18"
         }
       ],
-      "scheduling_reason": "Fresh concurrency and committed-success retry probe two days after correction; guided checks do not advance delayed-success stage."
+      "scheduling_reason": "Recovered prior actual scoped outcome from chat; see evidence ledger. No new stage advancement during recovery."
     },
     {
       "id": "review-be-auth-2026-10-04",
       "skill_id": "be.auth",
       "status": "pending",
       "kind": "review",
-      "due_on": "2026-10-12",
+      "due_on": "2026-10-20",
       "stage": 1,
       "last_interval_days": 3,
       "last_outcome": "success",
       "assessment_refs": [
         "assessments/2026-10-04-baseline-backend.md#q3d--authentication-versus-authorization",
-        "assessments/2026-10-08-review-access-control.md"
+        "assessments/2026-10-08-review-access-control.md",
+        "assessments/2026-10-18-session-recovery.md#baseline-q14-jwt-trust",
+        "assessments/2026-10-18-session-recovery.md#2026-10-13-review-auth",
+        "assessments/2026-10-18-session-recovery.md#2026-10-17-review-auth"
       ],
       "concept_ref": "concepts/reservation-access-control.md",
       "history": [
@@ -367,22 +470,40 @@
           "outcome": "success",
           "due_on": "2026-10-12",
           "reason": "Independently traced disclosure, supplied correct owner/session comparison, and distinguished authorization from authentication. Scoped conceptual success; no executable checks."
+        },
+        {
+          "on": "2026-10-13",
+          "assessment_id": "2026-10-13-review-auth",
+          "outcome": "needs_practice",
+          "due_on": "2026-10-15",
+          "reason": "Other owner correctly denied; wrong audience token rejected but misclassified as authorization after authentication success. Expiry classification after rule teaching. Prior owner success preserved.",
+          "recovered_on": "2026-10-18"
+        },
+        {
+          "on": "2026-10-17",
+          "assessment_id": "2026-10-17-review-auth",
+          "outcome": "success",
+          "due_on": "2026-10-20",
+          "reason": "Expired owned-invoice token fails authentication independently; caller-key signature rejected. Third-party wording clarified to configured issuer/JWKS/pinned trust. Original recorded client date17 retained; reply appeared with newer execution context18, precise completion-date association uncertain. No crypto/provider tests.",
+          "recovered_on": "2026-10-18"
         }
       ],
-      "scheduling_reason": "Successful first delayed ownership/trust-boundary conceptual review, completed October 9; next fresh conceptual probe three days later. Practical skill remains developing."
+      "scheduling_reason": "Recovered prior actual scoped outcome from chat; see evidence ledger. No new stage advancement during recovery."
     },
     {
       "id": "review-be-sql-2026-10-07",
       "skill_id": "be.sql",
       "status": "pending",
       "kind": "review",
-      "due_on": "2026-10-11",
+      "due_on": "2026-10-20",
       "stage": 0,
       "last_interval_days": 2,
       "last_outcome": "needs_practice",
       "assessment_refs": [
         "assessments/2026-10-04-baseline-backend.md#q4b--aggregation-keys-and-missing-matches",
-        "assessments/2026-10-09-review-sql.md"
+        "assessments/2026-10-09-review-sql.md",
+        "assessments/2026-10-18-session-recovery.md#2026-10-12-review-sql",
+        "assessments/2026-10-18-session-recovery.md#2026-10-17-review-sql"
       ],
       "concept_ref": "concepts/event-reservation-counts.md",
       "history": [
@@ -401,9 +522,166 @@
           "outcome": "needs_practice",
           "due_on": "2026-10-11",
           "reason": "Correct grouping and COALESCE; teams-left RIGHT JOIN needed correction. Reversed-order answer guided; tutor demonstrations are not learner tests."
+        },
+        {
+          "on": "2026-10-13",
+          "assessment_id": "2026-10-12-review-sql",
+          "outcome": "needs_practice",
+          "due_on": "2026-10-15",
+          "reason": "LEFT JOIN project/ticket followed by WHERE status=open removes unmatched parent. ON correction guided; COUNT child versus preserved row explanation correct. Historical tutor SQLite examples, no learner/PostgreSQL tests.",
+          "recovered_on": "2026-10-18"
+        },
+        {
+          "on": "2026-10-18",
+          "assessment_id": "2026-10-17-review-sql",
+          "outcome": "needs_practice",
+          "due_on": "2026-10-20",
+          "reason": "Three projects preserved correctly; both COUNT(child.id) and COUNT(*) for unmatched group predictedNULL. Malformed side-by-side tutor input repaired without penalty. Row/non-null distinction taught before final2/1. Historical tutor SQLite not learner/PostgreSQL tests.",
+          "recovered_on": "2026-10-18"
         }
       ],
-      "scheduling_reason": "Fresh preserved-side and post-join-filter reasoning two days after correction; no independent delayed success stage advancement."
+      "scheduling_reason": "Recovered prior actual scoped outcome from chat; see evidence ledger. No new stage advancement during recovery."
+    },
+    {
+      "id": "review-be-java-2026-10-10",
+      "skill_id": "be.java",
+      "status": "pending",
+      "kind": "review",
+      "assessment_refs": [
+        "assessments/2026-10-18-session-recovery.md#baseline-q6-nullable",
+        "assessments/2026-10-18-session-recovery.md#baseline-q7-exception-flow",
+        "assessments/2026-10-18-session-recovery.md#baseline-q8-checked-exceptions",
+        "assessments/2026-10-18-session-recovery.md#2026-10-13-review-java",
+        "assessments/2026-10-18-review-java.md",
+        "assessments/2026-10-25-learning-resource-cleanup.md"
+      ],
+      "concept_ref": "concepts/java-resource-cleanup.md",
+      "history": [
+        {
+          "on": "2026-10-10",
+          "assessment_id": "baseline-q6-nullable",
+          "outcome": "needs_practice",
+          "due_on": "2026-10-12",
+          "reason": "Nullable Integer requestedSeats >0 throws before either branch; record accessor naming and unboxing taught before null-first && guard. Historical Java21 source-mode NPE and guard demonstrations, not learner tests.",
+          "recovered_on": "2026-10-18"
+        },
+        {
+          "on": "2026-10-13",
+          "assessment_id": "2026-10-13-review-java",
+          "outcome": "needs_practice",
+          "due_on": "2026-10-15",
+          "reason": "Integer null == primitive0 throws; safe guard after explanation. Checked IOException catch-or-declare independently recalled. Historical tutor Java NPE illustration not learner tests.",
+          "recovered_on": "2026-10-18"
+        },
+        {
+          "on": "2026-10-25",
+          "assessment_id": "2026-10-18-review-java",
+          "question_id": "Q2",
+          "outcome": "success",
+          "due_on": "2026-10-28",
+          "reason": "Independent arithmetic-NPE prediction and correct null-default if/else; no fresh solution before answer, tests or lateness penalty."
+        },
+        {
+          "on": "2026-10-25",
+          "assessment_id": "2026-10-25-learning-resource-cleanup",
+          "question_id": "Q3",
+          "outcome": "needs_practice",
+          "due_on": "2026-10-27",
+          "reason": "Both cleanup orders needed explicit teaching before scope-exit recognition; new unit not delayed success, earlier nullable success retained."
+        }
+      ],
+      "due_on": "2026-10-27",
+      "stage": 0,
+      "last_interval_days": 2,
+      "last_outcome": "needs_practice",
+      "scheduling_reason": "New resource-cleanup scope needs fresh check two days after teaching; bring existing Java item forward from Oct28 and include nullable transfer, preserve earlier success."
+    },
+    {
+      "id": "review-be-spring-2026-10-10",
+      "skill_id": "be.spring",
+      "status": "pending",
+      "kind": "review",
+      "assessment_refs": [
+        "assessments/2026-10-18-session-recovery.md#baseline-q10-spring-validation",
+        "assessments/2026-10-18-session-recovery.md#baseline-q12-injection",
+        "assessments/2026-10-18-session-recovery.md#2026-10-13-review-spring",
+        "assessments/2026-10-25-review-spring.md"
+      ],
+      "concept_ref": "assessments/2026-10-18-session-recovery.md#baseline-q10-spring-validation",
+      "history": [
+        {
+          "on": "2026-10-10",
+          "assessment_id": "baseline-q10-spring-validation",
+          "outcome": "needs_practice",
+          "due_on": "2026-10-12",
+          "reason": "Metadata versus execution and intended parameter trigger correct; @Valid name supplied without penalty. @Positive strict-zero boundary needed teaching. Record null construction not automatic validation. Current exact dates of some baseline messages uncertain; retain earlier recorded client-date association. No Boot/provider/HTTP run.",
+          "recovered_on": "2026-10-18"
+        },
+        {
+          "on": "2026-10-13",
+          "assessment_id": "2026-10-13-review-spring",
+          "outcome": "success",
+          "due_on": "2026-10-16",
+          "reason": "Independent @Positive null acceptance, @Valid execution trigger, @Bean registration without @Service and default singleton. No Boot/provider/HTTP startup tests.",
+          "recovered_on": "2026-10-18"
+        },
+        {
+          "on": "2026-10-25",
+          "assessment_id": "2026-10-25-review-spring",
+          "question_id": "Q2",
+          "outcome": "success",
+          "due_on": "2026-11-01",
+          "reason": "Independent validation-boundary and sole matching type injection predictions; no app/tests/lateness penalty."
+        }
+      ],
+      "due_on": "2026-11-01",
+      "stage": 2,
+      "last_interval_days": 7,
+      "last_outcome": "success",
+      "scheduling_reason": "Second scoped delayed validation/registered-type-injection success; next seven days after October25. Broad practical Spring unverified."
+    },
+    {
+      "id": "review-be-concurrency-2026-10-10",
+      "skill_id": "be.concurrency",
+      "status": "pending",
+      "kind": "review",
+      "assessment_refs": [
+        "assessments/2026-10-18-session-recovery.md#baseline-q13-singleton-state",
+        "assessments/2026-10-18-session-recovery.md#2026-10-13-review-request-state",
+        "assessments/2026-10-25-review-concurrency.md"
+      ],
+      "concept_ref": "assessments/2026-10-18-session-recovery.md#baseline-q13-singleton-state",
+      "history": [
+        {
+          "on": "2026-10-10",
+          "assessment_id": "baseline-q13-singleton-state",
+          "outcome": "success",
+          "due_on": "2026-10-11",
+          "reason": "Visible shared currentUserId field A17/B28 gives A28; learner independently proposes invocation parameters/local state. Fresh single-scope first review, no real threads/JMM/security propagation tests. Earlier recorded date retained.",
+          "recovered_on": "2026-10-18"
+        },
+        {
+          "on": "2026-10-13",
+          "assessment_id": "2026-10-13-review-request-state",
+          "outcome": "success",
+          "due_on": "2026-10-16",
+          "reason": "Invocation-local primitive quantity independent, local references still alias stipulated shared list. Explicit visibility/sequential schedule, no actual threads or broad JMM proof.",
+          "recovered_on": "2026-10-18"
+        },
+        {
+          "on": "2026-10-25",
+          "assessment_id": "2026-10-25-review-concurrency",
+          "question_id": "Q2",
+          "outcome": "needs_practice",
+          "due_on": "2026-10-27",
+          "reason": "Local assignment incorrectly treated as object copy; aliasing explained, correct fresh-builder fix guided. Tutor sequential demo not learner thread tests."
+        }
+      ],
+      "due_on": "2026-10-27",
+      "stage": 0,
+      "last_interval_days": 2,
+      "last_outcome": "needs_practice",
+      "scheduling_reason": "Fresh local-reference/shared-object scenario two days after October25 correction; guided allocation fix not independent delayed success."
     }
   ]
 }

@@ -12,6 +12,23 @@ My backend and DevOps learning path includes Java, Spring Boot, SQL, Linux, netw
 
 ## 1. Daily workflow
 
+### Required persistent context and visible progress
+
+At every tutoring session start or resumption, read these files before presenting a question:
+
+- [Tutoring preferences](progress/tutoring-preferences.md).
+- [Question template](progress/question-template.md), the accepted case-study format.
+- [Session progress](progress/session-progress.md), the current finite plan and bars.
+- `progress/mastery.json`, `reviews/queue.json`, the active assessment and latest relevant daily notes.
+
+Re-read changed files or lost context before the next question. These are required context, not optional references to consult only when reminded. CLAUDE.md points to this same policy. Use Java21+/Spring Boot4 for backend learning; preserve professional frontend difficulty and plain-language explanations.
+
+Before each new substantive question, show the current review/new-learning progress line. Ask one focused task and wait. Use scenario, useful diagram/table, code/data, explicit assumptions and evidence status as required by the template. Distinguish compiler acceptance, runtime behavior and API response precisely. Separate independent input schemas into separate headed tables.
+
+Use `progress/mastery.json` as the source of truth for evidence-backed skill scores/status/history and `reviews/queue.json` for review dates/stages. Assessments preserve actual responses and assistance. The Markdown session tracker records selected work/completion and links to those sources; it must not invent or duplicate an independent mastery score. On a partial answer, save evidence but do not assign a final outcome. After a final scoped evaluation, update mastery/history and queue together, verify matching next-review dates, then update the session tracker. Tutor demonstrations and guided corrections do not establish untested learner implementation or independent retention.
+
+Keep sessions finite: default to three selected due reviews and one focused new-learning unit, adapting to time, active guidance and user goals. Record selected items/changes explicitly; do not silently chain every overdue item into a mandatory backlog. A follow-up is part of its review, not another completed item. Completed-with-guidance counts as completed work with its needs-practice outcome, not mastery. Preserve deferred/unrun status, archive completed plans in daily notes, and show the next plan if the learner continues. Retain an active plan across date changes until finished or explicitly revised.
+
 Each weekday, perform the following steps in order.
 
 1. Read the available curriculum, previous lessons, assessment results, recurring mistakes, and review queue.

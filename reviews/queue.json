@@ -86,16 +86,17 @@
       "skill_id": "fe.react",
       "status": "pending",
       "kind": "review",
-      "due_on": "2026-10-21",
-      "stage": 2,
-      "last_interval_days": 7,
+      "due_on": "2026-11-09",
+      "stage": 3,
+      "last_interval_days": 14,
       "last_outcome": "success",
       "assessment_refs": [
         "assessments/2026-10-04-baseline-frontend.md#q1--asynchronous-profile-prediction",
         "assessments/2026-10-04-baseline-frontend.md#q4--cancellation-versus-ignoring-results",
         "assessments/2026-10-07-review-request-validity.md",
         "assessments/2026-10-09-review-request-validity.md",
-        "assessments/2026-10-18-session-recovery.md#2026-10-14-review-request-validity"
+        "assessments/2026-10-18-session-recovery.md#2026-10-14-review-request-validity",
+        "assessments/2026-10-26-phase4-react.md#final-evaluation"
       ],
       "concept_ref": "concepts/async-request-validity.md",
       "history": [
@@ -138,9 +139,17 @@
           "due_on": "2026-10-21",
           "reason": "Latest-ID and abort/null cleanup proposed; ref ambiguity clarified to both owned refs. Custom buildPreview ignores abort after fetch/body completed: boundary explicitly taught, not independently demonstrated. Historical grade3 limited to guard/lifecycle; no React/unmount tests, cancellation remains fresh target.",
           "recovered_on": "2026-10-18"
+        },
+        {
+          "on": "2026-10-26",
+          "assessment_id": "2026-10-26-phase4-react",
+          "question_id": "Q2",
+          "outcome": "success",
+          "due_on": "2026-11-09",
+          "reason": "Late overwrite and request-ID gating independently identified; no actual guard/tests or full lifecycle verification."
         }
       ],
-      "scheduling_reason": "Recovered prior actual scoped outcome from chat; see evidence ledger. No new stage advancement during recovery."
+      "scheduling_reason": "Independent custom-work cancellation boundary and identity-guard proposal; fresh review in14days."
     },
     {
       "id": "review-fe-typescript-2026-10-04",
@@ -260,15 +269,16 @@
       "skill_id": "fe.accessibility",
       "status": "pending",
       "kind": "review",
-      "due_on": "2026-10-24",
-      "stage": 2,
-      "last_interval_days": 7,
+      "due_on": "2026-11-11",
+      "stage": 3,
+      "last_interval_days": 14,
       "last_outcome": "success",
       "assessment_refs": [
         "assessments/2026-10-04-baseline-frontend.md#q7--dialog-keyboard-accessibility",
         "assessments/2026-10-07-review-accessibility.md",
         "assessments/2026-10-09-review-accessibility.md",
-        "assessments/2026-10-18-session-recovery.md#2026-10-14-review-accessibility"
+        "assessments/2026-10-18-session-recovery.md#2026-10-14-review-accessibility",
+        "assessments/2026-10-26-phase4-accessibility.md#final-evaluation"
       ],
       "concept_ref": "concepts/modal-keyboard-focus.md",
       "history": [
@@ -303,9 +313,17 @@
           "due_on": "2026-10-24",
           "reason": "Reverse Tab first-to-last independent; ARIA wording clarified as no click blocking. Inert vocabulary requested/taught, reversal guided. Historical grade3 scoped to modal behavior, not independent inert mastery. No keyboard/browser/assistive tests.",
           "recovered_on": "2026-10-18"
+        },
+        {
+          "on": "2026-10-28",
+          "assessment_id": "2026-10-26-phase4-accessibility",
+          "question_id": "focus-restoration",
+          "outcome": "success",
+          "due_on": "2026-11-11",
+          "reason": "Correct target only; tutor rationale afterward, inert scope clarification ungraded, no runtime tests."
         }
       ],
-      "scheduling_reason": "Recovered prior actual scoped outcome from chat; see evidence ledger. No new stage advancement during recovery."
+      "scheduling_reason": "Independent surviving focus-target choice; future learned-focus review, inert remains deferred/ungraded."
     },
     {
       "id": "review-fe-nextjs-2026-10-04",
@@ -549,15 +567,16 @@
       "skill_id": "be.sql",
       "status": "pending",
       "kind": "review",
-      "due_on": "2026-10-20",
-      "stage": 0,
-      "last_interval_days": 2,
-      "last_outcome": "needs_practice",
+      "due_on": "2026-10-29",
+      "stage": 1,
+      "last_interval_days": 3,
+      "last_outcome": "success",
       "assessment_refs": [
         "assessments/2026-10-04-baseline-backend.md#q4b--aggregation-keys-and-missing-matches",
         "assessments/2026-10-09-review-sql.md",
         "assessments/2026-10-18-session-recovery.md#2026-10-12-review-sql",
-        "assessments/2026-10-18-session-recovery.md#2026-10-17-review-sql"
+        "assessments/2026-10-18-session-recovery.md#2026-10-17-review-sql",
+        "assessments/2026-10-25-phase4-sql.md#final-evaluation"
       ],
       "concept_ref": "concepts/event-reservation-counts.md",
       "history": [
@@ -592,9 +611,17 @@
           "due_on": "2026-10-20",
           "reason": "Three projects preserved correctly; both COUNT(child.id) and COUNT(*) for unmatched group predictedNULL. Malformed side-by-side tutor input repaired without penalty. Row/non-null distinction taught before final2/1. Historical tutor SQLite not learner/PostgreSQL tests.",
           "recovered_on": "2026-10-18"
+        },
+        {
+          "on": "2026-10-26",
+          "assessment_id": "2026-10-25-phase4-sql",
+          "question_id": "Q2",
+          "outcome": "success",
+          "due_on": "2026-10-29",
+          "reason": "Counts and parent-removing WHERE effect correct independently; no DB tests."
         }
       ],
-      "scheduling_reason": "Recovered prior actual scoped outcome from chat; see evidence ledger. No new stage advancement during recovery."
+      "scheduling_reason": "Independent narrow count/filter review completedOctober26; fresh case after three days."
     },
     {
       "id": "review-be-java-2026-10-10",
@@ -786,6 +813,31 @@
         }
       ],
       "scheduling_reason": "Fresh listener interpretation two days after guided initial learning; no practical operations mastery."
+    },
+    {
+      "id": "review-ops-networking-2026-10-28",
+      "skill_id": "ops.networking",
+      "status": "pending",
+      "kind": "review",
+      "due_on": "2026-10-30",
+      "stage": 0,
+      "last_interval_days": 2,
+      "last_outcome": "needs_practice",
+      "assessment_refs": [
+        "assessments/2026-10-28-dns-tcp-baseline.md#final-evaluation"
+      ],
+      "concept_ref": "concepts/dns-tcp-http-stages.md",
+      "history": [
+        {
+          "on": "2026-10-28",
+          "assessment_id": "2026-10-28-dns-tcp-baseline",
+          "question_id": "Q3",
+          "outcome": "needs_practice",
+          "due_on": "2026-10-30",
+          "reason": "Independent DNS exclusion; TCP/HTTP distinction required direct teaching, changed-trace answer guided."
+        }
+      ],
+      "scheduling_reason": "Fresh stage/evidence diagnosis two days after first guided networking unit."
     }
   ]
 }

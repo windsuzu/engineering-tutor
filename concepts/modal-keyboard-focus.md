@@ -49,3 +49,7 @@ Cancellation follow-up October 7: learner correctly names the original outside D
 ## October 9 review
 
 [Archive workflow review](../assessments/2026-10-09-review-accessibility.md#final-evaluation): independently distinguishes ARIA declarations from focus movement, proposes explicit ref/DOM focus, chooses New document after the only opener disappears, and describes forward Tab wrapping. Conceptual 3/4 for this narrow review. Clarified ARIA semantics without inferring a broader misconception from shorthand. No actual modal implementation or keyboard checks verified; reverse navigation, Escape, background inertness and broader edge cases remain unassessed in this review. Next active review October 12; prior dates/evidence preserved above.
+
+## October28 focus-target review
+
+[Phase4 assessment](../assessments/2026-10-26-phase4-accessibility.md#final-evaluation): independently chooses New report after last report/opener removed. Conceptual3/4 for target choice only; rationale supplied by tutor after response. Inert probe deferred after learner reports not learned; not a failure or established mastery. No implementation/keyboard tests. Next reviewNovember11; broader focus behavior and inert learning remain separate scopes.

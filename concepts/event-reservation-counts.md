@@ -52,3 +52,7 @@ Immediate Q4c follow-up on 2026-10-07 correctly predicts zero for an event with 
 [Support-ticket review](../assessments/2026-10-09-review-sql.md#final-evaluation): independently selects the team grouping key and supplies COALESCE(value, 0), but chooses RIGHT JOIN with teams on the left. Explained preserved-side semantics; reversed-order correction answer is guided. Conceptual 2/4 for this narrow review; practical implementation, testing, and broader SQL skill remain unverified. Tutor-run SQLite 3.53.1 examples confirmed illustrated aggregation/join results and the zero display; no PostgreSQL queries or complete learner queries executed. Earlier evidence preserved.
 
 LEFT JOIN preserves left rows at the join step. A later WHERE condition on unmatched right-hand values can reject their NULLs and remove those preserved rows. No learner understanding of that filtering edge case assessed yet.
+
+## October26 delayed review
+
+[Support-queue case](../assessments/2026-10-25-phase4-sql.md#final-evaluation): independent COUNT(*)/COUNT(child.id) outputs and WHERE parent-removal effect correct, conceptual3/4. No DB implementation/tests or broader mastery inferred. Q1October25,Q2October26; next reviewOctober29. Prior gaps/history retained.

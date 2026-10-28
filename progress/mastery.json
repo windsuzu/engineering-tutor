@@ -264,9 +264,9 @@
       "latest_scores": {
         "conceptual_understanding": {
           "score": 3,
-          "assessment_id": "2026-10-14-review-request-validity",
-          "evidence_ref": "assessments/2026-10-18-session-recovery.md#2026-10-14-review-request-validity",
-          "assessed_on": "2026-10-14"
+          "assessment_id": "2026-10-26-phase4-react",
+          "evidence_ref": "assessments/2026-10-26-phase4-react.md#final-evaluation",
+          "assessed_on": "2026-10-26"
         },
         "implementation_correctness": null,
         "edge_case_handling": {
@@ -288,8 +288,8 @@
           "assessed_on": "2026-10-04"
         }
       },
-      "last_assessed_on": "2026-10-14",
-      "next_review_on": "2026-10-21",
+      "last_assessed_on": "2026-10-26",
+      "next_review_on": "2026-11-09",
       "assessment_history": [
         {
           "assessment_id": "2026-10-04-baseline-frontend",
@@ -413,6 +413,28 @@
           "checks_run": [],
           "outcome": "Recovered prior scoped evaluation; other dimensions unassessed here.",
           "recovery_event": "2026-10-14-review-request-validity"
+        },
+        {
+          "assessment_id": "2026-10-26-phase4-react",
+          "assessment_path": "assessments/2026-10-26-phase4-react.md",
+          "assessed_on": "2026-10-26",
+          "question_ids": [
+            "Q1",
+            "Q2"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 3
+          },
+          "evidence_refs": [
+            "assessments/2026-10-26-phase4-react.md#final-evaluation"
+          ],
+          "assistance": "No answer before Q1 or guard solution before Q2; captured versus latest comparison made explicit after proposal. Cancellation/result eligibility distinction acknowledged.",
+          "independent": true,
+          "checks_run": [],
+          "outcome": "Correct custom-work abort boundary and per-request identity gate; lifecycle/error/test implementation not reassessed."
         }
       ]
     },
@@ -685,17 +707,17 @@
       "latest_scores": {
         "conceptual_understanding": {
           "score": 3,
-          "assessment_id": "2026-10-14-review-accessibility",
-          "evidence_ref": "assessments/2026-10-18-session-recovery.md#2026-10-14-review-accessibility",
-          "assessed_on": "2026-10-17"
+          "assessment_id": "2026-10-26-phase4-accessibility",
+          "evidence_ref": "assessments/2026-10-26-phase4-accessibility.md#final-evaluation",
+          "assessed_on": "2026-10-28"
         },
         "implementation_correctness": null,
         "edge_case_handling": null,
         "testing_quality": null,
         "tradeoff_explanation": null
       },
-      "last_assessed_on": "2026-10-17",
-      "next_review_on": "2026-10-24",
+      "last_assessed_on": "2026-10-28",
+      "next_review_on": "2026-11-11",
       "assessment_history": [
         {
           "assessment_id": "2026-10-04-baseline-frontend",
@@ -806,6 +828,27 @@
           "checks_run": [],
           "outcome": "Recovered prior scoped evaluation; other dimensions unassessed here.",
           "recovery_event": "2026-10-14-review-accessibility"
+        },
+        {
+          "assessment_id": "2026-10-26-phase4-accessibility",
+          "assessment_path": "assessments/2026-10-26-phase4-accessibility.md",
+          "assessed_on": "2026-10-28",
+          "question_ids": [
+            "focus-restoration"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 3
+          },
+          "evidence_refs": [
+            "assessments/2026-10-26-phase4-accessibility.md#final-evaluation"
+          ],
+          "assistance": "Inert probe deferred after learner scope clarification, no failure. Revised focus target chosen without solution; rationale supplied by tutor after answer, not independently demonstrated.",
+          "independent": true,
+          "checks_run": [],
+          "outcome": "Correct narrow surviving focus-target choice; no independent rationale, inert, executable modal or testing mastery inferred."
         }
       ]
     },
@@ -1230,18 +1273,18 @@
       "status": "developing",
       "latest_scores": {
         "conceptual_understanding": {
-          "score": 2,
-          "assessment_id": "2026-10-17-review-sql",
-          "evidence_ref": "assessments/2026-10-18-session-recovery.md#2026-10-17-review-sql",
-          "assessed_on": "2026-10-18"
+          "score": 3,
+          "assessment_id": "2026-10-25-phase4-sql",
+          "evidence_ref": "assessments/2026-10-25-phase4-sql.md#final-evaluation",
+          "assessed_on": "2026-10-26"
         },
         "implementation_correctness": null,
         "edge_case_handling": null,
         "testing_quality": null,
         "tradeoff_explanation": null
       },
-      "last_assessed_on": "2026-10-18",
-      "next_review_on": "2026-10-20",
+      "last_assessed_on": "2026-10-26",
+      "next_review_on": "2026-10-29",
       "assessment_history": [
         {
           "assessment_id": "2026-10-04-baseline-backend",
@@ -1332,6 +1375,28 @@
           "checks_run": [],
           "outcome": "Recovered prior scoped evaluation; other dimensions unassessed here.",
           "recovery_event": "2026-10-17-review-sql"
+        },
+        {
+          "assessment_id": "2026-10-25-phase4-sql",
+          "assessment_path": "assessments/2026-10-25-phase4-sql.md",
+          "assessed_on": "2026-10-26",
+          "question_ids": [
+            "Q1",
+            "Q2"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 3
+          },
+          "evidence_refs": [
+            "assessments/2026-10-25-phase4-sql.md#final-evaluation"
+          ],
+          "assistance": "Q1 count explanation after correct answer; no filter-placement solution before Q2. Q1 October25, Q2 October26.",
+          "independent": true,
+          "checks_run": [],
+          "outcome": "Correct independent outer-join count outputs and WHERE filter effect; no practical DB evidence."
         }
       ]
     },
@@ -1768,17 +1833,46 @@
     },
     "ops.networking": {
       "track": "devops",
-      "status": "unassessed",
+      "status": "developing",
       "latest_scores": {
-        "conceptual_understanding": null,
+        "conceptual_understanding": {
+          "score": 2,
+          "assessment_id": "2026-10-28-dns-tcp-baseline",
+          "evidence_ref": "assessments/2026-10-28-dns-tcp-baseline.md#final-evaluation",
+          "assessed_on": "2026-10-28"
+        },
         "implementation_correctness": null,
         "edge_case_handling": null,
         "testing_quality": null,
         "tradeoff_explanation": null
       },
-      "last_assessed_on": null,
-      "next_review_on": null,
-      "assessment_history": []
+      "last_assessed_on": "2026-10-28",
+      "next_review_on": "2026-10-30",
+      "assessment_history": [
+        {
+          "assessment_id": "2026-10-28-dns-tcp-baseline",
+          "assessment_path": "assessments/2026-10-28-dns-tcp-baseline.md",
+          "assessed_on": "2026-10-28",
+          "question_ids": [
+            "Q1",
+            "Q2",
+            "Q3"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 2
+          },
+          "evidence_refs": [
+            "assessments/2026-10-28-dns-tcp-baseline.md#final-evaluation"
+          ],
+          "assistance": "DNS/TCP definitions before first question; tentative cause acknowledged. Full TCP refusal versus HTTP response explanation before changed-trace Q3.",
+          "independent": false,
+          "checks_run": [],
+          "outcome": "DNS ruled out independently; TCP/HTTP distinction corrected with teaching, immediate connection-success check correct. No practical network mastery."
+        }
+      ]
     },
     "ops.http": {
       "track": "devops",

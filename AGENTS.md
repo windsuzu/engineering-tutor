@@ -18,16 +18,16 @@ At every tutoring session start or resumption, read these files before presentin
 
 - [Tutoring preferences](progress/tutoring-preferences.md).
 - [Question template](progress/question-template.md), the accepted case-study format.
-- [Session progress](progress/session-progress.md), the current finite plan and bars.
+- [Session progress](progress/session-progress.md), the current dated occurrence plan and compact bars.
 - `progress/mastery.json`, `reviews/queue.json`, the active assessment and latest relevant daily notes.
 
 Re-read changed files or lost context before the next question. These are required context, not optional references to consult only when reminded. CLAUDE.md points to this same policy. Use Java21+/Spring Boot4 for backend learning; preserve professional frontend difficulty and plain-language explanations.
 
-Before each new substantive question, show the current review/new-learning progress line. Ask one focused task and wait. Use scenario, useful diagram/table, code/data, explicit assumptions and evidence status as required by the template. Distinguish compiler acceptance, runtime behavior and API response precisely. Separate independent input schemas into separate headed tables.
+Before each new substantive question, show only a compact review/new-learning status bar. Keep full dated occurrence/item tables in repository records; do not repeat them in chat. Ask one focused task and wait. Use scenario, useful diagram/table, code/data, explicit assumptions and evidence status as required by the template. Distinguish compiler acceptance, runtime behavior and API response precisely. Separate independent input schemas into separate headed tables.
 
-Use `progress/mastery.json` as the source of truth for evidence-backed skill scores/status/history and `reviews/queue.json` for review dates/stages. Assessments preserve actual responses and assistance. The Markdown session tracker records selected work/completion and links to those sources; it must not invent or duplicate an independent mastery score. On a partial answer, save evidence but do not assign a final outcome. After a final scoped evaluation, update mastery/history and queue together, verify matching next-review dates, then update the session tracker. Tutor demonstrations and guided corrections do not establish untested learner implementation or independent retention.
+Use `progress/mastery.json` as the source of truth for evidence-backed skill scores/status/history and `reviews/queue.json` for review dates/stages. Assessments preserve actual responses and assistance. The Markdown session tracker records dated review occurrences and work completion and links to those sources; it must not invent or duplicate an independent mastery score. On a partial answer, save evidence but do not assign a final outcome. After a final scoped evaluation, update mastery/history and queue together, verify matching next-review dates, then update the session tracker. Tutor demonstrations and guided corrections do not establish untested learner implementation or independent retention.
 
-Keep sessions finite: default to three selected due reviews and one focused new-learning unit, adapting to time, active guidance and user goals. Record selected items/changes explicitly; do not silently chain every overdue item into a mandatory backlog. A follow-up is part of its review, not another completed item. Completed-with-guidance counts as completed work with its needs-practice outcome, not mastery. Preserve deferred/unrun status, archive completed plans in daily notes, and show the next plan if the learner continues. Retain an active plan across date changes until finished or explicitly revised.
+The learner superseded the earlier three-review sample during Phase5: include every due/overdue review occurrence in the tracker denominator. Preserve completed occurrences and their original due dates; when the date changes, add newly due occurrences, including repeat reviews of a skill already completed earlier in the active plan. Keep future scheduled reviews listed in the repository. A follow-up is part of its review, not another completed occurrence. Completion counts work, including guided needs-practice outcomes, not mastery. Retain the active plan across date changes, preserve deferred/unrun status, and archive completed plans in daily notes. The learner can pause or explicitly revise the plan without a lateness penalty; listing all due work does not require completing it in one sitting.
 
 Each weekday, perform the following steps in order.
 
@@ -117,7 +117,7 @@ Use a mix of:
 - Testing and edge-case analysis.
 - Design and trade-off questions.
 
-Use fresh examples rather than repeating the exact wording or solution from an earlier assessment.
+Use fresh examples rather than repeating the exact wording or solution from an earlier assessment. The learner explicitly retired the repeated Layout-duration-versus-CLS problem on November1: use different performance problems in future without inferring broad performance mastery. The inert/background-interaction probe remains deferred and ungraded because the learner had not learned it.
 
 When possible, use a small isolated project with runnable tests. Clearly distinguish tests that actually ran from tests that were merely suggested.
 
@@ -254,6 +254,6 @@ If web research is unavailable, say so and avoid claiming that the lesson reflec
 
 If persistent storage or repository access fails, report the failure and provide the intended Markdown changes without claiming they were saved.
 
-If I miss a day, resume from the review queue. Do not create a backlog of mandatory lessons or penalize me for missing a session.
+If I miss a day, resume from the review queue, add newly due review occurrences to the tracker, and retain prior completions. Do not add mandatory missed-day lessons or penalize me for missing a session.
 
 Optimize for consistent practice, honest assessment, and durable understanding rather than the number of lessons produced.

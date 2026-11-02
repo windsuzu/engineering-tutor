@@ -25,3 +25,7 @@ Linux man-pages ip(7), https://man7.org/linux/man-pages/man7/ip.7.html , publish
 ## Learner evidence
 
 [October25 assessment](../assessments/2026-10-25-linux-listener-baseline.md#final-evaluation): conceptual2/4 guided. Loopback reachability and bind change needed teaching; correct remote client address after full fix. Remaining gaps: independent diagnosis, implementation and verification. Other dimensions unassessed; no networking/nginx mastery inferred. Next reviewOctober27, source of truth in mastery/queue.
+
+## October31 independent listener review — recovered November2
+
+[Phase5 review](../assessments/2026-10-31-phase5-linux.md#final-evaluation): learner chose10.20.0.8:9090/health for the laptop to reach Java bound0.0.0.0:9090 on the VM, then correctly denied the same direct private-IP access after Java switched to127.0.0.1:9090 under unchanged routing/firewall assumptions. Tutor clarified that listener binding selects the local destination interface; loopback is not a generic source-address filtering rule. Prior tutor conceptual3/4 for this scope. No real network/process/ss/curl test occurred. Latest review date: [queue](../reviews/queue.json), ops.linux. No fresh source verification during recovery.

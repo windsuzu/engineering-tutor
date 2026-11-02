@@ -54,3 +54,9 @@ Documented procedure, not executed during the baseline. [Chrome Performance refe
 Read container.offsetWidth once inside each resize handler before looping over cards, then reuse the saved width for writes when the requirement is an initial-width snapshot. This avoids repeated geometry reads after layout-invalidating writes; final layout work still exists. Virtualization reduces mounted DOM work, a separate hypothesis. Compare equivalent resize traces using Layout count/total duration and visual correctness. No actual trace recorded. Google web.dev source above reverified 2026-10-08; published March 20, 2015, updated May 7, 2025; authors Jeremy Wagner, Paul Lewis, Barry Pollard.
 
 Evidence: ../assessments/2026-10-07-review-performance.md. Learner correctly confirms saved-number reuse after detailed explanation. Conceptual 2/4, guided understanding; other dimensions unassessed. Next review 2026-10-10 supersedes earlier date.
+
+## November1 interpretation and retired case — recovered November2
+
+[Phase5 evidence](../assessments/2026-11-01-phase5-performance.md#final-evaluation): learner correctly cited the supplied Layout-duration drop30ms→7ms as evidence for reduced layout work despite unchanged CLS0.02. Prior tutor conceptual3/4 for the repeated metric distinction, not a measured optimization or broad performance certification. No browser recording or benchmark occurred.
+
+The learner explicitly asked to retire this repeated Layout-duration-versus-CLS question. Use a different performance problem for future reviews. This preserves the completed occurrence and history without inferring mastery of other performance areas. Latest date and scheduling reason: [queue](../reviews/queue.json), fe.performance. No new source verification during recovery.

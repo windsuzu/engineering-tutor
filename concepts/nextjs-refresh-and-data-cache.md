@@ -63,3 +63,7 @@ SWR means stale-while-revalidate: serve the old cached value while refreshing it
 ## October25 delayed boundary review
 
 [Assessment](../assessments/2026-10-25-phase3-nextjs.md#final-evaluation): idle separate-browser display and next tagged-read fresh wait correctly predicted, conceptual3/4. New-user restriction clarified: same visitor can also trigger a qualifying read. Other dimensions unassessed; no runtime test or fresh live-doc verification (retrieval blocked403). Next reviewOctober28; earlier evidence retained.
+
+## October31 expiry and fresh-read review — recovered November2
+
+[Phase5 review](../assessments/2026-10-31-phase5-nextjs.md#final-evaluation): with cached5, database8, updateTag('stock'), no reads for90seconds and400ms origin latency, learner correctly predicted the next tagged read waits400ms and returns8. Prior tutor conceptual3/4 for that freshness boundary. Tutor qualified the learner's shorthand: revalidateTag(tag, 'max') uses stale-while-revalidate; not every expiration option has the same behavior. No eager replacement read follows merely from idle time. No Next.js runtime/cache tests or new documentation verification during recovery. Latest schedule: [queue](../reviews/queue.json), fe.nextjs; earlier dates are historical.

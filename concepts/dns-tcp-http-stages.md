@@ -36,3 +36,9 @@ curl project man page, https://curl.se/docs/manpage.html , publication date/vers
 ## Learner evidence
 
 [October28 assessment](../assessments/2026-10-28-dns-tcp-baseline.md#final-evaluation): conceptual2/4 guided. Independently excludes DNS, TCP/HTTP distinction taught; immediate changed-trace TCP success correct. Implementation, edge cases, tests and tradeoffs unassessed. Fresh independent diagnosis pending, nextOctober30. Mastery/queue are scheduling sources of truth.
+
+## October31–November1 timeout-stage review — recovered November2
+
+[Phase5 review](../assessments/2026-11-01-phase5-networking.md#final-evaluation): DNS resolves the stipulated correct10.20.0.8, but TCP connection to9090 times out before any connection/HTTP response. Learner independently identified connection-stage failure (October31) and explained that this does not establish the Java process's health (November1). Prior tutor conceptual3/4 for the stage/process-health distinction. A timeout is not proof of a particular root cause; no actual network or process check occurred. Latest schedule remains [queue](../reviews/queue.json), ops.networking.
+
+The separate [TLS hostname/application-auth scope](tls-hostname-and-application-auth.md) was introduced November1. Its first review must not overwrite this DNS/TCP history. Earlier statement that HTTPS extensions were unassessed describes the original October28 scope; later TLS evidence is recorded separately. No fresh source verification during recovery.

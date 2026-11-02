@@ -56,3 +56,7 @@ LEFT JOIN preserves left rows at the join step. A later WHERE condition on unmat
 ## October26 delayed review
 
 [Support-queue case](../assessments/2026-10-25-phase4-sql.md#final-evaluation): independent COUNT(*)/COUNT(child.id) outputs and WHERE parent-removal effect correct, conceptual3/4. No DB implementation/tests or broader mastery inferred. Q1October25,Q2October26; next reviewOctober29. Prior gaps/history retained.
+
+## October31 filtered aggregate and missing group — recovered November2
+
+[Phase5 merchant/payment review](../assessments/2026-10-31-phase5-sql.md#final-evaluation): subquery filters successful payments before grouping, so it returns only merchant1/count2. Merchant2's failed-only row is removed before grouping and does not produce a zero-count group. The outer LEFT JOIN without COALESCE returns North2, SouthNULL, WestNULL. Learner initially predicted zero counts and an inner2|0 row; after tutor explanation, correctly supplied NULL for missing joined aggregates. Prior conceptual2/4, guided; prior independent count/filter evidence is preserved rather than erased. COALESCE teaching came afterward. No database or learner tests. Latest review date is in [queue](../reviews/queue.json), be.sql; recovery did not newly verify sources.

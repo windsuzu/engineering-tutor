@@ -47,3 +47,9 @@ Double clicks duplicate one operation only if the client reuses its pending atte
 [Voucher purchase review](../assessments/2026-10-08-review-idempotency.md#final-evaluation): independently identifies a client-supplied ID and correctly distinguishes reused retry IDs from new intended-purchase IDs. Concurrent routing needed explanation; proposes a pre-insert check rather than database enforcement, and explicitly chooses an error for an already committed successful retry. Explained the uniqueness guarantee and recovery of the original success result. Correct rollback and successful UI-display checks are immediate guided evidence, not retained mastery. Scoped conceptual score remains 2; other dimensions unassessed. No endpoint, SQL, or tests executed. Earlier evidence preserved.
 
 Next review: 2026-10-10; fresh concurrency and successful-retry response scenario after correction.
+
+## October28 committed replay review — recovered November2
+
+[Phase5 REST evidence](../assessments/2026-10-28-phase5-rest.md#final-evaluation): user42's identical booking-820 retry on another instance returns the saved success for R820 without reserving again. Reusing that key with three seats instead of two is a key/payload conflict; it does not undo R820 or turn the original successful operation into failure. Learner independently chose replay and rejection of the changed payload; tutor refined the generic "reservation already existed" wording. Prior tutor evaluation: conceptual3/4 for this scope. No API/database/schema/transaction or learner tests occurred. Caller scope and payload comparison were explicit scenario assumptions; other in-progress/expiry/external-effect cases remain unassessed.
+
+Latest scheduling is in [review queue](../reviews/queue.json), skill be.rest; earlier dates above are historical. This recovery preserves the supplied evidence without fresh source verification.

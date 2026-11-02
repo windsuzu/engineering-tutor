@@ -31,3 +31,7 @@ Useful for timely cleanup of files/connections and other AutoCloseable resources
 [Resource lesson](../assessments/2026-10-25-learning-resource-cleanup.md#final-evaluation): both initial path orders needed correction; final scope-exit rule correct after explicit teaching. Conceptual2/4 in this new scope, other dimensions unassessed. Earlier Java nullable/defaulting success retained. Next fresh combined Java check October27, stage0. No independent resource-cleanup mastery inferred.
 
 Tutor-run OpenJDK21.0.12.1 source-file demonstration verified failure order write/close/failed, exit0. No actual file resource or learner tests; success path not run. Authoritative reference: Oracle Java SE21 JLS14.20.3, https://docs.oracle.com/javase/specs/jls/se21/html/jls-14.html#jls-14.20.3 . Retrieval attempted during lesson and blocked by proxyHTTP403; no live contents verified or publication date invented. Stable language semantics illustrated locally for failure path.
+
+## October31 Java review scope — recovered November2
+
+The later [nullable exception-flow review](java-nullable-exception-flow.md) evaluated unboxing, catch and finally behavior, not try-with-resources acquisition/close order. It does not independently resolve the resource-lifetime gaps above. Earlier conceptual2/4 and tutor demonstration remain historical evidence. Latest active Java date comes from [queue](../reviews/queue.json), be.java; retain resource cleanup as an unverified subtopic rather than inferring it from another Java exercise.

@@ -19,7 +19,8 @@
     "failure_resets_stage_to": 0,
     "unanswered_status": "pending",
     "overdue_is_failure": false,
-    "policy_ref": "README.md"
+    "policy_ref": "README.md",
+    "occurrence_tracking": "Include every due/overdue review occurrence in session tracker, preserve original due dates and completed occurrences, add newly due work on Asia/Taipei date rollover. Future scheduled reviews stay queued. Completion is not mastery."
   },
   "items": [
     {
@@ -208,16 +209,17 @@
       "skill_id": "fe.browser",
       "status": "pending",
       "kind": "review",
-      "due_on": "2026-10-27",
-      "stage": 0,
-      "last_interval_days": 2,
-      "last_outcome": "needs_practice",
+      "due_on": "2026-11-03",
+      "stage": 1,
+      "last_interval_days": 3,
+      "last_outcome": "success",
       "assessment_refs": [
         "assessments/2026-10-04-baseline-frontend.md#q6--browser-event-loop-prediction",
         "assessments/2026-10-07-review-microtasks.md",
         "assessments/2026-10-18-session-recovery.md#2026-10-10-review-microtasks",
         "assessments/2026-10-18-session-recovery.md#2026-10-13-review-microtasks",
-        "assessments/2026-10-25-phase2-browser.md"
+        "assessments/2026-10-25-phase2-browser.md",
+        "assessments/2026-10-31-phase5-browser.md#final-evaluation"
       ],
       "concept_ref": "concepts/browser-microtask-ordering.md",
       "history": [
@@ -260,9 +262,22 @@
           "outcome": "needs_practice",
           "due_on": "2026-10-27",
           "reason": "Timer placed before queued microtasks; correct remainder after hint. No browser/learner tests/lateness penalty."
+        },
+        {
+          "on": "2026-10-31",
+          "assessment_id": "2026-10-31-phase5-browser",
+          "outcome": "success",
+          "due_on": "2026-11-03",
+          "reason": "Independent synchronous/microtask/timer ordering in supplied case; no browser execution.",
+          "recovered_on": "2026-11-02",
+          "scheduling_provenance": "chat_proposed_date",
+          "stage_after": 1,
+          "interval_days": 3,
+          "review_due_on": "2026-10-27",
+          "scheduling_note": "Date proposed in prior chat; first persisted in this recovered checkout now."
         }
       ],
-      "scheduling_reason": "Fresh timer/microtask boundary two days after October25 correction; guided remainder not independent retention."
+      "scheduling_reason": "Date proposed in prior chat; first persisted in this recovered checkout now. Independent synchronous/microtask/timer ordering in supplied case; no browser execution."
     },
     {
       "id": "review-fe-accessibility-2026-10-04",
@@ -330,16 +345,17 @@
       "skill_id": "fe.nextjs",
       "status": "pending",
       "kind": "review",
-      "due_on": "2026-10-28",
-      "stage": 1,
-      "last_interval_days": 3,
+      "due_on": "2026-11-07",
+      "stage": 2,
+      "last_interval_days": 7,
       "last_outcome": "success",
       "assessment_refs": [
         "assessments/2026-10-04-baseline-frontend.md#q8--nextjs-cached-read-after-a-mutation",
         "assessments/2026-10-07-review-nextjs.md",
         "assessments/2026-10-09-review-nextjs.md",
         "assessments/2026-10-18-session-recovery.md#2026-10-17-review-nextjs",
-        "assessments/2026-10-25-phase3-nextjs.md#final-evaluation"
+        "assessments/2026-10-25-phase3-nextjs.md#final-evaluation",
+        "assessments/2026-10-31-phase5-nextjs.md#final-evaluation"
       ],
       "concept_ref": "concepts/nextjs-refresh-and-data-cache.md",
       "history": [
@@ -382,25 +398,39 @@
           "outcome": "success",
           "due_on": "2026-10-28",
           "reason": "Idle UI and next-read fresh wait correctly predicted; new-user wording clarified, no timing solution supplied."
+        },
+        {
+          "on": "2026-10-31",
+          "assessment_id": "2026-10-31-phase5-nextjs",
+          "outcome": "success",
+          "due_on": "2026-11-07",
+          "reason": "Scoped expiry versus replacement-fetch reasoning; no Next.js runtime test.",
+          "recovered_on": "2026-11-02",
+          "scheduling_provenance": "chat_proposed_date",
+          "stage_after": 2,
+          "interval_days": 7,
+          "review_due_on": "2026-10-28",
+          "scheduling_note": "Date proposed in prior chat; first persisted in this recovered checkout now."
         }
       ],
-      "scheduling_reason": "Successful narrow delayed expiry/browser/read timing review; next fresh case in three days, no practical mastery."
+      "scheduling_reason": "Date proposed in prior chat; first persisted in this recovered checkout now. Scoped expiry versus replacement-fetch reasoning; no Next.js runtime test."
     },
     {
       "id": "review-fe-performance-2026-10-04",
       "skill_id": "fe.performance",
       "status": "pending",
       "kind": "review",
-      "due_on": "2026-11-01",
-      "stage": 2,
-      "last_interval_days": 7,
+      "due_on": "2026-11-15",
+      "stage": 3,
+      "last_interval_days": 14,
       "last_outcome": "success",
       "assessment_refs": [
         "assessments/2026-10-04-baseline-frontend.md#q9--performance-diagnosis-final-initial-baseline-probe",
         "assessments/2026-10-07-review-performance.md",
         "assessments/2026-10-18-session-recovery.md#2026-10-10-review-performance",
         "assessments/2026-10-18-session-recovery.md#2026-10-17-review-performance",
-        "assessments/2026-10-25-phase3-performance.md#final-evaluation"
+        "assessments/2026-10-25-phase3-performance.md#final-evaluation",
+        "assessments/2026-11-01-phase5-performance.md#final-evaluation"
       ],
       "concept_ref": "concepts/frontend-performance-attribution.md",
       "history": [
@@ -443,25 +473,39 @@
           "outcome": "success",
           "due_on": "2026-11-01",
           "reason": "Correct read-once/reduced repeated layout interpretation; timing supplied not measured, exact layout count unproven."
+        },
+        {
+          "on": "2026-11-01",
+          "assessment_id": "2026-11-01-phase5-performance",
+          "outcome": "success",
+          "due_on": "2026-11-15",
+          "reason": "Stage2 advances to3, fourteen days after Nov1. Narrow historical conceptual result only; next case must differ. No benchmark or all-performance mastery.",
+          "recovered_on": "2026-11-02",
+          "scheduling_provenance": "reconstructed_from_policy",
+          "stage_after": 3,
+          "interval_days": 14,
+          "review_due_on": "2026-11-01",
+          "scheduling_note": "Reconstructed during recovery from existing stage and policy; not a previously confirmed saved or chat-stated date."
         }
       ],
-      "scheduling_reason": "Independent narrow delayed layout-work interpretation; fresh review in seven days, no benchmark mastery."
+      "scheduling_reason": "Reconstructed during recovery from existing stage and policy; not a previously confirmed saved or chat-stated date. Stage2 advances to3, fourteen days after Nov1. Narrow historical conceptual result only; next case must differ. No benchmark or all-performance mastery."
     },
     {
       "id": "review-be-rest-2026-10-04",
       "skill_id": "be.rest",
       "status": "pending",
       "kind": "review",
-      "due_on": "2026-10-24",
-      "stage": 2,
-      "last_interval_days": 7,
+      "due_on": "2026-11-11",
+      "stage": 3,
+      "last_interval_days": 14,
       "last_outcome": "success",
       "assessment_refs": [
         "assessments/2026-10-04-baseline-backend.md#q2e--duplicate-insert-and-inventory-rollback",
         "assessments/2026-10-08-review-idempotency.md",
         "assessments/2026-10-18-session-recovery.md#baseline-q5-validation",
         "assessments/2026-10-18-session-recovery.md#2026-10-10-review-idempotency",
-        "assessments/2026-10-18-session-recovery.md#2026-10-17-review-idempotency"
+        "assessments/2026-10-18-session-recovery.md#2026-10-17-review-idempotency",
+        "assessments/2026-10-28-phase5-rest.md#final-evaluation"
       ],
       "concept_ref": "concepts/booking-retry-idempotency.md",
       "history": [
@@ -496,26 +540,41 @@
           "due_on": "2026-10-24",
           "reason": "SameK quantity1 committed versus quantity3 payload: no mutation, invalid replay. Insert-failure phrase refined to key/payload conflict, original still successful; unchanged replay returns success. No API/schema/fingerprint tests.",
           "recovered_on": "2026-10-18"
+        },
+        {
+          "on": "2026-10-28",
+          "assessment_id": "2026-10-28-phase5-rest",
+          "outcome": "success",
+          "due_on": "2026-11-11",
+          "reason": "Scoped committed-result replay and payload-conflict reasoning; no endpoint, schema, database or transaction tests.",
+          "recovered_on": "2026-11-02",
+          "scheduling_provenance": "handoff_confirmed_local_state",
+          "stage_after": 3,
+          "interval_days": 14,
+          "review_due_on": "2026-10-24",
+          "scheduling_note": "Handoff reports this local schedule succeeded before failure; absent from recovered checkout and restored here."
         }
       ],
-      "scheduling_reason": "Recovered prior actual scoped outcome from chat; see evidence ledger. No new stage advancement during recovery."
+      "scheduling_reason": "Handoff reports this local schedule succeeded before failure; absent from recovered checkout and restored here. Scoped committed-result replay and payload-conflict reasoning; no endpoint, schema, database or transaction tests."
     },
     {
       "id": "review-be-auth-2026-10-04",
       "skill_id": "be.auth",
       "status": "pending",
       "kind": "review",
-      "due_on": "2026-10-27",
-      "stage": 0,
-      "last_interval_days": 2,
-      "last_outcome": "needs_practice",
+      "due_on": "2026-11-08",
+      "stage": 2,
+      "last_interval_days": 7,
+      "last_outcome": "success",
       "assessment_refs": [
         "assessments/2026-10-04-baseline-backend.md#q3d--authentication-versus-authorization",
         "assessments/2026-10-08-review-access-control.md",
         "assessments/2026-10-18-session-recovery.md#baseline-q14-jwt-trust",
         "assessments/2026-10-18-session-recovery.md#2026-10-13-review-auth",
         "assessments/2026-10-18-session-recovery.md#2026-10-17-review-auth",
-        "assessments/2026-10-25-phase3-auth.md#final-evaluation"
+        "assessments/2026-10-25-phase3-auth.md#final-evaluation",
+        "assessments/2026-10-28-phase5-auth.md#final-evaluation",
+        "assessments/2026-11-01-phase5-auth.md#final-evaluation"
       ],
       "concept_ref": "concepts/reservation-access-control.md",
       "history": [
@@ -558,25 +617,52 @@
           "outcome": "needs_practice",
           "due_on": "2026-10-27",
           "reason": "Audience requirement needed hint; independent owner authorization classification correct, other dimensions unassessed."
+        },
+        {
+          "on": "2026-10-28",
+          "assessment_id": "2026-10-28-phase5-auth",
+          "outcome": "success",
+          "due_on": "2026-10-31",
+          "reason": "Scoped credential rejection reasoning; no trust provisioning or verifier implementation/tests.",
+          "recovered_on": "2026-11-02",
+          "scheduling_provenance": "handoff_confirmed_local_state",
+          "stage_after": 1,
+          "interval_days": 3,
+          "review_due_on": "2026-10-27",
+          "scheduling_note": "Handoff reports this local schedule succeeded before failure; absent from recovered checkout and restored here."
+        },
+        {
+          "on": "2026-11-01",
+          "assessment_id": "2026-11-01-phase5-auth",
+          "outcome": "success",
+          "due_on": "2026-11-08",
+          "reason": "Stage1 from Oct28 advances to2; seven days after Nov1. Signature/audience/expiry/owner given valid, no verifier test.",
+          "recovered_on": "2026-11-02",
+          "scheduling_provenance": "reconstructed_from_policy",
+          "stage_after": 2,
+          "interval_days": 7,
+          "review_due_on": "2026-10-31",
+          "scheduling_note": "Reconstructed during recovery from existing stage and policy; not a previously confirmed saved or chat-stated date."
         }
       ],
-      "scheduling_reason": "Signature-only acceptance omitted audience; guided correction, fresh credential-validity case in two days."
+      "scheduling_reason": "Reconstructed during recovery from existing stage and policy; not a previously confirmed saved or chat-stated date. Stage1 from Oct28 advances to2; seven days after Nov1. Signature/audience/expiry/owner given valid, no verifier test."
     },
     {
       "id": "review-be-sql-2026-10-07",
       "skill_id": "be.sql",
       "status": "pending",
       "kind": "review",
-      "due_on": "2026-10-29",
-      "stage": 1,
-      "last_interval_days": 3,
-      "last_outcome": "success",
+      "due_on": "2026-11-02",
+      "stage": 0,
+      "last_interval_days": 2,
+      "last_outcome": "needs_practice",
       "assessment_refs": [
         "assessments/2026-10-04-baseline-backend.md#q4b--aggregation-keys-and-missing-matches",
         "assessments/2026-10-09-review-sql.md",
         "assessments/2026-10-18-session-recovery.md#2026-10-12-review-sql",
         "assessments/2026-10-18-session-recovery.md#2026-10-17-review-sql",
-        "assessments/2026-10-25-phase4-sql.md#final-evaluation"
+        "assessments/2026-10-25-phase4-sql.md#final-evaluation",
+        "assessments/2026-10-31-phase5-sql.md#final-evaluation"
       ],
       "concept_ref": "concepts/event-reservation-counts.md",
       "history": [
@@ -619,9 +705,22 @@
           "outcome": "success",
           "due_on": "2026-10-29",
           "reason": "Counts and parent-removing WHERE effect correct independently; no DB tests."
+        },
+        {
+          "on": "2026-10-31",
+          "assessment_id": "2026-10-31-phase5-sql",
+          "outcome": "needs_practice",
+          "due_on": "2026-11-02",
+          "reason": "Guided pre-aggregation/missing-group correction; no database execution.",
+          "recovered_on": "2026-11-02",
+          "scheduling_provenance": "chat_proposed_date",
+          "stage_after": 0,
+          "interval_days": 2,
+          "review_due_on": "2026-10-29",
+          "scheduling_note": "Date proposed in prior chat; first persisted in this recovered checkout now."
         }
       ],
-      "scheduling_reason": "Independent narrow count/filter review completedOctober26; fresh case after three days."
+      "scheduling_reason": "Date proposed in prior chat; first persisted in this recovered checkout now. Guided pre-aggregation/missing-group correction; no database execution."
     },
     {
       "id": "review-be-java-2026-10-10",
@@ -634,9 +733,10 @@
         "assessments/2026-10-18-session-recovery.md#baseline-q8-checked-exceptions",
         "assessments/2026-10-18-session-recovery.md#2026-10-13-review-java",
         "assessments/2026-10-18-review-java.md",
-        "assessments/2026-10-25-learning-resource-cleanup.md"
+        "assessments/2026-10-25-learning-resource-cleanup.md",
+        "assessments/2026-10-31-phase5-java.md#final-evaluation"
       ],
-      "concept_ref": "concepts/java-resource-cleanup.md",
+      "concept_ref": "concepts/java-nullable-exception-flow.md",
       "history": [
         {
           "on": "2026-10-10",
@@ -669,13 +769,29 @@
           "outcome": "needs_practice",
           "due_on": "2026-10-27",
           "reason": "Both cleanup orders needed explicit teaching before scope-exit recognition; new unit not delayed success, earlier nullable success retained."
+        },
+        {
+          "on": "2026-10-31",
+          "assessment_id": "2026-10-31-phase5-java",
+          "outcome": "needs_practice",
+          "due_on": "2026-11-02",
+          "reason": "Guided exception-flow correction; nullable diagnosis retained, resource-cleanup and broader Java scopes remain unverified.",
+          "recovered_on": "2026-11-02",
+          "scheduling_provenance": "chat_proposed_date",
+          "stage_after": 0,
+          "interval_days": 2,
+          "review_due_on": "2026-10-27",
+          "scheduling_note": "Date proposed in prior chat; first persisted in this recovered checkout now."
         }
       ],
-      "due_on": "2026-10-27",
+      "due_on": "2026-11-02",
       "stage": 0,
       "last_interval_days": 2,
       "last_outcome": "needs_practice",
-      "scheduling_reason": "New resource-cleanup scope needs fresh check two days after teaching; bring existing Java item forward from Oct28 and include nullable transfer, preserve earlier success."
+      "scheduling_reason": "Date proposed in prior chat; first persisted in this recovered checkout now. Guided exception-flow correction; nullable diagnosis retained, resource-cleanup and broader Java scopes remain unverified.",
+      "related_concept_refs": [
+        "concepts/java-resource-cleanup.md"
+      ]
     },
     {
       "id": "review-be-spring-2026-10-10",
@@ -686,9 +802,10 @@
         "assessments/2026-10-18-session-recovery.md#baseline-q10-spring-validation",
         "assessments/2026-10-18-session-recovery.md#baseline-q12-injection",
         "assessments/2026-10-18-session-recovery.md#2026-10-13-review-spring",
-        "assessments/2026-10-25-review-spring.md"
+        "assessments/2026-10-25-review-spring.md",
+        "assessments/2026-11-01-phase5-spring.md#final-evaluation"
       ],
-      "concept_ref": "assessments/2026-10-18-session-recovery.md#baseline-q10-spring-validation",
+      "concept_ref": "concepts/spring-nullable-validation.md",
       "history": [
         {
           "on": "2026-10-10",
@@ -713,13 +830,29 @@
           "outcome": "success",
           "due_on": "2026-11-01",
           "reason": "Independent validation-boundary and sole matching type injection predictions; no app/tests/lateness penalty."
+        },
+        {
+          "on": "2026-11-01",
+          "assessment_id": "2026-11-01-phase5-spring",
+          "outcome": "needs_practice",
+          "due_on": "2026-11-03",
+          "reason": "Guided nullable-validation correction, two-day fresh reassessment; no Boot/provider/HTTP execution.",
+          "recovered_on": "2026-11-02",
+          "scheduling_provenance": "chat_proposed_date",
+          "stage_after": 0,
+          "interval_days": 2,
+          "review_due_on": "2026-11-01",
+          "scheduling_note": "Date proposed in prior chat; first persisted in this recovered checkout now."
         }
       ],
-      "due_on": "2026-11-01",
-      "stage": 2,
-      "last_interval_days": 7,
-      "last_outcome": "success",
-      "scheduling_reason": "Second scoped delayed validation/registered-type-injection success; next seven days after October25. Broad practical Spring unverified."
+      "due_on": "2026-11-03",
+      "stage": 0,
+      "last_interval_days": 2,
+      "last_outcome": "needs_practice",
+      "scheduling_reason": "Date proposed in prior chat; first persisted in this recovered checkout now. Guided nullable-validation correction, two-day fresh reassessment; no Boot/provider/HTTP execution.",
+      "related_concept_refs": [
+        "assessments/2026-10-18-session-recovery.md#baseline-q10-spring-validation"
+      ]
     },
     {
       "id": "review-be-concurrency-2026-10-10",
@@ -729,9 +862,10 @@
       "assessment_refs": [
         "assessments/2026-10-18-session-recovery.md#baseline-q13-singleton-state",
         "assessments/2026-10-18-session-recovery.md#2026-10-13-review-request-state",
-        "assessments/2026-10-25-review-concurrency.md"
+        "assessments/2026-10-25-review-concurrency.md",
+        "assessments/2026-10-28-phase5-concurrency.md#final-evaluation"
       ],
-      "concept_ref": "assessments/2026-10-18-session-recovery.md#baseline-q13-singleton-state",
+      "concept_ref": "concepts/java-shared-object-state.md",
       "history": [
         {
           "on": "2026-10-10",
@@ -756,25 +890,43 @@
           "outcome": "needs_practice",
           "due_on": "2026-10-27",
           "reason": "Local assignment incorrectly treated as object copy; aliasing explained, correct fresh-builder fix guided. Tutor sequential demo not learner thread tests."
+        },
+        {
+          "on": "2026-10-31",
+          "assessment_id": "2026-10-28-phase5-concurrency",
+          "outcome": "success",
+          "due_on": "2026-11-03",
+          "reason": "Fresh aliasing transfer and per-invocation allocation reasoning; no compile/thread test.",
+          "recovered_on": "2026-11-02",
+          "scheduling_provenance": "chat_proposed_date",
+          "stage_after": 1,
+          "interval_days": 3,
+          "review_due_on": "2026-10-27",
+          "scheduling_note": "Date proposed in prior chat; first persisted in this recovered checkout now."
         }
       ],
-      "due_on": "2026-10-27",
-      "stage": 0,
-      "last_interval_days": 2,
-      "last_outcome": "needs_practice",
-      "scheduling_reason": "Fresh local-reference/shared-object scenario two days after October25 correction; guided allocation fix not independent delayed success."
+      "due_on": "2026-11-03",
+      "stage": 1,
+      "last_interval_days": 3,
+      "last_outcome": "success",
+      "scheduling_reason": "Date proposed in prior chat; first persisted in this recovered checkout now. Fresh aliasing transfer and per-invocation allocation reasoning; no compile/thread test.",
+      "related_concept_refs": [
+        "assessments/2026-10-18-session-recovery.md#baseline-q13-singleton-state"
+      ]
     },
     {
       "id": "review-ops-http-2026-10-25",
       "skill_id": "ops.http",
       "status": "pending",
       "kind": "review",
-      "due_on": "2026-10-26",
-      "stage": 0,
-      "last_interval_days": 1,
+      "due_on": "2026-11-08",
+      "stage": 2,
+      "last_interval_days": 7,
       "last_outcome": "success",
       "assessment_refs": [
-        "assessments/2026-10-25-devops-http-baseline.md#final-evaluation"
+        "assessments/2026-10-25-devops-http-baseline.md#final-evaluation",
+        "assessments/2026-10-28-phase5-http.md#final-evaluation",
+        "assessments/2026-11-01-phase5-http.md#final-evaluation"
       ],
       "concept_ref": "concepts/http-proxy-request-path.md",
       "history": [
@@ -785,21 +937,48 @@
           "outcome": "success",
           "due_on": "2026-10-26",
           "reason": "Independent hop/port and original-route verification plan; first delayed review next day, no actual operations tests."
+        },
+        {
+          "on": "2026-10-28",
+          "assessment_id": "2026-10-28-phase5-http",
+          "outcome": "success",
+          "due_on": "2026-10-31",
+          "reason": "Independent narrow proxy path diagnosis; no Nginx edit, reload or curl.",
+          "recovered_on": "2026-11-02",
+          "scheduling_provenance": "handoff_confirmed_local_state",
+          "stage_after": 1,
+          "interval_days": 3,
+          "review_due_on": "2026-10-26",
+          "scheduling_note": "Handoff reports this local schedule succeeded before failure; absent from recovered checkout and restored here."
+        },
+        {
+          "on": "2026-11-01",
+          "assessment_id": "2026-11-01-phase5-http",
+          "outcome": "success",
+          "due_on": "2026-11-08",
+          "reason": "Stage1 from Oct28 advances to2; seven days after Nov1. Only public-route choice independently stated here, no real edit/test.",
+          "recovered_on": "2026-11-02",
+          "scheduling_provenance": "reconstructed_from_policy",
+          "stage_after": 2,
+          "interval_days": 7,
+          "review_due_on": "2026-10-31",
+          "scheduling_note": "Reconstructed during recovery from existing stage and policy; not a previously confirmed saved or chat-stated date."
         }
       ],
-      "scheduling_reason": "First fresh delayed HTTP path diagnosis review one day after initial conceptual success; practical ops unverified."
+      "scheduling_reason": "Reconstructed during recovery from existing stage and policy; not a previously confirmed saved or chat-stated date. Stage1 from Oct28 advances to2; seven days after Nov1. Only public-route choice independently stated here, no real edit/test."
     },
     {
       "id": "review-ops-linux-2026-10-25",
       "skill_id": "ops.linux",
       "status": "pending",
       "kind": "review",
-      "due_on": "2026-10-27",
-      "stage": 0,
-      "last_interval_days": 2,
-      "last_outcome": "needs_practice",
+      "due_on": "2026-11-03",
+      "stage": 1,
+      "last_interval_days": 3,
+      "last_outcome": "success",
       "assessment_refs": [
-        "assessments/2026-10-25-linux-listener-baseline.md#final-evaluation"
+        "assessments/2026-10-25-linux-listener-baseline.md#final-evaluation",
+        "assessments/2026-10-31-phase5-linux.md#final-evaluation"
       ],
       "concept_ref": "concepts/linux-listener-addresses.md",
       "history": [
@@ -810,21 +989,35 @@
           "outcome": "needs_practice",
           "due_on": "2026-10-27",
           "reason": "Loopback reachability and direct bind fix required explanation; correct client destination guided."
+        },
+        {
+          "on": "2026-10-31",
+          "assessment_id": "2026-10-31-phase5-linux",
+          "outcome": "success",
+          "due_on": "2026-11-03",
+          "reason": "Scoped listener address reasoning; no actual network/process checks.",
+          "recovered_on": "2026-11-02",
+          "scheduling_provenance": "chat_proposed_date",
+          "stage_after": 1,
+          "interval_days": 3,
+          "review_due_on": "2026-10-27",
+          "scheduling_note": "Date proposed in prior chat; first persisted in this recovered checkout now."
         }
       ],
-      "scheduling_reason": "Fresh listener interpretation two days after guided initial learning; no practical operations mastery."
+      "scheduling_reason": "Date proposed in prior chat; first persisted in this recovered checkout now. Scoped listener address reasoning; no actual network/process checks."
     },
     {
       "id": "review-ops-networking-2026-10-28",
       "skill_id": "ops.networking",
       "status": "pending",
       "kind": "review",
-      "due_on": "2026-10-30",
-      "stage": 0,
-      "last_interval_days": 2,
-      "last_outcome": "needs_practice",
+      "due_on": "2026-11-04",
+      "stage": 1,
+      "last_interval_days": 3,
+      "last_outcome": "success",
       "assessment_refs": [
-        "assessments/2026-10-28-dns-tcp-baseline.md#final-evaluation"
+        "assessments/2026-10-28-dns-tcp-baseline.md#final-evaluation",
+        "assessments/2026-11-01-phase5-networking.md#final-evaluation"
       ],
       "concept_ref": "concepts/dns-tcp-http-stages.md",
       "history": [
@@ -835,9 +1028,51 @@
           "outcome": "needs_practice",
           "due_on": "2026-10-30",
           "reason": "Independent DNS exclusion; TCP/HTTP distinction required direct teaching, changed-trace answer guided."
+        },
+        {
+          "on": "2026-11-01",
+          "assessment_id": "2026-11-01-phase5-networking",
+          "outcome": "success",
+          "due_on": "2026-11-04",
+          "reason": "Original dueOct30; first fresh success after stage0, three-day interval from final responseNov1. DNS/TCP scope only; no process or network tests.",
+          "recovered_on": "2026-11-02",
+          "scheduling_provenance": "reconstructed_from_policy",
+          "stage_after": 1,
+          "interval_days": 3,
+          "review_due_on": "2026-10-30",
+          "scheduling_note": "Reconstructed during recovery from existing stage and policy; not a previously confirmed saved or chat-stated date."
         }
       ],
-      "scheduling_reason": "Fresh stage/evidence diagnosis two days after first guided networking unit."
+      "scheduling_reason": "Reconstructed during recovery from existing stage and policy; not a previously confirmed saved or chat-stated date. Original dueOct30; first fresh success after stage0, three-day interval from final responseNov1. DNS/TCP scope only; no process or network tests."
+    },
+    {
+      "id": "review-ops-tls-2026-11-01",
+      "skill_id": "ops.tls",
+      "status": "pending",
+      "kind": "review",
+      "due_on": "2026-11-02",
+      "stage": 0,
+      "last_interval_days": 1,
+      "last_outcome": null,
+      "assessment_refs": [
+        "assessments/2026-11-01-learning-tls.md#final-evaluation"
+      ],
+      "concept_ref": "concepts/tls-hostname-and-application-auth.md",
+      "history": [
+        {
+          "on": "2026-11-01",
+          "assessment_id": "2026-11-01-learning-tls",
+          "outcome": "initial_learning",
+          "due_on": "2026-11-02",
+          "reason": "Initial scoped learning around Nov1; first delayed review Nov2, no success-stage advancement. Separate ops.tls identity explicitly created during recovery; DNS/TCP history preserved.",
+          "recovered_on": "2026-11-02",
+          "scheduling_provenance": "chat_proposed_date",
+          "stage_after": 0,
+          "interval_days": 1,
+          "scheduling_note": "Date proposed in prior chat; first persisted in this recovered checkout now."
+        }
+      ],
+      "scheduling_reason": "Date proposed in prior chat; first persisted in this recovered checkout now. Initial scoped learning around Nov1; first delayed review Nov2, no success-stage advancement. Separate ops.tls identity explicitly created during recovery; DNS/TCP history preserved."
     }
   ]
 }

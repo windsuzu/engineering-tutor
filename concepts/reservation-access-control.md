@@ -52,3 +52,11 @@ Proposed cases: owner gets the correct record; nonowner is denied despite forged
 [Private export review](../assessments/2026-10-08-review-access-control.md#final-evaluation), completed October 9: independently traces caller-controlled identity disclosure, compares stored ownerUserId with verified requester.userId, and explains that a logged-in nonowner fails authorization. Narrow conceptual score 3/4. No new testing evidence; baseline proposed-test score remains historical evidence, and runnable endpoint/security checks remain unverified. No broad practical mastery inferred. Earlier assessment history preserved.
 
 Next review: 2026-10-12, fresh conceptual transfer three days after the first successful delayed review.
+
+## October28 and November1 token-validity reviews — recovered November2
+
+[October28 assessment](../assessments/2026-10-28-phase5-auth.md#final-evaluation): learner rejected a billing-api audience for an inventory-api endpoint and rejected an arbitrary caller-supplied verification key. Tutor clarified that established trust can use a configured pinned key or a trusted issuer's JWKS; third-party certification is not mandatory. Do not infer independent trust provisioning from the correct rejection.
+
+[November1 assessment](../assessments/2026-11-01-phase5-auth.md#final-evaluation): despite a trusted-key signature, right audience, unexpired token and matching owner, an issuer differing from the explicitly configured expected issuer is invalid. Learner correctly rejected it; tutor refined the explanation to configured issuer mismatch rather than a certification requirement.
+
+Prior tutor conceptual3/4 each is scoped to these token checks. No verifier, cryptographic, provider, endpoint or learner tests occurred. Earlier ownership evidence remains historical. Latest schedule is [queue](../reviews/queue.json), be.auth; recovery did not newly verify sources.

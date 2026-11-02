@@ -38,3 +38,7 @@ Next review: 2026-10-05; fe.browser in ../reviews/queue.json.
 Verified primary references on 2026-10-07: [WHATWG microtask checkpoint](https://html.spec.whatwg.org/multipage/webappapis.html#perform-a-microtask-checkpoint), [TC39 Promise reactions](https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-performpromisethen). Full metadata is in the dated review assessment.
 
 The overdue review was completed on 2026-10-07 without penalty. Next active review: 2026-10-10.
+
+## October31 independent scheduling review — recovered November2
+
+[Phase5 review](../assessments/2026-10-31-phase5-browser.md#final-evaluation): learner independently predicted "open, close, promise, queued, timer" for synchronous open/close, an earlier-enqueued resolved-Promise reaction, queueMicrotask, and a zero-delay timer. Prior tutor conceptual3/4 for this trace. This revisits the timer/checkpoint gap without erasing prior guided attempts. No browser execution/tests; nested async cases and broader platform behavior were not assessed here. Latest date is in [queue](../reviews/queue.json), fe.browser. No fresh source verification during recovery.

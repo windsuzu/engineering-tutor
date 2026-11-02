@@ -1,34 +1,68 @@
-# Current session progress — phase5
+# Current session progress — phase5, recovered through November2
 
-Started October28 (Asia/Taipei) after explicit request:"push all the progress and move on to the next phase." [Phase4](sessions/2026-10-25-to-28-phase4.md) archived with actual evidence; no history/mastery reset.
+Asia/Taipei. Phase5 began October28. All due/overdue review occurrences are counted under the learner's updated preference; this supersedes the original three-review sample. Completed occurrences retain original due dates. Follow-ups remain part of one occurrence. Future reviews stay scheduled below.
 
-## Bars
+## Compact chat status
 
-**Reviews [░░░] 0/3 completed.** REST in progress; HTTP and browser scheduling planned.
+**Reviews [████████░░] 14/17 | New learning [█] 1/1**
 
-**New learning [░] 0/1 completed.** TLS handshake purpose planned, not taught/assessed.
+November1 historical checkpoint was **14/14 reviews, 1/1 new learning**. On November2, Java, SQL and the first TLS review become due, expanding the denominator to17 without changing completed work. No November2 learner assessment has occurred. Next recommended work: Java exception-flow or SQL fresh reassessment, one focused case at a time. This recovery/push does not itself start a tutoring question.
 
-Current: **REST replay of a committed operation**, first response pending.
+## Dated review occurrence ledger
 
-## Selected plan
+| Occurrence | Skill / scope | Original due | Completed | Evidence / work outcome |
+| --- | --- | --- | --- | --- |
+| 1 | REST committed retry | 2026-10-24 | 2026-10-28 | [Assessment](../assessments/2026-10-28-phase5-rest.md#final-evaluation); scoped conceptual success |
+| 2 | HTTP proxy route/port | 2026-10-26 | 2026-10-28 | [Assessment](../assessments/2026-10-28-phase5-http.md#final-evaluation); scoped conceptual success |
+| 3 | Auth token validation | 2026-10-27 | 2026-10-28 | [Assessment](../assessments/2026-10-28-phase5-auth.md#final-evaluation); scoped conceptual success |
+| 4 | Java shared-list aliasing | 2026-10-27 | 2026-10-31 | [Assessment](../assessments/2026-10-28-phase5-concurrency.md#final-evaluation); scoped conceptual success |
+| 5 | Java unboxing/exception flow | 2026-10-27 | 2026-10-31 | [Assessment](../assessments/2026-10-31-phase5-java.md#final-evaluation); guided needs-practice |
+| 6 | Browser scheduling | 2026-10-27 | 2026-10-31 | [Assessment](../assessments/2026-10-31-phase5-browser.md#final-evaluation); scoped conceptual success |
+| 7 | Linux listener addresses | 2026-10-27 | 2026-10-31 | [Assessment](../assessments/2026-10-31-phase5-linux.md#final-evaluation); scoped conceptual success |
+| 8 | Next.js expiry/fresh read | 2026-10-28 | 2026-10-31 | [Assessment](../assessments/2026-10-31-phase5-nextjs.md#final-evaluation); scoped conceptual success |
+| 9 | SQL pre-aggregation/LEFT JOIN | 2026-10-29 | 2026-10-31 | [Assessment](../assessments/2026-10-31-phase5-sql.md#final-evaluation); guided needs-practice |
+| 10 | DNS/TCP timeout stage | 2026-10-30 | 2026-11-01 | [Assessment](../assessments/2026-11-01-phase5-networking.md#final-evaluation); scoped conceptual success |
+| 11 | HTTP proxy route/port | 2026-10-31 | 2026-11-01 | [Assessment](../assessments/2026-11-01-phase5-http.md#final-evaluation); scoped conceptual success |
+| 12 | Auth token validation | 2026-10-31 | 2026-11-01 | [Assessment](../assessments/2026-11-01-phase5-auth.md#final-evaluation); scoped conceptual success |
+| 13 | Spring nullable validation | 2026-11-01 | 2026-11-01 | [Assessment](../assessments/2026-11-01-phase5-spring.md#final-evaluation); guided needs-practice |
+| 14 | Performance timing interpretation | 2026-11-01 | 2026-11-01 | [Assessment](../assessments/2026-11-01-phase5-performance.md#final-evaluation); scoped conceptual success |
+| 15 | Java unboxing/exception flow | 2026-11-02 | Pending | Newly due; no new attempt/grade |
+| 16 | SQL pre-aggregation/LEFT JOIN | 2026-11-02 | Pending | Newly due; no new attempt/grade |
+| 17 | TLS hostname/application auth | 2026-11-02 | Pending | Newly due; no new attempt/grade |
 
-| Kind | Item | State | Evidence |
-| --- | --- | --- | --- |
-| Review1 | REST retry identity and saved result | In progress | [Case](../assessments/2026-10-28-phase5-rest.md); dueOct24; answer pending |
-| Review2 | HTTP original request path versus direct backend check | Planned | [Queue](../reviews/queue.json); dueOct26; no new attempt |
-| Review3 | Browser task versus microtask scheduling | Planned | [Queue](../reviews/queue.json); dueOct27; no new attempt |
-| New learning1 | TLS handshake purpose in HTTPS request path | Planned | Extends DNS/TCP path; no lesson/response/score yet |
+## New learning
 
-Oldest two due items selected, then browser at tiedOct27 for earlier timer/microtask gap. Auth/Java/concurrency/Linux tiedOct27 remain queued, not silently added. Next.js dueOct28 also stays queued. Finite3reviews/1new unit, follow-ups not extra completions, archive/stop after selected work. Inert question remains deferred/ungraded, not presumed learned. Guided completion is not mastery.
+TLS server hostname verification versus application user authentication: completed around November1, [actual responses and teaching](../assessments/2026-11-01-learning-tls.md#final-evaluation). Initial scoped conceptual3 is a prior provisional evaluation, not delayed retention. Separate `ops.tls` skill and first reviewNovember2 preserve the existing `ops.networking` DNS/TCP history.
 
-## Sources of truth and maintenance
+## Future scheduled reviews
 
-Read AGENTS.md, [preferences](tutoring-preferences.md), [question template](question-template.md), tracker, [mastery](mastery.json), [queue](../reviews/queue.json), active assessment and latest daily notes before questions. Save actual responses/assistance; partial answers do not receive final outcome. Synchronize final mastery/queue dates, then bars. Tutor-run checks do not establish learner testing skill.
+These remain queued and are added as new occurrences when due. They are not pending occurrences in today's denominator.
 
-## Queue snapshot
+| Skill | Next due |
+| --- | --- |
+| Java shared-list aliasing | 2026-11-03 |
+| Spring nullable validation | 2026-11-03 |
+| Browser scheduling | 2026-11-03 |
+| Linux listener addresses | 2026-11-03 |
+| DNS/TCP timeout stage | 2026-11-04 |
+| Next.js expiry/fresh read | 2026-11-07 |
+| Auth token validation | 2026-11-08 |
+| Transaction commit boundary | 2026-11-08 |
+| TypeScript runtime validity | 2026-11-08 |
+| HTTP proxy route/port | 2026-11-08 |
+| React request eligibility | 2026-11-09 |
+| REST committed retry | 2026-11-11 |
+| Dialog focus restoration | 2026-11-11 |
+| Performance timing interpretation | 2026-11-15 |
 
-October28:7overdue, Next.js due today. Selected REST24,HTTP26,browser27; remaining overdue auth/Java/concurrency/Linux27. SQL nextOct29,networkingOct30,Spring/performanceNov1,transactions/TypeScriptNov8,ReactNov9,accessibilityNov11. Not a mandatory catch-up backlog.
+## Evidence and scheduling limits
 
-## Save checkpoint
+[Mastery](mastery.json) retains dimension evidence/history; [queue](../reviews/queue.json) owns next dates/stages. Assessment records preserve verbatim responses, assistance and original dates. Guided Java/SQL/Spring work counts as complete with needs-practice, not independent mastery. Practical implementation/testing dimensions were not newly assessed; older supported dimension scores remain intact. Inert/background interaction remains deferred/ungraded. The repeated Layout-duration-versus-CLS case is retired; future performance cases must differ.
 
-Learner authorizes push of all Phase4 progress and next pending plan. Remote master confirmed51f04bd before save. New Git hash/outcome reported after successful push verification; no force push. Phase5 preparation does not advance scores/stages or teach planned TLS unit.
+REST/HTTP/auth October28 states were reportedly written before the outage but absent from this checkout; later evidence was chat-only. All15 outcomes are recovered prior provisional tutor evaluations, not new grading. Networking spans October31–November1; its final response is recorded November1. The handoff places later work around November1 without exact per-message timestamps. Recovery dateNovember2 is not an assessment date.
+
+Networking nextNovember4, HTTP/auth nextNovember8 and performance nextNovember15 are **reconstructed scheduling decisions**, derived from prior stages and repository intervals. They were not confirmed persisted or consistently stated in the old chat. Other restored dates retain their handoff/chat provenance in queue history. TLS first reviewNovember2 is an explicitly recovered chat proposal; its new skill ID is a recovery decision.
+
+## Recovery and save checkpoint
+
+Last confirmed remote checkpoint was `937a1ac278209f80edf6414861e6499579f27f57`, including Phase4 and the initial pending REST case. Current checkout began clean at that commit; post-checkpoint writes did not survive here. Remote `origin/master` was independently confirmed at the same commit before edits. [Recovery journal](../daily/2026-11-02.md) records validation and push scope. User already authorized saving/pushing all progress. No force push or credential/application-code changes are needed. Git save checks do not establish learner runtime/testing skill.

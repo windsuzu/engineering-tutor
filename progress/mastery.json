@@ -134,18 +134,18 @@
       "status": "developing",
       "latest_scores": {
         "conceptual_understanding": {
-          "score": 2,
-          "assessment_id": "2026-10-25-phase2-browser",
-          "evidence_ref": "assessments/2026-10-25-phase2-browser.md#final-evaluation",
-          "assessed_on": "2026-10-25"
+          "score": 3,
+          "assessment_id": "2026-10-31-phase5-browser",
+          "evidence_ref": "assessments/2026-10-31-phase5-browser.md#final-evaluation",
+          "assessed_on": "2026-10-31"
         },
         "implementation_correctness": null,
         "edge_case_handling": null,
         "testing_quality": null,
         "tradeoff_explanation": null
       },
-      "last_assessed_on": "2026-10-25",
-      "next_review_on": "2026-10-27",
+      "last_assessed_on": "2026-10-31",
+      "next_review_on": "2026-11-03",
       "assessment_history": [
         {
           "assessment_id": "2026-10-04-baseline-frontend",
@@ -255,6 +255,29 @@
           "independent": false,
           "checks_run": [],
           "outcome": "needs_practice on timer/checkpoint; earlier async progress preserved. Tutor Node illustration not browser/learner tests."
+        },
+        {
+          "assessment_id": "2026-10-31-phase5-browser",
+          "assessment_path": "assessments/2026-10-31-phase5-browser.md",
+          "assessed_on": "2026-10-31",
+          "question_ids": [
+            "see-actual-responses"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 3
+          },
+          "evidence_refs": [
+            "assessments/2026-10-31-phase5-browser.md#final-evaluation"
+          ],
+          "assistance": "No output solution supplied before independent open,close,promise,queued,timer answer.",
+          "independent": true,
+          "checks_run": [],
+          "outcome": "success: Independent synchronous/microtask/timer ordering in supplied case; no browser execution.",
+          "recovered_on": "2026-11-02",
+          "evaluation_provenance": "Prior provisional tutor evaluation recovered from learner-supplied handoff; not a new assessment or certification."
         }
       ]
     },
@@ -444,17 +467,17 @@
       "latest_scores": {
         "conceptual_understanding": {
           "score": 3,
-          "assessment_id": "2026-10-25-phase3-nextjs",
-          "evidence_ref": "assessments/2026-10-25-phase3-nextjs.md#final-evaluation",
-          "assessed_on": "2026-10-25"
+          "assessment_id": "2026-10-31-phase5-nextjs",
+          "evidence_ref": "assessments/2026-10-31-phase5-nextjs.md#final-evaluation",
+          "assessed_on": "2026-10-31"
         },
         "implementation_correctness": null,
         "edge_case_handling": null,
         "testing_quality": null,
         "tradeoff_explanation": null
       },
-      "last_assessed_on": "2026-10-25",
-      "next_review_on": "2026-10-28",
+      "last_assessed_on": "2026-10-31",
+      "next_review_on": "2026-11-07",
       "assessment_history": [
         {
           "assessment_id": "2026-10-04-baseline-frontend",
@@ -542,6 +565,29 @@
           "independent": true,
           "checks_run": [],
           "outcome": "Narrow idle-browser and fresh-next-read predictions correct; user identity clarification supplied, broader implementation unassessed."
+        },
+        {
+          "assessment_id": "2026-10-31-phase5-nextjs",
+          "assessment_path": "assessments/2026-10-31-phase5-nextjs.md",
+          "assessed_on": "2026-10-31",
+          "question_ids": [
+            "see-actual-responses"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 3
+          },
+          "evidence_refs": [
+            "assessments/2026-10-31-phase5-nextjs.md#final-evaluation"
+          ],
+          "assistance": "Independent updateTag next-read wait400ms/value8. Tutor clarified revalidateTag(tag,'max') SWR versus other expiration options after response.",
+          "independent": true,
+          "checks_run": [],
+          "outcome": "success: Scoped expiry versus replacement-fetch reasoning; no Next.js runtime test.",
+          "recovered_on": "2026-11-02",
+          "evaluation_provenance": "Prior provisional tutor evaluation recovered from learner-supplied handoff; not a new assessment or certification."
         }
       ]
     },
@@ -565,17 +611,17 @@
       "latest_scores": {
         "conceptual_understanding": {
           "score": 3,
-          "assessment_id": "2026-10-25-phase3-performance",
-          "evidence_ref": "assessments/2026-10-25-phase3-performance.md#final-evaluation",
-          "assessed_on": "2026-10-25"
+          "assessment_id": "2026-11-01-phase5-performance",
+          "evidence_ref": "assessments/2026-11-01-phase5-performance.md#final-evaluation",
+          "assessed_on": "2026-11-01"
         },
         "implementation_correctness": null,
         "edge_case_handling": null,
         "testing_quality": null,
         "tradeoff_explanation": null
       },
-      "last_assessed_on": "2026-10-25",
-      "next_review_on": "2026-11-01",
+      "last_assessed_on": "2026-11-01",
+      "next_review_on": "2026-11-15",
       "assessment_history": [
         {
           "assessment_id": "2026-10-04-baseline-frontend",
@@ -684,6 +730,29 @@
           "independent": true,
           "checks_run": [],
           "outcome": "Correct independent reduced repeated-layout work interpretation despite unchanged CLS; no actual measurements or practical mastery."
+        },
+        {
+          "assessment_id": "2026-11-01-phase5-performance",
+          "assessment_path": "assessments/2026-11-01-phase5-performance.md",
+          "assessed_on": "2026-11-01",
+          "question_ids": [
+            "see-actual-responses"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 3
+          },
+          "evidence_refs": [
+            "assessments/2026-11-01-phase5-performance.md#final-evaluation"
+          ],
+          "assistance": "Independent supplied Layout-duration reduction interpretation despite unchanged CLS. Learner explicitly retired this repeated case.",
+          "independent": true,
+          "checks_run": [],
+          "outcome": "success: Stage2 advances to3, fourteen days after Nov1. Narrow historical conceptual result only; next case must differ. No benchmark or all-performance mastery.",
+          "recovered_on": "2026-11-02",
+          "evaluation_provenance": "Prior provisional tutor evaluation recovered from learner-supplied handoff; not a new assessment or certification."
         }
       ]
     },
@@ -872,17 +941,17 @@
       "latest_scores": {
         "conceptual_understanding": {
           "score": 2,
-          "assessment_id": "2026-10-25-learning-resource-cleanup",
-          "evidence_ref": "assessments/2026-10-25-learning-resource-cleanup.md#final-evaluation",
-          "assessed_on": "2026-10-25"
+          "assessment_id": "2026-10-31-phase5-java",
+          "evidence_ref": "assessments/2026-10-31-phase5-java.md#final-evaluation",
+          "assessed_on": "2026-10-31"
         },
         "implementation_correctness": null,
         "edge_case_handling": null,
         "testing_quality": null,
         "tradeoff_explanation": null
       },
-      "last_assessed_on": "2026-10-25",
-      "next_review_on": "2026-10-27",
+      "last_assessed_on": "2026-10-31",
+      "next_review_on": "2026-11-02",
       "assessment_history": [
         {
           "assessment_id": "baseline-q6-nullable",
@@ -1016,6 +1085,29 @@
           "independent": false,
           "checks_run": [],
           "outcome": "New resource-lifetime unit completed with guidance; fresh check needed. Earlier independent nullable/defaulting3 preserved; no learner I/O/tests, success path not executed."
+        },
+        {
+          "assessment_id": "2026-10-31-phase5-java",
+          "assessment_path": "assessments/2026-10-31-phase5-java.md",
+          "assessed_on": "2026-10-31",
+          "question_ids": [
+            "see-actual-responses"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 2
+          },
+          "evidence_refs": [
+            "assessments/2026-10-31-phase5-java.md#final-evaluation"
+          ],
+          "assistance": "Initial unboxing NPE diagnosis correct, but after incorrectly printed with uncaught exception. Tutor explained propagation after finally before the correct added-catch output.",
+          "independent": false,
+          "checks_run": [],
+          "outcome": "needs_practice: Guided exception-flow correction; nullable diagnosis retained, resource-cleanup and broader Java scopes remain unverified.",
+          "recovered_on": "2026-11-02",
+          "evaluation_provenance": "Prior provisional tutor evaluation recovered from learner-supplied handoff; not a new assessment or certification."
         }
       ]
     },
@@ -1024,18 +1116,18 @@
       "status": "developing",
       "latest_scores": {
         "conceptual_understanding": {
-          "score": 3,
-          "assessment_id": "2026-10-25-review-spring",
-          "evidence_ref": "assessments/2026-10-25-review-spring.md#final-evaluation",
-          "assessed_on": "2026-10-25"
+          "score": 2,
+          "assessment_id": "2026-11-01-phase5-spring",
+          "evidence_ref": "assessments/2026-11-01-phase5-spring.md#final-evaluation",
+          "assessed_on": "2026-11-01"
         },
         "implementation_correctness": null,
         "edge_case_handling": null,
         "testing_quality": null,
         "tradeoff_explanation": null
       },
-      "last_assessed_on": "2026-10-25",
-      "next_review_on": "2026-11-01",
+      "last_assessed_on": "2026-11-01",
+      "next_review_on": "2026-11-03",
       "assessment_history": [
         {
           "assessment_id": "baseline-q10-spring-validation",
@@ -1124,6 +1216,29 @@
           "independent": true,
           "checks_run": [],
           "outcome": "Successful narrow @Valid/Positive and type-based bean injection reasoning; no Boot/provider/HTTP/startup or learner tests."
+        },
+        {
+          "assessment_id": "2026-11-01-phase5-spring",
+          "assessment_path": "assessments/2026-11-01-phase5-spring.md",
+          "assessed_on": "2026-11-01",
+          "question_ids": [
+            "see-actual-responses"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 2
+          },
+          "evidence_refs": [
+            "assessments/2026-11-01-phase5-spring.md#final-evaluation"
+          ],
+          "assistance": "Initially predicted @Positive rejects null. Tutor explained null acceptance; learner proposed presence constraint, tutor supplied Jakarta@NotNull name. Syntax recall not penalized.",
+          "independent": false,
+          "checks_run": [],
+          "outcome": "needs_practice: Guided nullable-validation correction, two-day fresh reassessment; no Boot/provider/HTTP execution.",
+          "recovered_on": "2026-11-02",
+          "evaluation_provenance": "Prior provisional tutor evaluation recovered from learner-supplied handoff; not a new assessment or certification."
         }
       ]
     },
@@ -1133,17 +1248,17 @@
       "latest_scores": {
         "conceptual_understanding": {
           "score": 3,
-          "assessment_id": "2026-10-17-review-idempotency",
-          "evidence_ref": "assessments/2026-10-18-session-recovery.md#2026-10-17-review-idempotency",
-          "assessed_on": "2026-10-17"
+          "assessment_id": "2026-10-28-phase5-rest",
+          "evidence_ref": "assessments/2026-10-28-phase5-rest.md#final-evaluation",
+          "assessed_on": "2026-10-28"
         },
         "implementation_correctness": null,
         "edge_case_handling": null,
         "testing_quality": null,
         "tradeoff_explanation": null
       },
-      "last_assessed_on": "2026-10-17",
-      "next_review_on": "2026-10-24",
+      "last_assessed_on": "2026-10-28",
+      "next_review_on": "2026-11-11",
       "assessment_history": [
         {
           "assessment_id": "2026-10-04-baseline-backend",
@@ -1265,6 +1380,29 @@
           "checks_run": [],
           "outcome": "Recovered prior scoped evaluation; other dimensions unassessed here.",
           "recovery_event": "2026-10-17-review-idempotency"
+        },
+        {
+          "assessment_id": "2026-10-28-phase5-rest",
+          "assessment_path": "assessments/2026-10-28-phase5-rest.md",
+          "assessed_on": "2026-10-28",
+          "question_ids": [
+            "see-actual-responses"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 3
+          },
+          "evidence_refs": [
+            "assessments/2026-10-28-phase5-rest.md#final-evaluation"
+          ],
+          "assistance": "Identical retry replay and changed-payload rejection supplied independently. Tutor refined generic reservation-exists wording to key/payload conflict; original R820 remains successful.",
+          "independent": true,
+          "checks_run": [],
+          "outcome": "success: Scoped committed-result replay and payload-conflict reasoning; no endpoint, schema, database or transaction tests.",
+          "recovered_on": "2026-11-02",
+          "evaluation_provenance": "Prior provisional tutor evaluation recovered from learner-supplied handoff; not a new assessment or certification."
         }
       ]
     },
@@ -1273,18 +1411,18 @@
       "status": "developing",
       "latest_scores": {
         "conceptual_understanding": {
-          "score": 3,
-          "assessment_id": "2026-10-25-phase4-sql",
-          "evidence_ref": "assessments/2026-10-25-phase4-sql.md#final-evaluation",
-          "assessed_on": "2026-10-26"
+          "score": 2,
+          "assessment_id": "2026-10-31-phase5-sql",
+          "evidence_ref": "assessments/2026-10-31-phase5-sql.md#final-evaluation",
+          "assessed_on": "2026-10-31"
         },
         "implementation_correctness": null,
         "edge_case_handling": null,
         "testing_quality": null,
         "tradeoff_explanation": null
       },
-      "last_assessed_on": "2026-10-26",
-      "next_review_on": "2026-10-29",
+      "last_assessed_on": "2026-10-31",
+      "next_review_on": "2026-11-02",
       "assessment_history": [
         {
           "assessment_id": "2026-10-04-baseline-backend",
@@ -1397,6 +1535,29 @@
           "independent": true,
           "checks_run": [],
           "outcome": "Correct independent outer-join count outputs and WHERE filter effect; no practical DB evidence."
+        },
+        {
+          "assessment_id": "2026-10-31-phase5-sql",
+          "assessment_path": "assessments/2026-10-31-phase5-sql.md",
+          "assessed_on": "2026-10-31",
+          "question_ids": [
+            "see-actual-responses"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 2
+          },
+          "evidence_refs": [
+            "assessments/2026-10-31-phase5-sql.md#final-evaluation"
+          ],
+          "assistance": "Initial outer zeros and inner merchant2 zero-count group incorrect. Tutor taught WHERE-before-GROUP-BY removal; NULL correction guided, COALESCE explained afterward.",
+          "independent": false,
+          "checks_run": [],
+          "outcome": "needs_practice: Guided pre-aggregation/missing-group correction; no database execution.",
+          "recovered_on": "2026-11-02",
+          "evaluation_provenance": "Prior provisional tutor evaluation recovered from learner-supplied handoff; not a new assessment or certification."
         }
       ]
     },
@@ -1516,10 +1677,10 @@
       "status": "developing",
       "latest_scores": {
         "conceptual_understanding": {
-          "score": 2,
-          "assessment_id": "2026-10-25-phase3-auth",
-          "evidence_ref": "assessments/2026-10-25-phase3-auth.md#final-evaluation",
-          "assessed_on": "2026-10-25"
+          "score": 3,
+          "assessment_id": "2026-11-01-phase5-auth",
+          "evidence_ref": "assessments/2026-11-01-phase5-auth.md#final-evaluation",
+          "assessed_on": "2026-11-01"
         },
         "implementation_correctness": null,
         "edge_case_handling": null,
@@ -1531,8 +1692,8 @@
         },
         "tradeoff_explanation": null
       },
-      "last_assessed_on": "2026-10-25",
-      "next_review_on": "2026-10-27",
+      "last_assessed_on": "2026-11-01",
+      "next_review_on": "2026-11-08",
       "assessment_history": [
         {
           "assessment_id": "2026-10-04-baseline-backend",
@@ -1671,6 +1832,52 @@
           "independent": false,
           "checks_run": [],
           "outcome": "Guided audience correction; ownership classification retained. Needs fresh credential-validity review; practical security unassessed."
+        },
+        {
+          "assessment_id": "2026-10-28-phase5-auth",
+          "assessment_path": "assessments/2026-10-28-phase5-auth.md",
+          "assessed_on": "2026-10-28",
+          "question_ids": [
+            "see-actual-responses"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 3
+          },
+          "evidence_refs": [
+            "assessments/2026-10-28-phase5-auth.md#final-evaluation"
+          ],
+          "assistance": "Wrong audience and arbitrary caller verification key rejected independently. Tutor clarified configured pinned keys/trusted issuer JWKS suffice; third-party certification is not mandatory.",
+          "independent": true,
+          "checks_run": [],
+          "outcome": "success: Scoped credential rejection reasoning; no trust provisioning or verifier implementation/tests.",
+          "recovered_on": "2026-11-02",
+          "evaluation_provenance": "Prior provisional tutor evaluation recovered from learner-supplied handoff; not a new assessment or certification."
+        },
+        {
+          "assessment_id": "2026-11-01-phase5-auth",
+          "assessment_path": "assessments/2026-11-01-phase5-auth.md",
+          "assessed_on": "2026-11-01",
+          "question_ids": [
+            "see-actual-responses"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 3
+          },
+          "evidence_refs": [
+            "assessments/2026-11-01-phase5-auth.md#final-evaluation"
+          ],
+          "assistance": "Independently rejected issuer mismatch. Tutor refined validated-third-party wording to exact configured expected-issuer comparison.",
+          "independent": true,
+          "checks_run": [],
+          "outcome": "success: Stage1 from Oct28 advances to2; seven days after Nov1. Signature/audience/expiry/owner given valid, no verifier test.",
+          "recovered_on": "2026-11-02",
+          "evaluation_provenance": "Prior provisional tutor evaluation recovered from learner-supplied handoff; not a new assessment or certification."
         }
       ]
     },
@@ -1679,18 +1886,18 @@
       "status": "developing",
       "latest_scores": {
         "conceptual_understanding": {
-          "score": 2,
-          "assessment_id": "2026-10-25-review-concurrency",
-          "evidence_ref": "assessments/2026-10-25-review-concurrency.md#final-evaluation",
-          "assessed_on": "2026-10-25"
+          "score": 3,
+          "assessment_id": "2026-10-28-phase5-concurrency",
+          "evidence_ref": "assessments/2026-10-28-phase5-concurrency.md#final-evaluation",
+          "assessed_on": "2026-10-31"
         },
         "implementation_correctness": null,
         "edge_case_handling": null,
         "testing_quality": null,
         "tradeoff_explanation": null
       },
-      "last_assessed_on": "2026-10-25",
-      "next_review_on": "2026-10-27",
+      "last_assessed_on": "2026-10-31",
+      "next_review_on": "2026-11-03",
       "assessment_history": [
         {
           "assessment_id": "baseline-q13-singleton-state",
@@ -1757,6 +1964,29 @@
           "independent": false,
           "checks_run": [],
           "outcome": "needs_practice on aliasing transfer; per-invocation fix correct after teaching. Prior local/shared-list success retained; no real threads or learner tests."
+        },
+        {
+          "assessment_id": "2026-10-28-phase5-concurrency",
+          "assessment_path": "assessments/2026-10-28-phase5-concurrency.md",
+          "assessed_on": "2026-10-31",
+          "question_ids": [
+            "see-actual-responses"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 3
+          },
+          "evidence_refs": [
+            "assessments/2026-10-28-phase5-concurrency.md#final-evaluation"
+          ],
+          "assistance": "Visibility and exact interleaving stipulated. Independently predicted Bo from shared field alias and proposed removing field plus a new local ArrayList each invocation.",
+          "independent": true,
+          "checks_run": [],
+          "outcome": "success: Fresh aliasing transfer and per-invocation allocation reasoning; no compile/thread test.",
+          "recovered_on": "2026-11-02",
+          "evaluation_provenance": "Prior provisional tutor evaluation recovered from learner-supplied handoff; not a new assessment or certification."
         }
       ]
     },
@@ -1793,18 +2023,18 @@
       "status": "developing",
       "latest_scores": {
         "conceptual_understanding": {
-          "score": 2,
-          "assessment_id": "2026-10-25-linux-listener-baseline",
-          "evidence_ref": "assessments/2026-10-25-linux-listener-baseline.md#final-evaluation",
-          "assessed_on": "2026-10-25"
+          "score": 3,
+          "assessment_id": "2026-10-31-phase5-linux",
+          "evidence_ref": "assessments/2026-10-31-phase5-linux.md#final-evaluation",
+          "assessed_on": "2026-10-31"
         },
         "implementation_correctness": null,
         "edge_case_handling": null,
         "testing_quality": null,
         "tradeoff_explanation": null
       },
-      "last_assessed_on": "2026-10-25",
-      "next_review_on": "2026-10-27",
+      "last_assessed_on": "2026-10-31",
+      "next_review_on": "2026-11-03",
       "assessment_history": [
         {
           "assessment_id": "2026-10-25-linux-listener-baseline",
@@ -1828,6 +2058,29 @@
           "independent": false,
           "checks_run": [],
           "outcome": "Guided first-learning listener scope; correct client destination after teaching, fresh independent diagnosis pending. Broader Linux practical skills unassessed."
+        },
+        {
+          "assessment_id": "2026-10-31-phase5-linux",
+          "assessment_path": "assessments/2026-10-31-phase5-linux.md",
+          "assessed_on": "2026-10-31",
+          "question_ids": [
+            "see-actual-responses"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 3
+          },
+          "evidence_refs": [
+            "assessments/2026-10-31-phase5-linux.md#final-evaluation"
+          ],
+          "assistance": "Correct VM private-IP destination and loopback-only reachability independently supplied. Tutor refined own-environment wording to destination-interface binding rather than source-address policy.",
+          "independent": true,
+          "checks_run": [],
+          "outcome": "success: Scoped listener address reasoning; no actual network/process checks.",
+          "recovered_on": "2026-11-02",
+          "evaluation_provenance": "Prior provisional tutor evaluation recovered from learner-supplied handoff; not a new assessment or certification."
         }
       ]
     },
@@ -1836,18 +2089,18 @@
       "status": "developing",
       "latest_scores": {
         "conceptual_understanding": {
-          "score": 2,
-          "assessment_id": "2026-10-28-dns-tcp-baseline",
-          "evidence_ref": "assessments/2026-10-28-dns-tcp-baseline.md#final-evaluation",
-          "assessed_on": "2026-10-28"
+          "score": 3,
+          "assessment_id": "2026-11-01-phase5-networking",
+          "evidence_ref": "assessments/2026-11-01-phase5-networking.md#final-evaluation",
+          "assessed_on": "2026-11-01"
         },
         "implementation_correctness": null,
         "edge_case_handling": null,
         "testing_quality": null,
         "tradeoff_explanation": null
       },
-      "last_assessed_on": "2026-10-28",
-      "next_review_on": "2026-10-30",
+      "last_assessed_on": "2026-11-01",
+      "next_review_on": "2026-11-04",
       "assessment_history": [
         {
           "assessment_id": "2026-10-28-dns-tcp-baseline",
@@ -1871,6 +2124,30 @@
           "independent": false,
           "checks_run": [],
           "outcome": "DNS ruled out independently; TCP/HTTP distinction corrected with teaching, immediate connection-success check correct. No practical network mastery."
+        },
+        {
+          "assessment_id": "2026-11-01-phase5-networking",
+          "assessment_path": "assessments/2026-11-01-phase5-networking.md",
+          "assessed_on": "2026-11-01",
+          "question_ids": [
+            "see-actual-responses"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 3
+          },
+          "evidence_refs": [
+            "assessments/2026-11-01-phase5-networking.md#final-evaluation"
+          ],
+          "assistance": "Learner independently identified connection-stage failure and then distinguished absent connection evidence from unknown Java process health. No root-cause solution supplied in handoff.",
+          "independent": true,
+          "checks_run": [],
+          "outcome": "success: Original dueOct30; first fresh success after stage0, three-day interval from final responseNov1. DNS/TCP scope only; no process or network tests.",
+          "recovered_on": "2026-11-02",
+          "evaluation_provenance": "Prior provisional tutor evaluation recovered from learner-supplied handoff; not a new assessment or certification.",
+          "started_on": "2026-10-31"
         }
       ]
     },
@@ -1880,17 +2157,17 @@
       "latest_scores": {
         "conceptual_understanding": {
           "score": 3,
-          "assessment_id": "2026-10-25-devops-http-baseline",
-          "evidence_ref": "assessments/2026-10-25-devops-http-baseline.md#final-evaluation",
-          "assessed_on": "2026-10-25"
+          "assessment_id": "2026-11-01-phase5-http",
+          "evidence_ref": "assessments/2026-11-01-phase5-http.md#final-evaluation",
+          "assessed_on": "2026-11-01"
         },
         "implementation_correctness": null,
         "edge_case_handling": null,
         "testing_quality": null,
         "tradeoff_explanation": null
       },
-      "last_assessed_on": "2026-10-25",
-      "next_review_on": "2026-10-26",
+      "last_assessed_on": "2026-11-01",
+      "next_review_on": "2026-11-08",
       "assessment_history": [
         {
           "assessment_id": "2026-10-25-devops-http-baseline",
@@ -1913,6 +2190,52 @@
           "independent": true,
           "checks_run": [],
           "outcome": "Initial narrow HTTP path diagnosis and original-route verification reasoning; no real server/curl/reload/tests, other operations skills unassessed."
+        },
+        {
+          "assessment_id": "2026-10-28-phase5-http",
+          "assessment_path": "assessments/2026-10-28-phase5-http.md",
+          "assessed_on": "2026-10-28",
+          "question_ids": [
+            "see-actual-responses"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 3
+          },
+          "evidence_refs": [
+            "assessments/2026-10-28-phase5-http.md#final-evaluation"
+          ],
+          "assistance": "Learner supplied path-prefix fix and public-route200 verification. Tutor added full localhost URL and invoice-body inspection.",
+          "independent": true,
+          "checks_run": [],
+          "outcome": "success: Independent narrow proxy path diagnosis; no Nginx edit, reload or curl.",
+          "recovered_on": "2026-11-02",
+          "evaluation_provenance": "Prior provisional tutor evaluation recovered from learner-supplied handoff; not a new assessment or certification."
+        },
+        {
+          "assessment_id": "2026-11-01-phase5-http",
+          "assessment_path": "assessments/2026-11-01-phase5-http.md",
+          "assessed_on": "2026-11-01",
+          "question_ids": [
+            "see-actual-responses"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 3
+          },
+          "evidence_refs": [
+            "assessments/2026-11-01-phase5-http.md#final-evaluation"
+          ],
+          "assistance": "Learner proposed Java9090 and public80/api/orders check. Tutor accepted upstream9091 alternative, refined proxy/redirect vocabulary and supplied expected200/orders body.",
+          "independent": true,
+          "checks_run": [],
+          "outcome": "success: Stage1 from Oct28 advances to2; seven days after Nov1. Only public-route choice independently stated here, no real edit/test.",
+          "recovered_on": "2026-11-02",
+          "evaluation_provenance": "Prior provisional tutor evaluation recovered from learner-supplied handoff; not a new assessment or certification."
         }
       ]
     },
@@ -2013,6 +2336,51 @@
       "last_assessed_on": null,
       "next_review_on": null,
       "assessment_history": []
+    },
+    "ops.tls": {
+      "track": "devops",
+      "status": "developing",
+      "latest_scores": {
+        "conceptual_understanding": {
+          "score": 3,
+          "assessment_id": "2026-11-01-learning-tls",
+          "evidence_ref": "assessments/2026-11-01-learning-tls.md#final-evaluation",
+          "assessed_on": "2026-11-01"
+        },
+        "implementation_correctness": null,
+        "edge_case_handling": null,
+        "testing_quality": null,
+        "tradeoff_explanation": null
+      },
+      "last_assessed_on": "2026-11-01",
+      "next_review_on": "2026-11-02",
+      "assessment_history": [
+        {
+          "assessment_id": "2026-11-01-learning-tls",
+          "assessment_path": "assessments/2026-11-01-learning-tls.md",
+          "assessed_on": "2026-11-01",
+          "question_ids": [
+            "see-actual-responses"
+          ],
+          "applicable_dimensions": [
+            "conceptual_understanding"
+          ],
+          "dimension_scores": {
+            "conceptual_understanding": 3
+          },
+          "evidence_refs": [
+            "assessments/2026-11-01-learning-tls.md#final-evaluation"
+          ],
+          "assistance": "Hostname checking introduced before attempt. Full URL and hostname-versus-path clarification supplied before correct user-authentication/401 distinction; new learning, no delayed retention.",
+          "independent": false,
+          "checks_run": [],
+          "outcome": "initial_learning: Initial scoped learning around Nov1; first delayed review Nov2, no success-stage advancement. Separate ops.tls identity explicitly created during recovery; DNS/TCP history preserved.",
+          "recovered_on": "2026-11-02",
+          "evaluation_provenance": "Prior provisional tutor evaluation recovered from learner-supplied handoff; not a new assessment or certification.",
+          "date_precision": "around November1; exact per-message timestamps unavailable"
+        }
+      ],
+      "scope": "TLS server hostname verification versus application user authentication; separate review scheduling from ops.networking DNS/TCP diagnosis."
     }
   }
 }

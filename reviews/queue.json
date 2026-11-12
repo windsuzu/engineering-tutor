@@ -652,17 +652,18 @@
       "skill_id": "be.sql",
       "status": "pending",
       "kind": "review",
-      "due_on": "2026-11-02",
-      "stage": 0,
-      "last_interval_days": 2,
-      "last_outcome": "needs_practice",
+      "due_on": "2026-11-15",
+      "stage": 1,
+      "last_interval_days": 3,
+      "last_outcome": "success",
       "assessment_refs": [
         "assessments/2026-10-04-baseline-backend.md#q4b--aggregation-keys-and-missing-matches",
         "assessments/2026-10-09-review-sql.md",
         "assessments/2026-10-18-session-recovery.md#2026-10-12-review-sql",
         "assessments/2026-10-18-session-recovery.md#2026-10-17-review-sql",
         "assessments/2026-10-25-phase4-sql.md#final-evaluation",
-        "assessments/2026-10-31-phase5-sql.md#final-evaluation"
+        "assessments/2026-10-31-phase5-sql.md#final-evaluation",
+        "assessments/2026-11-12-phase5-sql.md#final-evaluation"
       ],
       "concept_ref": "concepts/event-reservation-counts.md",
       "history": [
@@ -718,9 +719,19 @@
           "interval_days": 2,
           "review_due_on": "2026-10-29",
           "scheduling_note": "Date proposed in prior chat; first persisted in this recovered checkout now."
+        },
+        {
+          "on": "2026-11-12",
+          "assessment_id": "2026-11-12-phase5-sql",
+          "outcome": "success",
+          "review_due_on": "2026-11-02",
+          "due_on": "2026-11-15",
+          "stage_after": 1,
+          "interval_days": 3,
+          "reason": "Independent absent-group/NULL-extension diagnosis and joined-result COALESCE proposal. Exact count-column syntax clarified after attempt; no learner executable tests or lateness penalty."
         }
       ],
-      "scheduling_reason": "Date proposed in prior chat; first persisted in this recovered checkout now. Guided pre-aggregation/missing-group correction; no database execution."
+      "scheduling_reason": "First fresh successful conceptual review after guided October31 correction; three days after actualNovember12 completion. Original dueNovember2 retained, broad SQL practical mastery unverified."
     },
     {
       "id": "review-be-java-2026-10-10",
@@ -734,7 +745,8 @@
         "assessments/2026-10-18-session-recovery.md#2026-10-13-review-java",
         "assessments/2026-10-18-review-java.md",
         "assessments/2026-10-25-learning-resource-cleanup.md",
-        "assessments/2026-10-31-phase5-java.md#final-evaluation"
+        "assessments/2026-10-31-phase5-java.md#final-evaluation",
+        "assessments/2026-11-02-phase5-java.md#final-evaluation"
       ],
       "concept_ref": "concepts/java-nullable-exception-flow.md",
       "history": [
@@ -782,13 +794,23 @@
           "interval_days": 2,
           "review_due_on": "2026-10-27",
           "scheduling_note": "Date proposed in prior chat; first persisted in this recovered checkout now."
+        },
+        {
+          "on": "2026-11-12",
+          "assessment_id": "2026-11-02-phase5-java",
+          "outcome": "needs_practice",
+          "review_due_on": "2026-11-02",
+          "due_on": "2026-11-14",
+          "reason": "Work complete with focused finally reminder; correct placement afterward, independent complete flow not established. No lateness penalty.",
+          "stage_after": 0,
+          "interval_days": 2
         }
       ],
-      "due_on": "2026-11-02",
+      "due_on": "2026-11-14",
       "stage": 0,
       "last_interval_days": 2,
       "last_outcome": "needs_practice",
-      "scheduling_reason": "Date proposed in prior chat; first persisted in this recovered checkout now. Guided exception-flow correction; nullable diagnosis retained, resource-cleanup and broader Java scopes remain unverified.",
+      "scheduling_reason": "Assisted finally-placement correction completedNovember12; fresh review in two days, original dueNovember2 preserved in history.",
       "related_concept_refs": [
         "concepts/java-resource-cleanup.md"
       ]
@@ -863,7 +885,8 @@
         "assessments/2026-10-18-session-recovery.md#baseline-q13-singleton-state",
         "assessments/2026-10-18-session-recovery.md#2026-10-13-review-request-state",
         "assessments/2026-10-25-review-concurrency.md",
-        "assessments/2026-10-28-phase5-concurrency.md#final-evaluation"
+        "assessments/2026-10-28-phase5-concurrency.md#final-evaluation",
+        "assessments/2026-11-12-phase5-concurrency.md#final-evaluation"
       ],
       "concept_ref": "concepts/java-shared-object-state.md",
       "history": [
@@ -903,13 +926,23 @@
           "interval_days": 3,
           "review_due_on": "2026-10-27",
           "scheduling_note": "Date proposed in prior chat; first persisted in this recovered checkout now."
+        },
+        {
+          "on": "2026-11-12",
+          "assessment_id": "2026-11-12-phase5-concurrency",
+          "outcome": "success",
+          "review_due_on": "2026-11-03",
+          "due_on": "2026-11-19",
+          "stage_after": 2,
+          "interval_days": 7,
+          "reason": "Independent result-list copy reasoning for specified sequential calls; no thread-safety or executable mastery inferred, no lateness penalty."
         }
       ],
-      "due_on": "2026-11-03",
-      "stage": 1,
-      "last_interval_days": 3,
+      "due_on": "2026-11-19",
+      "stage": 2,
+      "last_interval_days": 7,
       "last_outcome": "success",
-      "scheduling_reason": "Date proposed in prior chat; first persisted in this recovered checkout now. Fresh aliasing transfer and per-invocation allocation reasoning; no compile/thread test.",
+      "scheduling_reason": "Second scoped independent delayed review after October31 aliasing success; seven days after actualNovember12 completion. Future review can probe overlapping/shared-state boundaries with explicit assumptions.",
       "related_concept_refs": [
         "assessments/2026-10-18-session-recovery.md#baseline-q13-singleton-state"
       ]
@@ -1050,12 +1083,13 @@
       "skill_id": "ops.tls",
       "status": "pending",
       "kind": "review",
-      "due_on": "2026-11-02",
+      "due_on": "2026-11-14",
       "stage": 0,
-      "last_interval_days": 1,
-      "last_outcome": null,
+      "last_interval_days": 2,
+      "last_outcome": "needs_practice",
       "assessment_refs": [
-        "assessments/2026-11-01-learning-tls.md#final-evaluation"
+        "assessments/2026-11-01-learning-tls.md#final-evaluation",
+        "assessments/2026-11-12-phase5-tls.md#final-evaluation"
       ],
       "concept_ref": "concepts/tls-hostname-and-application-auth.md",
       "history": [
@@ -1070,9 +1104,19 @@
           "stage_after": 0,
           "interval_days": 1,
           "scheduling_note": "Date proposed in prior chat; first persisted in this recovered checkout now."
+        },
+        {
+          "on": "2026-11-12",
+          "assessment_id": "2026-11-12-phase5-tls",
+          "outcome": "needs_practice",
+          "review_due_on": "2026-11-02",
+          "due_on": "2026-11-14",
+          "stage_after": 0,
+          "interval_days": 2,
+          "reason": "Certificate-path cause proposed despite successful TLS; hostname/path and application-auth distinction taught, changed-path response correct with guidance. No lateness penalty, no DNS/TCP schedule replacement."
         }
       ],
-      "scheduling_reason": "Date proposed in prior chat; first persisted in this recovered checkout now. Initial scoped learning around Nov1; first delayed review Nov2, no success-stage advancement. Separate ops.tls identity explicitly created during recovery; DNS/TCP history preserved."
+      "scheduling_reason": "Guided hostname/path correction completedNovember12; fresh independent checkNovember14. Separate ops.tls scope preserves existing ops.networking history."
     }
   ]
 }

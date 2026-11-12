@@ -26,3 +26,7 @@ The case stipulates ordinary HTTPS over TCP and no mutual TLS. A trusted, unexpi
 This is a separate TLS scope. Preserve the existing [DNS/TCP networking](dns-tcp-http-stages.md) history and schedule rather than replacing it with this first TLS review. The handoff proposed first TLS review November2; final skill identity and synchronized scheduling are recorded in [mastery](../progress/mastery.json) and [queue](../reviews/queue.json).
 
 No exact source metadata or newly verified documentation was supplied for this recovery. The diagram and explanations reconstruct the stated teaching assumptions and do not claim a new source review or runtime validation.
+
+## November12 delayed review and correction
+
+[Actual responses](../assessments/2026-11-12-phase5-tls.md#final-evaluation): initially identifies401/authentication but suggests missing certificate path despite successful handshake; hostname/path and application-login distinction taught explicitly. Correctly rejects a new certificate for /exports under the same hostname afterward. Conceptual2/4 guided, independent retention unestablished. Certificate hostname validity does not grant application access to every path. NextNovember14 stage0 in [queue](../reviews/queue.json); original DNS/TCP history remains separate. No actual TLS, application or learner tests and no fresh source verification.

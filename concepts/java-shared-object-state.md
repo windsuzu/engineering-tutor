@@ -34,3 +34,7 @@ A fresh list isolates this temporary container. Its elements or other dependenci
 ## Version and reference limits
 
 Java21+/Spring Boot4 learning context; singleton and visibility are explicit case assumptions. No new official-reference verification during recovery; exact historical source metadata was not supplied. Latest scheduling is in [queue](../reviews/queue.json), be.concurrency; prior guided attempts remain in the assessment history.
+
+## November12 sequential snapshot review
+
+[Actual response](../assessments/2026-11-12-phase5-concurrency.md#final-evaluation): independently predicts a containsAda because each call returns a new ArrayList. Correct for the stipulated same-instance sequential calls; source-list clear/add does not mutate the earlier returned list. Scoped conceptual3/4, no concurrent safety or deep-copy evidence. Stage2,nextNovember19 in [queue](../reviews/queue.json). Tutor sequential preparation assertions are not learner tests; prior shared-object evidence retained.

@@ -28,3 +28,7 @@ For nullable request/data values, distinguish null handling from exception handl
 ## Version and reference limits
 
 Java21+ learning baseline. This is recovered teaching/evidence, with no newly verified language-reference metadata. See the [resource-cleanup note](java-resource-cleanup.md) for that distinct scope and its recorded JLS reference. Latest Java review date is in [queue](../reviews/queue.json), be.java.
+
+## November12 method-boundary review
+
+[Actual evidence and final evaluation](../assessments/2026-11-02-phase5-java.md#final-evaluation): learner initially lists caller catch/continuation correctly but omits helper finally output. After a focused reminder, correctly puts cleanup before caller catch. Scoped conceptual2/4 assisted completion; omission alone is not evidence of an explicit belief that finally is skipped. Full unboxing/propagation explanation supplied by tutor afterward. No new implementation/testing or independent resource-cleanup evidence. Next fresh reviewNovember14,stage0, synchronized in [queue](../reviews/queue.json); earlier dates/outcomes stay historical.
